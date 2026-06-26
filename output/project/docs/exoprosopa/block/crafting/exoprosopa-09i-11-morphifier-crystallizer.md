@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-11-morphifier-crystallizer-full.png" width="48" height="48"></img> Morphite Accelerator
-Accelerates chromium to great speeds using cryogenics to create morphite. Produces ectoplasm as a byproduct.

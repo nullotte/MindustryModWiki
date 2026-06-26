@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-11k-08-build-tower-full.png" width="48" height="48"></img> Build Tower
-Automatically rebuilds structures in range and assists other units in construction.

@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-04-clevorite-disassembler-full.png" width="48" height="48"></img> Nichrome Disassembler
-Crafts clevorite with nichrome and cryogenics. Produces aluminium and chromium as a byproduct.

@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-26f-01-gryphic-wall-small-full.png" width="48" height="48"></img> Gryphic Barrier
-Protects structures from enemy projectiles. Low health, heavily armored.

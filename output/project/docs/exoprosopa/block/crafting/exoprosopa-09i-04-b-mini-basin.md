@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-04-b-mini-basin-full.png" width="48" height="48"></img> Terrafilter
-Uses cryogenics and miasma to transform nickel into clevorite, has a high conversion rate and does not produce any side-products.

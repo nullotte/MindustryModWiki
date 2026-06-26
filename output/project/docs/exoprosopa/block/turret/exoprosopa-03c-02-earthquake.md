@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-03c-02-earthquake-full.png" width="48" height="48"></img> Earthmover
-Slams down to generate a shockwave that slows down enemies and decrease their reload speed.

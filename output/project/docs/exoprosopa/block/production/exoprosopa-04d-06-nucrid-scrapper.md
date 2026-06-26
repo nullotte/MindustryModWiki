@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-04d-06-nucrid-scrapper-full.png" width="48" height="48"></img> Nucridscrap Shredder
-Extracts nucridscrap from nucrid walls. Faster than a regular nucridscrap crusher. Requires elixir and power to operate.

@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-08h-12-petal-wall-large-full.png" width="48" height="48"></img> Large Bloodstone Wall
-Protects structures from enemy projectiles, decently armored. Explodes on destruction, briefly breaching enemies on hit.

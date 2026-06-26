@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-05e-02-a-aluminium-pipe-full.png" width="48" height="48"></img> Aluminium Pipe
-Moves items forward. Only capable of storing a single item, does not accept non-pipe inputs from the sides.

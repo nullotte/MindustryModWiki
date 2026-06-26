@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-06f-02-hoverducts-full.png" width="48" height="48"></img> Hoverducts
-Transfers liquids and fluids using non-gravity ducts, much faster than regular conduits.

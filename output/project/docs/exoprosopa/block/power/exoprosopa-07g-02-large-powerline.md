@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-07g-02-large-powerline-full.png" width="48" height="48"></img> Large Powerline
-Transmits power to other blocks over a long distance, only capable of forming a single connection.

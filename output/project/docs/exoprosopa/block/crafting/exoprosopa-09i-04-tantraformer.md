@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-04-tantraformer-full.png" width="48" height="48"></img> Tantraformer
-Grinds nickel and anthracite to create tantrium. Due to a flaw in the design process, the elixir must first be taken out before being put back in.

@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-10i-002-canvas-large-full.png" width="48" height="48"></img> Large Drawer
-Displays a large size of single image with a pre-defined pallete. Images can be imported and exported. Editable.

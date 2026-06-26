@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-11-n-morphite-liquidfier-full.png" width="48" height="48"></img> Morphite Discharger
-Heats morphite with miasma and ichor to create morphitix plasma.

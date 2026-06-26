@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-07g-10-necroplasm-reactor-full.png" width="48" height="48"></img> Necroplasia Reactor
-Uses necroplasm's radioactivity to generate power and ectoplasm as a byproduct. Explode violently if ectoplasm reaches above the threshold.

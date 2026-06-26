@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-07g-04-burner-reactor-full.png" width="48" height="48"></img> Burner Reactor
-Burns flammable materials to generate power, requires cryogenics and chromium to function.

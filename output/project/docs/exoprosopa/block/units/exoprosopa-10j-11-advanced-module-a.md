@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-10j-11-advanced-module-a-full.png" width="48" height="48"></img> Advanced Expansion Module
-Increases an assembler tier by 2 when placed next to its bounding box. Can be used as an additional payload input. Requires previous expansion module to be placed.

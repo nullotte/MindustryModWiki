@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-07g-02-las-morphite-node-full.png" width="48" height="48"></img> Morphite Node
-Transmits power to other blocks over a medium distance, can connect to multiple blocks.
