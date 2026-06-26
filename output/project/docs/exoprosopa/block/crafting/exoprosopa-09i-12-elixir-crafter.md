@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-12-elixir-crafter-full.png" width="48" height="48"></img> Biocrafter
-Breaks down nucliogen into basic bio-elixir. Works better on nucridscrap surface.

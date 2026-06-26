@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-02-a-aluminium-refinery-forge-full.png" width="48" height="48"></img> Aluminium Refinery Forge
-Heats nickel and cobalt using anthracite in a large amount, this process allows for bulk aluminium production.

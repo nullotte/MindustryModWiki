@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-03c-04-a-canace-full.png" width="48" height="48"></img> Torrefy
-Fires explosive cluster grenades that scatter into puddles of slag and inflict melting effect. Deals more damage with a direct hit.

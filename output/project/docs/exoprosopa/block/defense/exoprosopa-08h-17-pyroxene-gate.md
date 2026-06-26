@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-08h-17-pyroxene-gate-full.png" width="48" height="48"></img> Pyroxene Gate
-Protects structures from enemy projectiles, well armored. Able to absorb lasers. Deals damage to enemies when destroyed.

@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-04-a-terra-basin-full.png" width="48" height="48"></img> Terraformic Basin
-Uses cryogenics to transform nickel, exposing high charge clevorite. Outputs cobalt and elixir as a byproduct.

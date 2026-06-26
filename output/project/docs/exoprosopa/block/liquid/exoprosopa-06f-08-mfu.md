@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-06f-08-mfu-full.png" width="48" height="48"></img> Miasma Filtration Unit
-Filtralize miasma into elixir using tantrium. Beware! Leaking conduits can be the cause for a miasma infection!

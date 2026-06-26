@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-03c-08-shigure-full.png" width="48" height="48"></img> Phantasm
-Rapidly blasts bullets at enemies. Specialized at dealing with single enemies, head-on. Less efficient against swarms.

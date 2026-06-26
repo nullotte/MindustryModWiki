@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-05e-03-armored-pipe-full.png" width="48" height="48"></img> Bloodstone Pipe
-Moves items forward, does not accept non-pipes inputs from the sides. Decently armored.

@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-05e-02-chromium-pipe-full.png" width="48" height="48"></img> Chromium Pipe
-Moves items forward. Faster than standard pipe. Only capable of storing a single item.

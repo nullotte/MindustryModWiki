@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-09i-03-cryo-synthetis-chamber-full.png" width="48" height="48"></img> Cryogenics Synthesis Chamber
-Purifies elixir into cryogenics without dematerializing it. Uses nucridscrap as a main fuel, requires medium amount of power.

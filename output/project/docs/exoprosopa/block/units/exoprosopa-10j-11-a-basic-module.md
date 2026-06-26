@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-10j-11-a-basic-module-full.png" width="48" height="48"></img> Basic Expansion Module
-Increases an assembler tier by 1 when placed next to its bounding box. Can be used as an additional payload input.

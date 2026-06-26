@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/exoprosopa-18r-05-program-full.png" width="48" height="48"></img> Program
-Fires impaling bullets that explodes upon contact. Equipped with point-defense turret. Capable to self regenerate. Damages nearby units when destroyed.

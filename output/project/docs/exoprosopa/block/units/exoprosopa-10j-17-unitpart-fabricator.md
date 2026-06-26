@@ -1,2 +1,0 @@
-# <img src="/exoprosopa/images/block-exoprosopa-10j-17-unitpart-fabricator-full.png" width="48" height="48"></img> Advanced Fabricator
-Crafts unit part for unit assembly, requires power and necroplasm.
