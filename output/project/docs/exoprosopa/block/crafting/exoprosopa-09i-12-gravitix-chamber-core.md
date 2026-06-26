@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-09i-12-gravitix-chamber-core-full.png" width="48" height="48"></img> Gravitix Chamber Core
+Utilizes an extremely strong magnetic field to fuse multiple materials into gravitix, requires ichor and large amount of heats to operate.

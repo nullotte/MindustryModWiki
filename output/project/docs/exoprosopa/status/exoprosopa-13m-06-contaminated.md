@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-13m-06-contaminated.png" width="48" height="48"></img> Contaminated
+Whenever a unit gets contaminated, its health gets slowly drained and gains increased attack speed.

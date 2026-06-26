@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-17q-04-noya-full.png" width="48" height="48"></img> Skyblade
+Charges and fires high damage piercing plasma orb over long distances. Has dual laser canons attached on the sides and a shield in the front.

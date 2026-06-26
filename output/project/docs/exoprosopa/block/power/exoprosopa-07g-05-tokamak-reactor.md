@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-07g-05-tokamak-reactor-full.png" width="48" height="48"></img> Tokamak Reactor
+Generates large amount of power via morphitix plasma and ichor. Explodes violently if has no sufficient fluids.

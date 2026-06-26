@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-09i-15-pyroforge-full.png" width="48" height="48"></img> Pyroforge
+Creates pyroxene from the strongest material, requires a large amount of necroplasm to convert.

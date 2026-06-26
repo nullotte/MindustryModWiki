@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-07g-03-b-power-director-full.png" width="48" height="48"></img> Power Redirector
+Moves battery power in a single direction only if the other side has less power stored.

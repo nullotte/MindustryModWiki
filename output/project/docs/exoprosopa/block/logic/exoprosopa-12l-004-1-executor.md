@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-12l-004-1-executor-full.png" width="48" height="48"></img> Hyper Terminator
+Runs logic instructions. Able to control units and buildings. Faster than the terminal chip.

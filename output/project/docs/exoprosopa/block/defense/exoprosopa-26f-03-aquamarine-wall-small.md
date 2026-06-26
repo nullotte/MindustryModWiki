@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-26f-03-aquamarine-wall-small-full.png" width="48" height="48"></img> Aquamarine Barrier
+Protects structures from enemy projectiles. Low health, insanely armored.

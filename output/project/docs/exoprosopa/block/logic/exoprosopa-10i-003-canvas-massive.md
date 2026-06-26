@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-10i-003-canvas-massive-full.png" width="48" height="48"></img> Multi Drawer
+Displays a massive size of single image with a pre-defined pallete. Images can be imported and exported. Editable.

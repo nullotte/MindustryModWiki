@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-10j-15-t-surge-launcher-full.png" width="48" height="48"></img> Large Surge Launcher
+Launches payloads to another connected large surge launcher in range.

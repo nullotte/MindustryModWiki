@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-04d-07-gravitix-drill-full.png" width="48" height="48"></img> Discharge Bore
+Making use of the unique properties of gravitix, ichor is dissected by enormous localized gravitational fields. The resulting reaction is carefully contained and directed towards the ground where it turns much of what was there to less than dust.

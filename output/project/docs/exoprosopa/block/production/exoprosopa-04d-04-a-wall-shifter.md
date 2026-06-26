@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-04d-04-a-wall-shifter-full.png" width="48" height="48"></img> Tantrium Extractinator
+Extracts tantrium from tantrium walls, faster than a tantrium crusher.

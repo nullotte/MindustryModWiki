@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-03c-04-preject-full.png" width="48" height="48"></img> Deprive
+Fires barrages of bullets at enemy targets over long distances, dealing massive AoE damage.

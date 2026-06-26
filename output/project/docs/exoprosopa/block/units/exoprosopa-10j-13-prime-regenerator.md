@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-10j-13-prime-regenerator-full.png" width="48" height="48"></img> Prime Regenerator
+Constantly repairs all units in its range at faster rate. Requires ichor and power to operate.

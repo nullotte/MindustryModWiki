@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-18r-04-matrix-full.png" width="48" height="48"></img> Matrix
+Fires pulsing bullets that inflict a stunned effect at enemies. Creates strong energy shields to nearby units. Damages nearby units when destroyed.

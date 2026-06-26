@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-18r-02-syntax-full.png" width="48" height="48"></img> Syntax
+Fires electric orbs that inflict a stunned effect at enemies. Protects itself with a directional shield.

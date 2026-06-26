@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-0000520-shock-tactics-full.png" width="48" height="48"></img> Shock Tactics
+Focused on ramming-based units and suprise attacks. Unlocks Core: Tether and Doomux.

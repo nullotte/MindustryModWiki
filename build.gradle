@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+sourceSets.main.java.srcDirs = ["src/"]
+
+repositories {
+    mavenCentral()
+
+    ivy {
+        url 'https://github.com/'
+        patternLayout { artifact '/[organisation]/[module]/releases/download/[revision]/Mindustry.jar' }
+        metadataSources { artifact() }
+    }
+}
+
+ext {
+    mindustryVersion = 'v158'
+}
+
+tasks.register('run', JavaExec) {
+    dependsOn classes
+    mainClass = "wikigen.Main"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+dependencies {
+    implementation "Anuken:Mindustry:$mindustryVersion"
+}

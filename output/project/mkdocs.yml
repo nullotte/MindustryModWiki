@@ -1,0 +1,1181 @@
+site_name: Mindustry Mod Wiki
+theme: material
+nav:
+  - index.md
+  - "Exoprosopa":
+    - "Exoprosopa": exoprosopa/index.md
+    - "Blocks": 
+      - "Crafting":
+        - "Aluminium Furnace": exoprosopa/block/crafting/exoprosopa-09i-01-aluminium-furnace.md
+        - "Aluminium Refinery Forge": exoprosopa/block/crafting/exoprosopa-09i-02-a-aluminium-refinery-forge.md
+        - "Cryogenics Purifier": exoprosopa/block/crafting/exoprosopa-09i-02-elixir-converter.md
+        - "Cryogenics Autofreezer": exoprosopa/block/crafting/exoprosopa-09i-02-f-elixir-autofreezer.md
+        - "Cryogenics Synthesis Chamber": exoprosopa/block/crafting/exoprosopa-09i-03-cryo-synthetis-chamber.md
+        - "Terraformic Basin": exoprosopa/block/crafting/exoprosopa-09i-04-a-terra-basin.md
+        - "Terrafilter": exoprosopa/block/crafting/exoprosopa-09i-04-b-mini-basin.md
+        - "Nichrome Disassembler": exoprosopa/block/crafting/exoprosopa-09i-04-clevorite-disassembler.md
+        - "Ichor Infuser": exoprosopa/block/crafting/exoprosopa-09i-04-heavy-ichor-mixer.md
+        - "Heavy Ichor Infuser": exoprosopa/block/crafting/exoprosopa-09i-04-ichor-regulator.md
+        - "Laminator": exoprosopa/block/crafting/exoprosopa-09i-04-laminator.md
+        - "Blast Chamber": exoprosopa/block/crafting/exoprosopa-09i-04-lamine-chamber.md
+        - "Tantraformer": exoprosopa/block/crafting/exoprosopa-09i-04-tantraformer.md
+        - "Aquamarine Filter": exoprosopa/block/crafting/exoprosopa-09i-04-u-aquafilter.md
+        - "Elemental Separator": exoprosopa/block/crafting/exoprosopa-09i-04-v-elemental-separator.md
+        - "Morphite Accelerator": exoprosopa/block/crafting/exoprosopa-09i-11-morphifier-crystallizer.md
+        - "Morphite Discharger": exoprosopa/block/crafting/exoprosopa-09i-11-n-morphite-liquidfier.md
+        - "Anthracite Heater": exoprosopa/block/crafting/exoprosopa-09i-11-o-anthracite-heater.md
+        - "Miasma Heater": exoprosopa/block/crafting/exoprosopa-09i-11-o-miasma-heater.md
+        - "Radiative Heater": exoprosopa/block/crafting/exoprosopa-09i-11-o-radiative-heater.md
+        - "Sunlit Heater": exoprosopa/block/crafting/exoprosopa-09i-11-o-sunlit-heater.md
+        - "Heat Connector": exoprosopa/block/crafting/exoprosopa-09i-11-p-heat-redirector.md
+        - "Heat Splitter": exoprosopa/block/crafting/exoprosopa-09i-11-q-heat-router.md
+        - "Biocrafter": exoprosopa/block/crafting/exoprosopa-09i-12-elixir-crafter.md
+        - "Enchanting Basin": exoprosopa/block/crafting/exoprosopa-09i-12-enchanting-basin.md
+        - "Gravitix Chamber Core": exoprosopa/block/crafting/exoprosopa-09i-12-gravitix-chamber-core.md
+        - "Necrolysis Boiler": exoprosopa/block/crafting/exoprosopa-09i-12-necrolysis-boiler.md
+        - "Technoworks": exoprosopa/block/crafting/exoprosopa-09i-13-technoworks.md
+        - "Pyroforge": exoprosopa/block/crafting/exoprosopa-09i-15-pyroforge.md
+        - "Biotic Incinerator": exoprosopa/block/crafting/exoprosopa-09i-20-pipeline-incinerator.md
+        - "Toxocida": exoprosopa/block/crafting/exoprosopa-27g-01-toxocida.md
+      - "Defense":
+        - "Cobalt Wall": exoprosopa/block/defense/exoprosopa-08h-01-cobalt-wall-small.md
+        - "Large Cobalt Wall": exoprosopa/block/defense/exoprosopa-08h-02-cobalt-wall-large.md
+        - "Chromium Wall": exoprosopa/block/defense/exoprosopa-08h-03-chromium-wall-small.md
+        - "Large Chromium Wall": exoprosopa/block/defense/exoprosopa-08h-04-chromium-wall-large.md
+        - "Automatic Gate": exoprosopa/block/defense/exoprosopa-08h-05-a-aluminium-gate.md
+        - "Clevorite Wall": exoprosopa/block/defense/exoprosopa-08h-05-clevorite-wall-small.md
+        - "Large Clevorite Wall": exoprosopa/block/defense/exoprosopa-08h-06-clevorite-wall-large.md
+        - "Lamine Wall": exoprosopa/block/defense/exoprosopa-08h-06-lamine-wall-small.md
+        - "Large Lamine Wall": exoprosopa/block/defense/exoprosopa-08h-06-lbmine-wall-large.md
+        - "Morphite Wall": exoprosopa/block/defense/exoprosopa-08h-07-morphite-wall-small.md
+        - "Large Morphite Wall": exoprosopa/block/defense/exoprosopa-08h-08-morphite-wall-large.md
+        - "Bloodstone Wall": exoprosopa/block/defense/exoprosopa-08h-11-petal-wall-small.md
+        - "Large Bloodstone Wall": exoprosopa/block/defense/exoprosopa-08h-12-petal-wall-large.md
+        - "Gravitix Wall": exoprosopa/block/defense/exoprosopa-08h-13-bethine-wall-small.md
+        - "Large Gravitix Wall": exoprosopa/block/defense/exoprosopa-08h-14-bethine-wall-large.md
+        - "Pyroxene Wall": exoprosopa/block/defense/exoprosopa-08h-15-pyroxene-wall-small.md
+        - "Large Pyroxene Wall": exoprosopa/block/defense/exoprosopa-08h-16-pyroxene-wall-large.md
+        - "Pyroxene Gate": exoprosopa/block/defense/exoprosopa-08h-17-pyroxene-gate.md
+        - "Gryphic Barrier": exoprosopa/block/defense/exoprosopa-26f-01-gryphic-wall-small.md
+        - "Large Gryphic Barrier": exoprosopa/block/defense/exoprosopa-26f-02-gryphic-wall-large.md
+        - "Aquamarine Barrier": exoprosopa/block/defense/exoprosopa-26f-03-aquamarine-wall-small.md
+        - "Large Aquamarine Barrier": exoprosopa/block/defense/exoprosopa-26f-04-aquamarine-wall-large.md
+      - "Distribution":
+        - "Necrology": exoprosopa/block/distribution/exoprosopa-00001-liquid.md
+        - "Aquatism": exoprosopa/block/distribution/exoprosopa-000011-aquatism.md
+        - "Navigation": exoprosopa/block/distribution/exoprosopa-0000110-navigation.md
+        - "Anchoring": exoprosopa/block/distribution/exoprosopa-000012-anchor.md
+        - "Oceanology": exoprosopa/block/distribution/exoprosopa-0000120-oceanology.md
+        - "Logistic": exoprosopa/block/distribution/exoprosopa-00002-logistic.md
+        - "Strategy": exoprosopa/block/distribution/exoprosopa-000021-defence.md
+        - "Fortification": exoprosopa/block/distribution/exoprosopa-0000210-fortification.md
+        - "Observatory": exoprosopa/block/distribution/exoprosopa-000022-research.md
+        - "Intelligence": exoprosopa/block/distribution/exoprosopa-0000220-intelligence.md
+        - "Elemental": exoprosopa/block/distribution/exoprosopa-00003-elemental.md
+        - "Pyrotechnic": exoprosopa/block/distribution/exoprosopa-000031-flame.md
+        - "Pyrolisis": exoprosopa/block/distribution/exoprosopa-0000310-pyrolysis.md
+        - "Electrology": exoprosopa/block/distribution/exoprosopa-000032-lighting.md
+        - "Electrolysis": exoprosopa/block/distribution/exoprosopa-0000320-electrolysis.md
+        - "Offensive": exoprosopa/block/distribution/exoprosopa-00004-metamorphosis.md
+        - "Poisonic": exoprosopa/block/distribution/exoprosopa-000041-poisonous.md
+        - "Venomic": exoprosopa/block/distribution/exoprosopa-0000410-venomous.md
+        - "Corrosion": exoprosopa/block/distribution/exoprosopa-000042-corrosion.md
+        - "Breaching Ability": exoprosopa/block/distribution/exoprosopa-0000420-breaching-ability.md
+        - "Ability": exoprosopa/block/distribution/exoprosopa-00005-ability.md
+        - "Regeneration": exoprosopa/block/distribution/exoprosopa-000051-necrosis.md
+        - "Support": exoprosopa/block/distribution/exoprosopa-0000510-support.md
+        - "Parasitism": exoprosopa/block/distribution/exoprosopa-000052-parasitism.md
+        - "Shock Tactics": exoprosopa/block/distribution/exoprosopa-0000520-shock-tactics.md
+        - "Tactical": exoprosopa/block/distribution/exoprosopa-00006-tactical.md
+        - "Boost Tactics": exoprosopa/block/distribution/exoprosopa-000061-boosted.md
+        - "Overdrive Tactics": exoprosopa/block/distribution/exoprosopa-0000610-overdrive.md
+        - "Marksman Tactics": exoprosopa/block/distribution/exoprosopa-000062-marksman.md
+        - "Sniper Tactics": exoprosopa/block/distribution/exoprosopa-0000620-artillery.md
+        - "Logistics": exoprosopa/block/distribution/exoprosopa-0001-transport.md
+        - "Liquid Logistics": exoprosopa/block/distribution/exoprosopa-0002-conduit.md
+        - "Factories": exoprosopa/block/distribution/exoprosopa-0003-factory.md
+        - "Production": exoprosopa/block/distribution/exoprosopa-0004-drill.md
+        - "Power": exoprosopa/block/distribution/exoprosopa-0005-power.md
+        - "Logic": exoprosopa/block/distribution/exoprosopa-0006-logic.md
+        - "Walls": exoprosopa/block/distribution/exoprosopa-0007-defence.md
+        - "Turrets": exoprosopa/block/distribution/exoprosopa-0008-turret.md
+        - "Units": exoprosopa/block/distribution/exoprosopa-0010-fabricator.md
+        - "Effect": exoprosopa/block/distribution/exoprosopa-0011-effect.md
+        - "Sectors": exoprosopa/block/distribution/exoprosopa-0012-sector.md
+        - "Material Collection": exoprosopa/block/distribution/exoprosopa-0013-item.md
+        - "Fluid Collection": exoprosopa/block/distribution/exoprosopa-0014-liquid.md
+        - "Core Units": exoprosopa/block/distribution/exoprosopa-0015-unit.md
+        - "exoprosopa-03c-04-sprayer": exoprosopa/block/distribution/exoprosopa-03c-04-sprayer.md
+        - "Transport Pipe": exoprosopa/block/distribution/exoprosopa-05e-01-transport-pipe.md
+        - "Aluminium Pipe": exoprosopa/block/distribution/exoprosopa-05e-02-a-aluminium-pipe.md
+        - "Chromium Pipe": exoprosopa/block/distribution/exoprosopa-05e-02-chromium-pipe.md
+        - "Bloodstone Pipe": exoprosopa/block/distribution/exoprosopa-05e-03-armored-pipe.md
+        - "Morphite Belt": exoprosopa/block/distribution/exoprosopa-05e-03-morphite-conveyor.md
+        - "Morphite Splitter": exoprosopa/block/distribution/exoprosopa-05e-04-a-morphite-router.md
+        - "Junction Pipe": exoprosopa/block/distribution/exoprosopa-05e-05-crossblock.md
+        - "Splitter Pipe": exoprosopa/block/distribution/exoprosopa-05e-06-splitter.md
+        - "Bridge Pipe": exoprosopa/block/distribution/exoprosopa-05e-07-mechanical-bridge.md
+        - "Sorter Pipe": exoprosopa/block/distribution/exoprosopa-05e-08-pipeline-sorter.md
+        - "Overflow Gate Pipe": exoprosopa/block/distribution/exoprosopa-05e-10-pipeline-overflow.md
+        - "Underflow Gate Pipe": exoprosopa/block/distribution/exoprosopa-05e-10-pipeline-underflow.md
+        - "Morph Bridge": exoprosopa/block/distribution/exoprosopa-05e-11-morph-bridge.md
+        - "Surge Driver": exoprosopa/block/distribution/exoprosopa-05e-13-a-surge-driver.md
+        - "Cargo Bay": exoprosopa/block/distribution/exoprosopa-05e-13-cargobay.md
+        - "Cargo Depot": exoprosopa/block/distribution/exoprosopa-05e-14-cargodepot.md
+        - "Unloader Pipeline": exoprosopa/block/distribution/exoprosopa-05e-15-pipeline-unloader.md
+        - "Necroplasm Beacon": exoprosopa/block/distribution/exoprosopa-29i-07-necroplasm-beacon.md
+        - "Aqua Boulder": exoprosopa/block/distribution/exoprosopa-aqua-boulder.md
+        - "Aqua Crystal": exoprosopa/block/distribution/exoprosopa-aqua-crystal.md
+        - "Aqua Vent": exoprosopa/block/distribution/exoprosopa-aqua-vent.md
+        - "Deep Aqua Water": exoprosopa/block/distribution/exoprosopa-aquadeepwater.md
+        - "Aqua Floor": exoprosopa/block/distribution/exoprosopa-aquafloor.md
+        - "Aqua Wall": exoprosopa/block/distribution/exoprosopa-aquawall.md
+        - "Aqua Water": exoprosopa/block/distribution/exoprosopa-aquawater.md
+        - "Bethblade": exoprosopa/block/distribution/exoprosopa-beth-blade.md
+        - "Bethine Boulder": exoprosopa/block/distribution/exoprosopa-bethine-boulder.md
+        - "Bethine Vent": exoprosopa/block/distribution/exoprosopa-bethine-vent.md
+        - "Bethine Wall": exoprosopa/block/distribution/exoprosopa-bethine-wall.md
+        - "Cobalt Wall": exoprosopa/block/distribution/exoprosopa-bethinecobalt.md
+        - "Bethstone": exoprosopa/block/distribution/exoprosopa-bethstone.md
+        - "Crystal Bethstone": exoprosopa/block/distribution/exoprosopa-crystal-bethstone.md
+        - "Dilace Boulder": exoprosopa/block/distribution/exoprosopa-dilace-boulder.md
+        - "Dilace Vent": exoprosopa/block/distribution/exoprosopa-dilace-vent.md
+        - "Dilace Wall": exoprosopa/block/distribution/exoprosopa-dilace-wall.md
+        - "Dilace Floor": exoprosopa/block/distribution/exoprosopa-dilace.md
+        - "Fleshing Boulder": exoprosopa/block/distribution/exoprosopa-flesh-boulder.md
+        - "Fleshing Floor": exoprosopa/block/distribution/exoprosopa-flesh-floor.md
+        - "Fleshing Bone Floor": exoprosopa/block/distribution/exoprosopa-flesh-open.md
+        - "Fleshing Vent": exoprosopa/block/distribution/exoprosopa-flesh-vent.md
+        - "Fleshing Wall": exoprosopa/block/distribution/exoprosopa-fleshwall.md
+        - "Large Flower": exoprosopa/block/distribution/exoprosopa-flower-large.md
+        - "Small Flower": exoprosopa/block/distribution/exoprosopa-flower-small.md
+        - "Petal Flower": exoprosopa/block/distribution/exoprosopa-flower-unique.md
+        - "Flower White Small": exoprosopa/block/distribution/exoprosopa-flower-white-small.md
+        - "Frost Boulder": exoprosopa/block/distribution/exoprosopa-frost-boulder.md
+        - "Frost Crystal": exoprosopa/block/distribution/exoprosopa-frost-crystal.md
+        - "Frost Wall": exoprosopa/block/distribution/exoprosopa-frost-wall.md
+        - "Frost Tile": exoprosopa/block/distribution/exoprosopa-frost.md
+        - "Ichor Floor": exoprosopa/block/distribution/exoprosopa-ichorfloor.md
+        - "Mesa Boulder": exoprosopa/block/distribution/exoprosopa-mesa-boulder.md
+        - "Mesa Vent": exoprosopa/block/distribution/exoprosopa-mesa-vent.md
+        - "Mesa Floor": exoprosopa/block/distribution/exoprosopa-mesafloor.md
+        - "Mesa Wall": exoprosopa/block/distribution/exoprosopa-mesawall.md
+        - "Miasma": exoprosopa/block/distribution/exoprosopa-miasma-pool.md
+        - "Nova Lightone Tile": exoprosopa/block/distribution/exoprosopa-nova-a.md
+        - "Nova Darktone Tile": exoprosopa/block/distribution/exoprosopa-nova-b.md
+        - "Nova Blue Floor": exoprosopa/block/distribution/exoprosopa-nova-blue-floor.md
+        - "Derelict Box": exoprosopa/block/distribution/exoprosopa-nova-box.md
+        - "Core Zone (Nova)": exoprosopa/block/distribution/exoprosopa-nova-corezone.md
+        - "Nova Light Bottom": exoprosopa/block/distribution/exoprosopa-nova-floor-bottom-light.md
+        - "Nova Floor 2": exoprosopa/block/distribution/exoprosopa-nova-floor-shining.md
+        - "Nova Light Top": exoprosopa/block/distribution/exoprosopa-nova-floor-top-light.md
+        - "Nova Floor": exoprosopa/block/distribution/exoprosopa-nova-floor.md
+        - "Nova Wall 2": exoprosopa/block/distribution/exoprosopa-nova-hole-wall.md
+        - "Nova Lighting Wall": exoprosopa/block/distribution/exoprosopa-nova-lighting-wall.md
+        - "Nova Nuclear Silo": exoprosopa/block/distribution/exoprosopa-nova-nuclear-silo.md
+        - "Nova Portal": exoprosopa/block/distribution/exoprosopa-nova-portal.md
+        - "Derelict Radar": exoprosopa/block/distribution/exoprosopa-nova-radar.md
+        - "Nova Floor (Rotated)": exoprosopa/block/distribution/exoprosopa-nova-rsquared-floor.md
+        - "Nova Tile": exoprosopa/block/distribution/exoprosopa-nova-tile.md
+        - "Nova Vent": exoprosopa/block/distribution/exoprosopa-nova-vent.md
+        - "Nova Air Ventillation": exoprosopa/block/distribution/exoprosopa-nova-ventillation.md
+        - "Nova Wall Pipe": exoprosopa/block/distribution/exoprosopa-nova-wall-pipe.md
+        - "Nova Wall 1": exoprosopa/block/distribution/exoprosopa-nova-wall.md
+        - "Nova Yellow Floor": exoprosopa/block/distribution/exoprosopa-nova-yellow-floor.md
+        - "Nucriogen Pool": exoprosopa/block/distribution/exoprosopa-nucrid-pool.md
+        - "Nucrid Steel Floor": exoprosopa/block/distribution/exoprosopa-nucrid-steel.md
+        - "Nucrid Floor": exoprosopa/block/distribution/exoprosopa-nucrid.md
+        - "Nucrid Wall": exoprosopa/block/distribution/exoprosopa-nucridwall.md
+        - "Obsidian Boulder": exoprosopa/block/distribution/exoprosopa-obsidian-boulder.md
+        - "Obsidian Spikes": exoprosopa/block/distribution/exoprosopa-obsidian-spikes.md
+        - "Obsidian Vent": exoprosopa/block/distribution/exoprosopa-obsidian-vent.md
+        - "Obsidian Floor": exoprosopa/block/distribution/exoprosopa-obsidianfloor.md
+        - "Obsidian Active Floor": exoprosopa/block/distribution/exoprosopa-obsidianshinyfloor.md
+        - "Obsidian Wall": exoprosopa/block/distribution/exoprosopa-obsidianwall.md
+        - "Anthracite (Wall)": exoprosopa/block/distribution/exoprosopa-ore-anthracite.md
+        - "Anthracite": exoprosopa/block/distribution/exoprosopa-ore-anthracitefloor.md
+        - "Chromium (Wall)": exoprosopa/block/distribution/exoprosopa-ore-chromium.md
+        - "Chromium": exoprosopa/block/distribution/exoprosopa-ore-chromiumfloor.md
+        - "Cobalt": exoprosopa/block/distribution/exoprosopa-ore-cobalt.md
+        - "Nickel (Wall)": exoprosopa/block/distribution/exoprosopa-ore-nickel.md
+        - "Petal": exoprosopa/block/distribution/exoprosopa-petal-prop.md
+        - "Petal": exoprosopa/block/distribution/exoprosopa-petal-w.md
+        - "Tantra Boulder": exoprosopa/block/distribution/exoprosopa-tantra-boulder.md
+        - "Tantra Crater": exoprosopa/block/distribution/exoprosopa-tantra-crater.md
+        - "Tantriscape": exoprosopa/block/distribution/exoprosopa-tantriscape.md
+        - "Tantrium": exoprosopa/block/distribution/exoprosopa-tantrium.md
+        - "Technoscrap Wall": exoprosopa/block/distribution/exoprosopa-tech-ore.md
+      - "Utility":
+        - "Core: Suzuran Kit": exoprosopa/block/effect/exoprosopa-11k-00-core-suzuran-kit.md
+        - "Core: Apex": exoprosopa/block/effect/exoprosopa-11k-01-core-apex.md
+        - "Core: Empower": exoprosopa/block/effect/exoprosopa-11k-02-core-empower.md
+        - "Core: Apeirogon": exoprosopa/block/effect/exoprosopa-11k-03-core-apeirogon.md
+        - "Core: Crest": exoprosopa/block/effect/exoprosopa-11k-04-a-core-crest.md
+        - "Core: Boundless": exoprosopa/block/effect/exoprosopa-11k-04-b-core-boundless.md
+        - "Core: Ultimatum": exoprosopa/block/effect/exoprosopa-11k-04-c-core-ultimatum.md
+        - "Clip": exoprosopa/block/effect/exoprosopa-11k-04-clip.md
+        - "Hub": exoprosopa/block/effect/exoprosopa-11k-04-hub.md
+        - "Enforcer": exoprosopa/block/effect/exoprosopa-11k-05-a-enforcer.md
+        - "Auto-Repairer": exoprosopa/block/effect/exoprosopa-11k-05-a-healer.md
+        - "Holoshield": exoprosopa/block/effect/exoprosopa-11k-05-holoshield.md
+        - "Signal Navigator": exoprosopa/block/effect/exoprosopa-11k-06-illuminator.md
+        - "Survey Buoy": exoprosopa/block/effect/exoprosopa-11k-07-buoy.md
+        - "Discharge Landmine": exoprosopa/block/effect/exoprosopa-11k-07-landmine.md
+        - "Morphite Overdrive": exoprosopa/block/effect/exoprosopa-11k-07-morphite-overdrive.md
+        - "Build Tower": exoprosopa/block/effect/exoprosopa-11k-08-build-tower.md
+        - "": exoprosopa/block/effect/exoprosopa-11k-10-fog-blocks.md
+        - "Global Radar": exoprosopa/block/effect/exoprosopa-11k-11-global-radar.md
+        - "Core: Astral": exoprosopa/block/effect/exoprosopa-29i-01-core-astral.md
+        - "Necroplasm Navigator": exoprosopa/block/effect/exoprosopa-29i-01-necroplasm-radar.md
+        - "Artificial Mycellium": exoprosopa/block/effect/exoprosopa-29i-06-artificial-mycellium.md
+        - "Ultimate Accelerator": exoprosopa/block/effect/exoprosopa-91z-00-core-accelerator.md
+      - "Liquid":
+        - "Sea Conduit": exoprosopa/block/liquid/exoprosopa-06f-01-a-sea-conduit.md
+        - "Aqua Conduit": exoprosopa/block/liquid/exoprosopa-06f-01-b-aqua-conduit.md
+        - "Hoverducts": exoprosopa/block/liquid/exoprosopa-06f-02-hoverducts.md
+        - "Seaduct Junction": exoprosopa/block/liquid/exoprosopa-06f-02-seaduct-junction.md
+        - "Seaduct Router": exoprosopa/block/liquid/exoprosopa-06f-03-seaduct-router.md
+        - "Sea Bridge": exoprosopa/block/liquid/exoprosopa-06f-04-liquidbridge.md
+        - "Reinforced Sea Bridge": exoprosopa/block/liquid/exoprosopa-06f-04-m-clevoritebridge.md
+        - "Sea Morph Bridge": exoprosopa/block/liquid/exoprosopa-06f-05-a-morph-liquidbridge.md
+        - "Jet Pump": exoprosopa/block/liquid/exoprosopa-06f-05-jet-pump.md
+        - "Hydrolic Pump": exoprosopa/block/liquid/exoprosopa-06f-05-pump.md
+        - "Aqua Container": exoprosopa/block/liquid/exoprosopa-06f-06-aqua-container.md
+        - "Large Aqua Container": exoprosopa/block/liquid/exoprosopa-06f-07-large-aqua-container.md
+        - "Reinforced Aqua Container": exoprosopa/block/liquid/exoprosopa-06f-07-massive-container.md
+        - "Miasma Filtration Unit": exoprosopa/block/liquid/exoprosopa-06f-08-mfu.md
+        - "Nullifier": exoprosopa/block/liquid/exoprosopa-06f-09-nullifier.md
+        - "Chute": exoprosopa/block/liquid/exoprosopa-24d-01-chute.md
+        - "Chute Crosspipe": exoprosopa/block/liquid/exoprosopa-24d-02-chute-junction.md
+        - "Chute Router": exoprosopa/block/liquid/exoprosopa-24d-03-chute-router.md
+      - "Logic":
+        - "Drawer": exoprosopa/block/logic/exoprosopa-10i-001-canvas.md
+        - "Large Drawer": exoprosopa/block/logic/exoprosopa-10i-002-canvas-large.md
+        - "Multi Drawer": exoprosopa/block/logic/exoprosopa-10i-003-canvas-massive.md
+        - "Message Chip": exoprosopa/block/logic/exoprosopa-12l-001-message-chip.md
+        - "Switch Chip": exoprosopa/block/logic/exoprosopa-12l-002-switch.md
+        - "Terminator": exoprosopa/block/logic/exoprosopa-12l-003-terminator.md
+        - "Hyper Terminator": exoprosopa/block/logic/exoprosopa-12l-004-1-executor.md
+        - "Data Cell Chip": exoprosopa/block/logic/exoprosopa-12l-004-cell-data.md
+        - "Large Data Cell Chip": exoprosopa/block/logic/exoprosopa-12l-005-cell-data-large.md
+        - "Mini Projector Chip": exoprosopa/block/logic/exoprosopa-12l-005-mini-projector.md
+        - "Projector Chip": exoprosopa/block/logic/exoprosopa-12l-005-projector.md
+      - "Power":
+        - "Pressure Generator": exoprosopa/block/power/exoprosopa-04d-01-pressure-generator.md
+        - "Powerline": exoprosopa/block/power/exoprosopa-07g-01-powerline.md
+        - "Powerbeam": exoprosopa/block/power/exoprosopa-07g-01-q-powerbeam.md
+        - "Large Powerline": exoprosopa/block/power/exoprosopa-07g-02-large-powerline.md
+        - "Morphite Node": exoprosopa/block/power/exoprosopa-07g-02-las-morphite-node.md
+        - "Testing Node": exoprosopa/block/power/exoprosopa-07g-02-lb-supernode.md
+        - "Small Powerbank": exoprosopa/block/power/exoprosopa-07g-02-m-small-powerbank.md
+        - "Powerbank": exoprosopa/block/power/exoprosopa-07g-03-a-powerbank.md
+        - "Power Redirector": exoprosopa/block/power/exoprosopa-07g-03-b-power-director.md
+        - "Burner Generator": exoprosopa/block/power/exoprosopa-07g-03-burner-generator.md
+        - "Burner Reactor": exoprosopa/block/power/exoprosopa-07g-04-burner-reactor.md
+        - "Geothermal Generator": exoprosopa/block/power/exoprosopa-07g-05-a-geogenerator.md
+        - "Exosphere Panel": exoprosopa/block/power/exoprosopa-07g-05-morphite-solarpanel.md
+        - "Tokamak Reactor": exoprosopa/block/power/exoprosopa-07g-05-tokamak-reactor.md
+        - "Necroplasia Reactor": exoprosopa/block/power/exoprosopa-07g-10-necroplasm-reactor.md
+        - "Hybrid Reactor": exoprosopa/block/power/exoprosopa-07g-11-hybrid-reactor.md
+        - "Necrogenerator": exoprosopa/block/power/exoprosopa-25e-01-enlighthen.md
+        - "Power Nylon": exoprosopa/block/power/exoprosopa-25e-02-pylon.md
+      - "Production":
+        - "Elixir Collector": exoprosopa/block/production/exoprosopa-04d-02-elixir-collector.md
+        - "Elixir Extractor": exoprosopa/block/production/exoprosopa-04d-02-elixir-extractor.md
+        - "Ore Extractor": exoprosopa/block/production/exoprosopa-04d-03-ore-extractor.md
+        - "Ore Blaster": exoprosopa/block/production/exoprosopa-04d-03-r-ore-blaster.md
+        - "Tantrium Crusher": exoprosopa/block/production/exoprosopa-04d-04-a-wall-extractor.md
+        - "Tantrium Extractinator": exoprosopa/block/production/exoprosopa-04d-04-a-wall-shifter.md
+        - "Aquamarine Crusher": exoprosopa/block/production/exoprosopa-04d-04-b-aqua-dregder.md
+        - "Aquamarine Extractor": exoprosopa/block/production/exoprosopa-04d-04-b-aqua-extractor.md
+        - "Bore Jet": exoprosopa/block/production/exoprosopa-04d-04-bore-jet.md
+        - "Ichor Rig": exoprosopa/block/production/exoprosopa-04d-05-ichor-rig.md
+        - "Nucridscrap Crusher": exoprosopa/block/production/exoprosopa-04d-06-nucrid-crusher.md
+        - "Nucridscrap Shredder": exoprosopa/block/production/exoprosopa-04d-06-nucrid-scrapper.md
+        - "Discharge Bore": exoprosopa/block/production/exoprosopa-04d-07-gravitix-drill.md
+        - "Necroplasm Extractor": exoprosopa/block/production/exoprosopa-22b-01-necroplasm-extractor.md
+      - "Turret":
+        - "Impale": exoprosopa/block/turret/exoprosopa-03c-01-impale.md
+        - "Anvil": exoprosopa/block/turret/exoprosopa-03c-02-anvil.md
+        - "Shellcore": exoprosopa/block/turret/exoprosopa-03c-02-calamity.md
+        - "Earthmover": exoprosopa/block/turret/exoprosopa-03c-02-earthquake.md
+        - "Spewer": exoprosopa/block/turret/exoprosopa-03c-03-a-spewer.md
+        - "Vulcan": exoprosopa/block/turret/exoprosopa-03c-03-vulcan.md
+        - "Torrefy": exoprosopa/block/turret/exoprosopa-03c-04-a-canace.md
+        - "Influx": exoprosopa/block/turret/exoprosopa-03c-04-b-subsonic.md
+        - "Typhoon": exoprosopa/block/turret/exoprosopa-03c-04-ox.md
+        - "Deprive": exoprosopa/block/turret/exoprosopa-03c-04-preject.md
+        - "Equinox": exoprosopa/block/turret/exoprosopa-03c-05-equinox.md
+        - "Continuum": exoprosopa/block/turret/exoprosopa-03c-06-continuum.md
+        - "Phalanx": exoprosopa/block/turret/exoprosopa-03c-07-phalanx.md
+        - "Voyage": exoprosopa/block/turret/exoprosopa-03c-08-scathe.md
+        - "Phantasm": exoprosopa/block/turret/exoprosopa-03c-08-shigure.md
+        - "Skyhammer": exoprosopa/block/turret/exoprosopa-03c-08-skyhammer.md
+        - "Vertex": exoprosopa/block/turret/exoprosopa-03c-09-plasmyr.md
+        - "exoprosopa-03c-10-supernova": exoprosopa/block/turret/exoprosopa-03c-10-supernova.md
+        - "Havoc": exoprosopa/block/turret/exoprosopa-21a-01-havoc.md
+      - "Unit Parts":
+        - "Heavy Armored Treads": exoprosopa/block/unitpart/exoprosopa-90z-01-heavy-armored-treads.md
+        - "Hyperspace Thruster": exoprosopa/block/unitpart/exoprosopa-90z-02-hyperspace-engine.md
+        - "Geopowered Mechlegs": exoprosopa/block/unitpart/exoprosopa-90z-03-geopowered-mechlegs.md
+        - "Multi Batteries": exoprosopa/block/unitpart/exoprosopa-90z-04-multi-joint.md
+      - "Units":
+        - "Tankbay": exoprosopa/block/units/exoprosopa-10j-01-unitconstructor-tank.md
+        - "Shipbay": exoprosopa/block/units/exoprosopa-10j-02-unitconstructor-ship.md
+        - "Mechbay": exoprosopa/block/units/exoprosopa-10j-03-unitconstructor-mech.md
+        - "Walkerbay": exoprosopa/block/units/exoprosopa-10j-03-v-unitconstructor-legs.md
+        - "Tankbay Upgrade Chamber": exoprosopa/block/units/exoprosopa-10j-04-unitreconstructor-tank.md
+        - "Shipbay Upgrade Chamber": exoprosopa/block/units/exoprosopa-10j-05-unitreconstructor-ship.md
+        - "Mechbay Upgrade Chamber": exoprosopa/block/units/exoprosopa-10j-06-unitreconstructor-mech.md
+        - "Walkerbay Upgrade Chamber": exoprosopa/block/units/exoprosopa-10j-06-v-unitreconstructor-legs.md
+        - "Tank Assembly Station": exoprosopa/block/units/exoprosopa-10j-08-unitassembler-tank.md
+        - "Ship Assembly Station": exoprosopa/block/units/exoprosopa-10j-09-unitassembler-ship.md
+        - "Mech Assembly Station": exoprosopa/block/units/exoprosopa-10j-10-unitassembler-mech.md
+        - "Walker Assembly Station": exoprosopa/block/units/exoprosopa-10j-10-v-unitassembler-legs.md
+        - "Basic Expansion Module": exoprosopa/block/units/exoprosopa-10j-11-a-basic-module.md
+        - "Advanced Expansion Module": exoprosopa/block/units/exoprosopa-10j-11-advanced-module-a.md
+        - "Regenerator": exoprosopa/block/units/exoprosopa-10j-12-regenerator.md
+        - "Prime Regenerator": exoprosopa/block/units/exoprosopa-10j-13-prime-regenerator.md
+        - "Large Transporter": exoprosopa/block/units/exoprosopa-10j-14-payload-conveyor.md
+        - "Large Splitter": exoprosopa/block/units/exoprosopa-10j-15-payload-router.md
+        - "Surge Launcher": exoprosopa/block/units/exoprosopa-10j-15-surge-launcher.md
+        - "Large Surge Launcher": exoprosopa/block/units/exoprosopa-10j-15-t-surge-launcher.md
+        - "Block Fabricator": exoprosopa/block/units/exoprosopa-10j-16-block-fabricator.md
+        - "Large Block Fabricator": exoprosopa/block/units/exoprosopa-10j-17-block-large-fabricator.md
+        - "Advanced Fabricator": exoprosopa/block/units/exoprosopa-10j-17-unitpart-fabricator.md
+        - "Material Disassembler": exoprosopa/block/units/exoprosopa-10j-18-block-deconstructor.md
+        - "Large Material Disassembler": exoprosopa/block/units/exoprosopa-10j-19-block-large-deconstructor.md
+    - "???database-category.images???": 
+      - "Additive Reconstructor": exoprosopa/images/additive-reconstructor.png
+      - "Launch Pad": exoprosopa/images/advanced-launch-pad.png
+      - "Aegires": exoprosopa/images/aegires.png
+      - "Afflict": exoprosopa/images/afflict.png
+      - "Air Factory": exoprosopa/images/air-factory.png
+      - "Alpha": exoprosopa/images/alpha.png
+      - "anthicus-missile": exoprosopa/images/anthicus-missile.png
+      - "Anthicus": exoprosopa/images/anthicus.png
+      - "Antumbra": exoprosopa/images/antumbra.png
+      - "Arc": exoprosopa/images/arc.png
+      - "Arkycite": exoprosopa/images/arkycite-floor.png
+      - "Arkyid": exoprosopa/images/arkyid.png
+      - "Assembly Drone": exoprosopa/images/assembly-drone.png
+      - "Atmospheric Concentrator": exoprosopa/images/atmospheric-concentrator.png
+      - "Atrax": exoprosopa/images/atrax.png
+      - "Avert": exoprosopa/images/avert.png
+      - "Basic Assembler Module": exoprosopa/images/basic-assembler-module.png
+      - "Large Battery": exoprosopa/images/battery-large.png
+      - "Battery": exoprosopa/images/battery.png
+      - "Beam Link": exoprosopa/images/beam-link.png
+      - "Beam Node": exoprosopa/images/beam-node.png
+      - "Beam Tower": exoprosopa/images/beam-tower.png
+      - "Large Beryllium Wall": exoprosopa/images/beryllium-wall-large.png
+      - "Beryllium Wall": exoprosopa/images/beryllium-wall.png
+      - "Beta": exoprosopa/images/beta.png
+      - "Blast Door": exoprosopa/images/blast-door.png
+      - "Airblast Drill": exoprosopa/images/blast-drill.png
+      - "Blast Mixer": exoprosopa/images/blast-mixer.png
+      - "Breach": exoprosopa/images/breach.png
+      - "Bridge Conduit": exoprosopa/images/bridge-conduit.png
+      - "Bridge Conveyor": exoprosopa/images/bridge-conveyor.png
+      - "Bryde": exoprosopa/images/bryde.png
+      - "Build Tower": exoprosopa/images/build-tower.png
+      - "Canvas": exoprosopa/images/canvas.png
+      - "Carbide Crucible": exoprosopa/images/carbide-crucible.png
+      - "Large Carbide Wall": exoprosopa/images/carbide-wall-large.png
+      - "Carbide Wall": exoprosopa/images/carbide-wall.png
+      - "Character Overlay (White)": exoprosopa/images/character-overlay-white.png
+      - "Character Overlay": exoprosopa/images/character-overlay.png
+      - "Chemical Combustion Chamber": exoprosopa/images/chemical-combustion-chamber.png
+      - "Cleroi": exoprosopa/images/cleroi.png
+      - "Cliff Crusher": exoprosopa/images/cliff-crusher.png
+      - "Cliff": exoprosopa/images/cliff.png
+      - "Coal Centrifuge": exoprosopa/images/coal-centrifuge.png
+      - "Collaris": exoprosopa/images/collaris.png
+      - "Colored Floor": exoprosopa/images/colored-floor.png
+      - "Colored Wall": exoprosopa/images/colored-wall.png
+      - "Combustion Generator": exoprosopa/images/combustion-generator.png
+      - "Conquer": exoprosopa/images/conquer.png
+      - "Constructor": exoprosopa/images/constructor.png
+      - "Container": exoprosopa/images/container.png
+      - "Large Copper Wall": exoprosopa/images/copper-wall-large.png
+      - "Copper Wall": exoprosopa/images/copper-wall.png
+      - "Core: Acropolis": exoprosopa/images/core-acropolis.png
+      - "Core: Bastion": exoprosopa/images/core-bastion.png
+      - "Core: Citadel": exoprosopa/images/core-citadel.png
+      - "Core: Foundation": exoprosopa/images/core-foundation.png
+      - "Core: Nucleus": exoprosopa/images/core-nucleus.png
+      - "Core: Shard": exoprosopa/images/core-shard.png
+      - "Core Zone": exoprosopa/images/core-zone.png
+      - "Corvus": exoprosopa/images/corvus.png
+      - "Crawler": exoprosopa/images/crawler.png
+      - "Cryofluid Mixer": exoprosopa/images/cryofluid-mixer.png
+      - "Cultivator": exoprosopa/images/cultivator.png
+      - "Cyanogen Synthesizer": exoprosopa/images/cyanogen-synthesizer.png
+      - "Cyclone": exoprosopa/images/cyclone.png
+      - "Cyerce": exoprosopa/images/cyerce.png
+      - "Dagger": exoprosopa/images/dagger.png
+      - "Dark Panel 1": exoprosopa/images/dark-panel-1.png
+      - "Dark Panel 2": exoprosopa/images/dark-panel-2.png
+      - "Dark Panel 3": exoprosopa/images/dark-panel-3.png
+      - "Dark Panel 4": exoprosopa/images/dark-panel-4.png
+      - "Dark Panel 5": exoprosopa/images/dark-panel-5.png
+      - "Dark Panel 6": exoprosopa/images/dark-panel-6.png
+      - "Dark Sand Tainted Water": exoprosopa/images/darksand-tainted-water.png
+      - "Dark Sand Water": exoprosopa/images/darksand-water.png
+      - "Large Deconstructor": exoprosopa/images/deconstructor.png
+      - "Deep Tainted Water": exoprosopa/images/deep-tainted-water.png
+      - "Deep Water": exoprosopa/images/deep-water.png
+      - "Differential Generator": exoprosopa/images/differential-generator.png
+      - "Diffuse": exoprosopa/images/diffuse.png
+      - "Battery Diode": exoprosopa/images/diode.png
+      - "Disassembler": exoprosopa/images/disassembler.png
+      - "disrupt-missile": exoprosopa/images/disrupt-missile.png
+      - "Disrupt": exoprosopa/images/disrupt.png
+      - "Distributor": exoprosopa/images/distributor.png
+      - "Large Door": exoprosopa/images/door-large.png
+      - "Door": exoprosopa/images/door.png
+      - "Duct Bridge": exoprosopa/images/duct-bridge.png
+      - "Duct Router": exoprosopa/images/duct-router.png
+      - "Duct Unloader": exoprosopa/images/duct-unloader.png
+      - "Duo": exoprosopa/images/duo.png
+      - "Eclipse": exoprosopa/images/eclipse.png
+      - "Electric Heater": exoprosopa/images/electric-heater.png
+      - "Electrolyzer": exoprosopa/images/electrolyzer.png
+      - "Elude": exoprosopa/images/elude.png
+      - "Emanate": exoprosopa/images/emanate.png
+      - "Empty": exoprosopa/images/empty.png
+      - "Eruption Drill": exoprosopa/images/eruption-drill.png
+      - "Evoke": exoprosopa/images/evoke.png
+      - "Necrology": exoprosopa/images/exoprosopa-00001-liquid.png
+      - "Aquatism": exoprosopa/images/exoprosopa-000011-aquatism.png
+      - "Navigation": exoprosopa/images/exoprosopa-0000110-navigation.png
+      - "Anchoring": exoprosopa/images/exoprosopa-000012-anchor.png
+      - "Oceanology": exoprosopa/images/exoprosopa-0000120-oceanology.png
+      - "Logistic": exoprosopa/images/exoprosopa-00002-logistic.png
+      - "Strategy": exoprosopa/images/exoprosopa-000021-defence.png
+      - "Fortification": exoprosopa/images/exoprosopa-0000210-fortification.png
+      - "Observatory": exoprosopa/images/exoprosopa-000022-research.png
+      - "Intelligence": exoprosopa/images/exoprosopa-0000220-intelligence.png
+      - "Elemental": exoprosopa/images/exoprosopa-00003-elemental.png
+      - "Pyrotechnic": exoprosopa/images/exoprosopa-000031-flame.png
+      - "Pyrolisis": exoprosopa/images/exoprosopa-0000310-pyrolysis.png
+      - "Electrology": exoprosopa/images/exoprosopa-000032-lighting.png
+      - "Electrolysis": exoprosopa/images/exoprosopa-0000320-electrolysis.png
+      - "Offensive": exoprosopa/images/exoprosopa-00004-metamorphosis.png
+      - "Poisonic": exoprosopa/images/exoprosopa-000041-poisonous.png
+      - "Venomic": exoprosopa/images/exoprosopa-0000410-venomous.png
+      - "Corrosion": exoprosopa/images/exoprosopa-000042-corrosion.png
+      - "Breaching Ability": exoprosopa/images/exoprosopa-0000420-breaching-ability.png
+      - "Ability": exoprosopa/images/exoprosopa-00005-ability.png
+      - "Regeneration": exoprosopa/images/exoprosopa-000051-necrosis.png
+      - "Support": exoprosopa/images/exoprosopa-0000510-support.png
+      - "Parasitism": exoprosopa/images/exoprosopa-000052-parasitism.png
+      - "Shock Tactics": exoprosopa/images/exoprosopa-0000520-shock-tactics.png
+      - "Tactical": exoprosopa/images/exoprosopa-00006-tactical.png
+      - "Boost Tactics": exoprosopa/images/exoprosopa-000061-boosted.png
+      - "Overdrive Tactics": exoprosopa/images/exoprosopa-0000610-overdrive.png
+      - "Marksman Tactics": exoprosopa/images/exoprosopa-000062-marksman.png
+      - "Sniper Tactics": exoprosopa/images/exoprosopa-0000620-artillery.png
+      - "Logistics": exoprosopa/images/exoprosopa-0001-transport.png
+      - "Liquid Logistics": exoprosopa/images/exoprosopa-0002-conduit.png
+      - "Factories": exoprosopa/images/exoprosopa-0003-factory.png
+      - "Production": exoprosopa/images/exoprosopa-0004-drill.png
+      - "Power": exoprosopa/images/exoprosopa-0005-power.png
+      - "Logic": exoprosopa/images/exoprosopa-0006-logic.png
+      - "Walls": exoprosopa/images/exoprosopa-0007-defence.png
+      - "Turrets": exoprosopa/images/exoprosopa-0008-turret.png
+      - "Units": exoprosopa/images/exoprosopa-0010-fabricator.png
+      - "Effect": exoprosopa/images/exoprosopa-0011-effect.png
+      - "Sectors": exoprosopa/images/exoprosopa-0012-sector.png
+      - "Material Collection": exoprosopa/images/exoprosopa-0013-item.png
+      - "Fluid Collection": exoprosopa/images/exoprosopa-0014-liquid.png
+      - "Core Units": exoprosopa/images/exoprosopa-0015-unit.png
+      - "Cobalt": exoprosopa/images/exoprosopa-01a-01-item-cobalt.png
+      - "Nickel": exoprosopa/images/exoprosopa-01a-02-item-nickel.png
+      - "Anthracite": exoprosopa/images/exoprosopa-01a-03-item-anthracite.png
+      - "Aquamarine": exoprosopa/images/exoprosopa-01a-03-item-aquashard.png
+      - "Lamine": exoprosopa/images/exoprosopa-01a-03-item-lamine.png
+      - "Tantrium": exoprosopa/images/exoprosopa-01a-04-item-tantra-sand.png
+      - "Aluminium": exoprosopa/images/exoprosopa-01a-05-item-aluminium.png
+      - "Nichrome": exoprosopa/images/exoprosopa-01a-05-item-raw-nichrome.png
+      - "Chromium": exoprosopa/images/exoprosopa-01a-06-item-chromium.png
+      - "Clevorite": exoprosopa/images/exoprosopa-01a-07-item-clevorite.png
+      - "Nucridscrap": exoprosopa/images/exoprosopa-01a-08-item-nucrid.png
+      - "Petal Fragment": exoprosopa/images/exoprosopa-01a-08-item-petal-flower.png
+      - "Gravitix": exoprosopa/images/exoprosopa-01a-10-item-bethine.png
+      - "Technoscrap": exoprosopa/images/exoprosopa-01a-11-item-technoscrap.png
+      - "Techno Plating": exoprosopa/images/exoprosopa-01a-12-item-techno-plating.png
+      - "Gryphic": exoprosopa/images/exoprosopa-01a-21-item-gryphic.png
+      - "Crystallic Geode": exoprosopa/images/exoprosopa-01a-22-item-crystallic-geode.png
+      - "Morphitix Crystal": exoprosopa/images/exoprosopa-01a-31-item-morphitix-crystal.png
+      - "Elixir": exoprosopa/images/exoprosopa-02b-01-bioliquid.png
+      - "Cryogenics": exoprosopa/images/exoprosopa-02b-02-a-purified-elixir.png
+      - "Ichor": exoprosopa/images/exoprosopa-02b-02-ichor.png
+      - "Necroplasm": exoprosopa/images/exoprosopa-02b-03-necroplasm.png
+      - "Miasma": exoprosopa/images/exoprosopa-02b-04-miasma.png
+      - "Hydryite": exoprosopa/images/exoprosopa-02b-05-hydrowater.png
+      - "Morphitix Plasma": exoprosopa/images/exoprosopa-02b-06-morphitix-plasma.png
+      - "Ectoplasm": exoprosopa/images/exoprosopa-02b-07-ectoplasm.png
+      - "Nucliogen": exoprosopa/images/exoprosopa-02b-08-nucliogen.png
+      - "Impale": exoprosopa/images/exoprosopa-03c-01-impale.png
+      - "Anvil": exoprosopa/images/exoprosopa-03c-02-anvil.png
+      - "Shellcore": exoprosopa/images/exoprosopa-03c-02-calamity.png
+      - "Earthmover": exoprosopa/images/exoprosopa-03c-02-earthquake.png
+      - "Spewer": exoprosopa/images/exoprosopa-03c-03-a-spewer.png
+      - "Vulcan": exoprosopa/images/exoprosopa-03c-03-vulcan.png
+      - "Torrefy": exoprosopa/images/exoprosopa-03c-04-a-canace.png
+      - "Influx": exoprosopa/images/exoprosopa-03c-04-b-subsonic.png
+      - "Typhoon": exoprosopa/images/exoprosopa-03c-04-ox.png
+      - "Deprive": exoprosopa/images/exoprosopa-03c-04-preject.png
+      - "exoprosopa-03c-04-sprayer": exoprosopa/images/exoprosopa-03c-04-sprayer.png
+      - "Equinox": exoprosopa/images/exoprosopa-03c-05-equinox.png
+      - "Continuum": exoprosopa/images/exoprosopa-03c-06-continuum.png
+      - "Phalanx": exoprosopa/images/exoprosopa-03c-07-phalanx.png
+      - "Voyage": exoprosopa/images/exoprosopa-03c-08-scathe.png
+      - "Phantasm": exoprosopa/images/exoprosopa-03c-08-shigure.png
+      - "Skyhammer": exoprosopa/images/exoprosopa-03c-08-skyhammer.png
+      - "exoprosopa-03c-10-supernova": exoprosopa/images/exoprosopa-03c-10-supernova.png
+      - "Pressure Generator": exoprosopa/images/exoprosopa-04d-01-pressure-generator.png
+      - "Elixir Collector": exoprosopa/images/exoprosopa-04d-02-elixir-collector.png
+      - "Elixir Extractor": exoprosopa/images/exoprosopa-04d-02-elixir-extractor.png
+      - "Ore Extractor": exoprosopa/images/exoprosopa-04d-03-ore-extractor.png
+      - "Ore Blaster": exoprosopa/images/exoprosopa-04d-03-r-ore-blaster.png
+      - "Tantrium Crusher": exoprosopa/images/exoprosopa-04d-04-a-wall-extractor.png
+      - "Tantrium Extractinator": exoprosopa/images/exoprosopa-04d-04-a-wall-shifter.png
+      - "Aquamarine Crusher": exoprosopa/images/exoprosopa-04d-04-b-aqua-dregder.png
+      - "Aquamarine Extractor": exoprosopa/images/exoprosopa-04d-04-b-aqua-extractor.png
+      - "Bore Jet": exoprosopa/images/exoprosopa-04d-04-bore-jet.png
+      - "Ichor Rig": exoprosopa/images/exoprosopa-04d-05-ichor-rig.png
+      - "Nucridscrap Crusher": exoprosopa/images/exoprosopa-04d-06-nucrid-crusher.png
+      - "Nucridscrap Shredder": exoprosopa/images/exoprosopa-04d-06-nucrid-scrapper.png
+      - "Discharge Bore": exoprosopa/images/exoprosopa-04d-07-gravitix-drill.png
+      - "Morphite Belt": exoprosopa/images/exoprosopa-05e-03-morphite-conveyor.png
+      - "Morphite Splitter": exoprosopa/images/exoprosopa-05e-04-a-morphite-router.png
+      - "Junction Pipe": exoprosopa/images/exoprosopa-05e-05-crossblock.png
+      - "Splitter Pipe": exoprosopa/images/exoprosopa-05e-06-splitter.png
+      - "Bridge Pipe": exoprosopa/images/exoprosopa-05e-07-mechanical-bridge.png
+      - "Sorter Pipe": exoprosopa/images/exoprosopa-05e-08-pipeline-sorter.png
+      - "Overflow Gate Pipe": exoprosopa/images/exoprosopa-05e-10-pipeline-overflow.png
+      - "Underflow Gate Pipe": exoprosopa/images/exoprosopa-05e-10-pipeline-underflow.png
+      - "Morph Bridge": exoprosopa/images/exoprosopa-05e-11-morph-bridge.png
+      - "Surge Driver": exoprosopa/images/exoprosopa-05e-13-a-surge-driver.png
+      - "Cargo Bay": exoprosopa/images/exoprosopa-05e-13-cargobay.png
+      - "Cargo Depot": exoprosopa/images/exoprosopa-05e-14-cargodepot.png
+      - "Unloader Pipeline": exoprosopa/images/exoprosopa-05e-15-pipeline-unloader.png
+      - "Seaduct Junction": exoprosopa/images/exoprosopa-06f-02-seaduct-junction.png
+      - "Seaduct Router": exoprosopa/images/exoprosopa-06f-03-seaduct-router.png
+      - "Sea Bridge": exoprosopa/images/exoprosopa-06f-04-liquidbridge.png
+      - "Reinforced Sea Bridge": exoprosopa/images/exoprosopa-06f-04-m-clevoritebridge.png
+      - "Sea Morph Bridge": exoprosopa/images/exoprosopa-06f-05-a-morph-liquidbridge.png
+      - "Jet Pump": exoprosopa/images/exoprosopa-06f-05-jet-pump.png
+      - "Hydrolic Pump": exoprosopa/images/exoprosopa-06f-05-pump.png
+      - "Aqua Container": exoprosopa/images/exoprosopa-06f-06-aqua-container.png
+      - "Large Aqua Container": exoprosopa/images/exoprosopa-06f-07-large-aqua-container.png
+      - "Reinforced Aqua Container": exoprosopa/images/exoprosopa-06f-07-massive-container.png
+      - "Miasma Filtration Unit": exoprosopa/images/exoprosopa-06f-08-mfu.png
+      - "Nullifier": exoprosopa/images/exoprosopa-06f-09-nullifier.png
+      - "Powerline": exoprosopa/images/exoprosopa-07g-01-powerline.png
+      - "Powerbeam": exoprosopa/images/exoprosopa-07g-01-q-powerbeam.png
+      - "Large Powerline": exoprosopa/images/exoprosopa-07g-02-large-powerline.png
+      - "Morphite Node": exoprosopa/images/exoprosopa-07g-02-las-morphite-node.png
+      - "Testing Node": exoprosopa/images/exoprosopa-07g-02-lb-supernode.png
+      - "Small Powerbank": exoprosopa/images/exoprosopa-07g-02-m-small-powerbank.png
+      - "Powerbank": exoprosopa/images/exoprosopa-07g-03-a-powerbank.png
+      - "Power Redirector": exoprosopa/images/exoprosopa-07g-03-b-power-director.png
+      - "Burner Generator": exoprosopa/images/exoprosopa-07g-03-burner-generator.png
+      - "Burner Reactor": exoprosopa/images/exoprosopa-07g-04-burner-reactor.png
+      - "Geothermal Generator": exoprosopa/images/exoprosopa-07g-05-a-geogenerator.png
+      - "Exosphere Panel": exoprosopa/images/exoprosopa-07g-05-morphite-solarpanel.png
+      - "Tokamak Reactor": exoprosopa/images/exoprosopa-07g-05-tokamak-reactor.png
+      - "Necroplasia Reactor": exoprosopa/images/exoprosopa-07g-10-necroplasm-reactor.png
+      - "Hybrid Reactor": exoprosopa/images/exoprosopa-07g-11-hybrid-reactor.png
+      - "Cobalt Wall": exoprosopa/images/exoprosopa-08h-01-cobalt-wall-small.png
+      - "Large Cobalt Wall": exoprosopa/images/exoprosopa-08h-02-cobalt-wall-large.png
+      - "Chromium Wall": exoprosopa/images/exoprosopa-08h-03-chromium-wall-small.png
+      - "Large Chromium Wall": exoprosopa/images/exoprosopa-08h-04-chromium-wall-large.png
+      - "Automatic Gate": exoprosopa/images/exoprosopa-08h-05-a-aluminium-gate.png
+      - "Clevorite Wall": exoprosopa/images/exoprosopa-08h-05-clevorite-wall-small.png
+      - "Large Clevorite Wall": exoprosopa/images/exoprosopa-08h-06-clevorite-wall-large.png
+      - "Lamine Wall": exoprosopa/images/exoprosopa-08h-06-lamine-wall-small.png
+      - "Large Lamine Wall": exoprosopa/images/exoprosopa-08h-06-lbmine-wall-large.png
+      - "Morphite Wall": exoprosopa/images/exoprosopa-08h-07-morphite-wall-small.png
+      - "Large Morphite Wall": exoprosopa/images/exoprosopa-08h-08-morphite-wall-large.png
+      - "Bloodstone Wall": exoprosopa/images/exoprosopa-08h-11-petal-wall-small.png
+      - "Large Bloodstone Wall": exoprosopa/images/exoprosopa-08h-12-petal-wall-large.png
+      - "Gravitix Wall": exoprosopa/images/exoprosopa-08h-13-bethine-wall-small.png
+      - "Large Gravitix Wall": exoprosopa/images/exoprosopa-08h-14-bethine-wall-large.png
+      - "Pyroxene Wall": exoprosopa/images/exoprosopa-08h-15-pyroxene-wall-small.png
+      - "Large Pyroxene Wall": exoprosopa/images/exoprosopa-08h-16-pyroxene-wall-large.png
+      - "Pyroxene Gate": exoprosopa/images/exoprosopa-08h-17-pyroxene-gate.png
+      - "Aluminium Furnace": exoprosopa/images/exoprosopa-09i-01-aluminium-furnace.png
+      - "Aluminium Refinery Forge": exoprosopa/images/exoprosopa-09i-02-a-aluminium-refinery-forge.png
+      - "Cryogenics Purifier": exoprosopa/images/exoprosopa-09i-02-elixir-converter.png
+      - "Cryogenics Autofreezer": exoprosopa/images/exoprosopa-09i-02-f-elixir-autofreezer.png
+      - "Cryogenics Synthesis Chamber": exoprosopa/images/exoprosopa-09i-03-cryo-synthetis-chamber.png
+      - "Terraformic Basin": exoprosopa/images/exoprosopa-09i-04-a-terra-basin.png
+      - "Terrafilter": exoprosopa/images/exoprosopa-09i-04-b-mini-basin.png
+      - "Nichrome Disassembler": exoprosopa/images/exoprosopa-09i-04-clevorite-disassembler.png
+      - "Ichor Infuser": exoprosopa/images/exoprosopa-09i-04-heavy-ichor-mixer.png
+      - "Heavy Ichor Infuser": exoprosopa/images/exoprosopa-09i-04-ichor-regulator.png
+      - "Laminator": exoprosopa/images/exoprosopa-09i-04-laminator.png
+      - "Blast Chamber": exoprosopa/images/exoprosopa-09i-04-lamine-chamber.png
+      - "Tantraformer": exoprosopa/images/exoprosopa-09i-04-tantraformer.png
+      - "Aquamarine Filter": exoprosopa/images/exoprosopa-09i-04-u-aquafilter.png
+      - "Elemental Separator": exoprosopa/images/exoprosopa-09i-04-v-elemental-separator.png
+      - "Morphite Accelerator": exoprosopa/images/exoprosopa-09i-11-morphifier-crystallizer.png
+      - "Morphite Discharger": exoprosopa/images/exoprosopa-09i-11-n-morphite-liquidfier.png
+      - "Anthracite Heater": exoprosopa/images/exoprosopa-09i-11-o-anthracite-heater.png
+      - "Miasma Heater": exoprosopa/images/exoprosopa-09i-11-o-miasma-heater.png
+      - "Radiative Heater": exoprosopa/images/exoprosopa-09i-11-o-radiative-heater.png
+      - "Sunlit Heater": exoprosopa/images/exoprosopa-09i-11-o-sunlit-heater.png
+      - "Heat Connector": exoprosopa/images/exoprosopa-09i-11-p-heat-redirector.png
+      - "Heat Splitter": exoprosopa/images/exoprosopa-09i-11-q-heat-router.png
+      - "Biocrafter": exoprosopa/images/exoprosopa-09i-12-elixir-crafter.png
+      - "Enchanting Basin": exoprosopa/images/exoprosopa-09i-12-enchanting-basin.png
+      - "Gravitix Chamber Core": exoprosopa/images/exoprosopa-09i-12-gravitix-chamber-core.png
+      - "Necrolysis Boiler": exoprosopa/images/exoprosopa-09i-12-necrolysis-boiler.png
+      - "Technoworks": exoprosopa/images/exoprosopa-09i-13-technoworks.png
+      - "Pyroforge": exoprosopa/images/exoprosopa-09i-15-pyroforge.png
+      - "Biotic Incinerator": exoprosopa/images/exoprosopa-09i-20-pipeline-incinerator.png
+      - "Drawer": exoprosopa/images/exoprosopa-10i-001-canvas.png
+      - "Large Drawer": exoprosopa/images/exoprosopa-10i-002-canvas-large.png
+      - "Multi Drawer": exoprosopa/images/exoprosopa-10i-003-canvas-massive.png
+      - "Tankbay": exoprosopa/images/exoprosopa-10j-01-unitconstructor-tank.png
+      - "Shipbay": exoprosopa/images/exoprosopa-10j-02-unitconstructor-ship.png
+      - "Mechbay": exoprosopa/images/exoprosopa-10j-03-unitconstructor-mech.png
+      - "Walkerbay": exoprosopa/images/exoprosopa-10j-03-v-unitconstructor-legs.png
+      - "Tankbay Upgrade Chamber": exoprosopa/images/exoprosopa-10j-04-unitreconstructor-tank.png
+      - "Shipbay Upgrade Chamber": exoprosopa/images/exoprosopa-10j-05-unitreconstructor-ship.png
+      - "Mechbay Upgrade Chamber": exoprosopa/images/exoprosopa-10j-06-unitreconstructor-mech.png
+      - "Walkerbay Upgrade Chamber": exoprosopa/images/exoprosopa-10j-06-v-unitreconstructor-legs.png
+      - "Tank Assembly Station": exoprosopa/images/exoprosopa-10j-08-unitassembler-tank.png
+      - "Ship Assembly Station": exoprosopa/images/exoprosopa-10j-09-unitassembler-ship.png
+      - "Mech Assembly Station": exoprosopa/images/exoprosopa-10j-10-unitassembler-mech.png
+      - "Walker Assembly Station": exoprosopa/images/exoprosopa-10j-10-v-unitassembler-legs.png
+      - "Basic Expansion Module": exoprosopa/images/exoprosopa-10j-11-a-basic-module.png
+      - "Advanced Expansion Module": exoprosopa/images/exoprosopa-10j-11-advanced-module-a.png
+      - "Regenerator": exoprosopa/images/exoprosopa-10j-12-regenerator.png
+      - "Prime Regenerator": exoprosopa/images/exoprosopa-10j-13-prime-regenerator.png
+      - "Large Transporter": exoprosopa/images/exoprosopa-10j-14-payload-conveyor.png
+      - "Large Splitter": exoprosopa/images/exoprosopa-10j-15-payload-router.png
+      - "Surge Launcher": exoprosopa/images/exoprosopa-10j-15-surge-launcher.png
+      - "Large Surge Launcher": exoprosopa/images/exoprosopa-10j-15-t-surge-launcher.png
+      - "Block Fabricator": exoprosopa/images/exoprosopa-10j-16-block-fabricator.png
+      - "Large Block Fabricator": exoprosopa/images/exoprosopa-10j-17-block-large-fabricator.png
+      - "Advanced Fabricator": exoprosopa/images/exoprosopa-10j-17-unitpart-fabricator.png
+      - "Material Disassembler": exoprosopa/images/exoprosopa-10j-18-block-deconstructor.png
+      - "Large Material Disassembler": exoprosopa/images/exoprosopa-10j-19-block-large-deconstructor.png
+      - "Core: Suzuran Kit": exoprosopa/images/exoprosopa-11k-00-core-suzuran-kit.png
+      - "Core: Apex": exoprosopa/images/exoprosopa-11k-01-core-apex.png
+      - "Core: Empower": exoprosopa/images/exoprosopa-11k-02-core-empower.png
+      - "Core: Apeirogon": exoprosopa/images/exoprosopa-11k-03-core-apeirogon.png
+      - "Core: Crest": exoprosopa/images/exoprosopa-11k-04-a-core-crest.png
+      - "Core: Boundless": exoprosopa/images/exoprosopa-11k-04-b-core-boundless.png
+      - "Core: Ultimatum": exoprosopa/images/exoprosopa-11k-04-c-core-ultimatum.png
+      - "Clip": exoprosopa/images/exoprosopa-11k-04-clip.png
+      - "Hub": exoprosopa/images/exoprosopa-11k-04-hub.png
+      - "Enforcer": exoprosopa/images/exoprosopa-11k-05-a-enforcer.png
+      - "Auto-Repairer": exoprosopa/images/exoprosopa-11k-05-a-healer.png
+      - "Holoshield": exoprosopa/images/exoprosopa-11k-05-holoshield.png
+      - "Signal Navigator": exoprosopa/images/exoprosopa-11k-06-illuminator.png
+      - "Survey Buoy": exoprosopa/images/exoprosopa-11k-07-buoy.png
+      - "Discharge Landmine": exoprosopa/images/exoprosopa-11k-07-landmine.png
+      - "Morphite Overdrive": exoprosopa/images/exoprosopa-11k-07-morphite-overdrive.png
+      - "Build Tower": exoprosopa/images/exoprosopa-11k-08-build-tower.png
+      - "": exoprosopa/images/exoprosopa-11k-10-fog-blocks.png
+      - "Global Radar": exoprosopa/images/exoprosopa-11k-11-global-radar.png
+      - "Message Chip": exoprosopa/images/exoprosopa-12l-001-message-chip.png
+      - "Switch Chip": exoprosopa/images/exoprosopa-12l-002-switch.png
+      - "Terminator": exoprosopa/images/exoprosopa-12l-003-terminator.png
+      - "Hyper Terminator": exoprosopa/images/exoprosopa-12l-004-1-executor.png
+      - "Data Cell Chip": exoprosopa/images/exoprosopa-12l-004-cell-data.png
+      - "Large Data Cell Chip": exoprosopa/images/exoprosopa-12l-005-cell-data-large.png
+      - "Mini Projector Chip": exoprosopa/images/exoprosopa-12l-005-mini-projector.png
+      - "Projector Chip": exoprosopa/images/exoprosopa-12l-005-projector.png
+      - "Breached": exoprosopa/images/exoprosopa-13m-01-breached.png
+      - "Immunity": exoprosopa/images/exoprosopa-13m-02-immunity.png
+      - "Discharge Overload": exoprosopa/images/exoprosopa-13m-03-hsos6.png
+      - "Boosted": exoprosopa/images/exoprosopa-13m-04-boosted.png
+      - "Overboosted": exoprosopa/images/exoprosopa-13m-05-overboosted.png
+      - "Contaminated": exoprosopa/images/exoprosopa-13m-06-contaminated.png
+      - "Ground Shock": exoprosopa/images/exoprosopa-13m-07-shock.png
+      - "Stunned": exoprosopa/images/exoprosopa-13m-07-stunned.png
+      - "Doom": exoprosopa/images/exoprosopa-13m-08-doom.png
+      - "Rogue": exoprosopa/images/exoprosopa-14n-01-anby.png
+      - "Pioneer": exoprosopa/images/exoprosopa-14n-02-nicole.png
+      - "Trailblaze": exoprosopa/images/exoprosopa-14n-03-axthrasis.png
+      - "Coronis": exoprosopa/images/exoprosopa-14n-04-coronis.png
+      - "Sepia": exoprosopa/images/exoprosopa-14n-04-sepia.png
+      - "Suzuran": exoprosopa/images/exoprosopa-14n-04-suzuran.png
+      - "Locust": exoprosopa/images/exoprosopa-14n-04-t-evernight.png
+      - "Honsha": exoprosopa/images/exoprosopa-15n-01-honsha.png
+      - "Huntress": exoprosopa/images/exoprosopa-15n-02-ag-shiraino.png
+      - "Craig": exoprosopa/images/exoprosopa-15o-01-mason.png
+      - "Bastion": exoprosopa/images/exoprosopa-15o-02-oktarav.png
+      - "Bulwark": exoprosopa/images/exoprosopa-15o-03-vicient.png
+      - "Fortis": exoprosopa/images/exoprosopa-15o-04-siphon.png
+      - "Rancor": exoprosopa/images/exoprosopa-15o-05-rancor.png
+      - "Baron": exoprosopa/images/exoprosopa-16p-01-ares.png
+      - "Tribune": exoprosopa/images/exoprosopa-16p-02-rhitle.png
+      - "Archon": exoprosopa/images/exoprosopa-16p-03-sender.png
+      - "Emperor": exoprosopa/images/exoprosopa-16p-04-carragher.png
+      - "Monarch": exoprosopa/images/exoprosopa-16p-05-xenoct.png
+      - "Spark": exoprosopa/images/exoprosopa-17q-01-codex.png
+      - "Sora": exoprosopa/images/exoprosopa-17q-02-calaust.png
+      - "Strike": exoprosopa/images/exoprosopa-17q-03-syntaxe.png
+      - "Skyblade": exoprosopa/images/exoprosopa-17q-04-noya.png
+      - "Archangel": exoprosopa/images/exoprosopa-17q-05-archangel.png
+      - "Bulbhead": exoprosopa/images/exoprosopa-17q-05-bulbhead.png
+      - "Hammerhead": exoprosopa/images/exoprosopa-17q-06-shark.png
+      - "Narhwal": exoprosopa/images/exoprosopa-17q-07-narhwal.png
+      - "Freesia": exoprosopa/images/exoprosopa-17q-08-freesia.png
+      - "Byte": exoprosopa/images/exoprosopa-18r-01-byte.png
+      - "Syntax": exoprosopa/images/exoprosopa-18r-02-syntax.png
+      - "Decode": exoprosopa/images/exoprosopa-18r-03-decode.png
+      - "Matrix": exoprosopa/images/exoprosopa-18r-04-matrix.png
+      - "Program": exoprosopa/images/exoprosopa-18r-05-program.png
+      - "Amber": exoprosopa/images/exoprosopa-19r-01-amber.png
+      - "Crystal": exoprosopa/images/exoprosopa-19r-02-iris.png
+      - "Havoc": exoprosopa/images/exoprosopa-21a-01-havoc.png
+      - "Necroplasm Extractor": exoprosopa/images/exoprosopa-22b-01-necroplasm-extractor.png
+      - "Chute Crosspipe": exoprosopa/images/exoprosopa-24d-02-chute-junction.png
+      - "Chute Router": exoprosopa/images/exoprosopa-24d-03-chute-router.png
+      - "Necrogenerator": exoprosopa/images/exoprosopa-25e-01-enlighthen.png
+      - "Power Nylon": exoprosopa/images/exoprosopa-25e-02-pylon.png
+      - "Gryphic Barrier": exoprosopa/images/exoprosopa-26f-01-gryphic-wall-small.png
+      - "Large Gryphic Barrier": exoprosopa/images/exoprosopa-26f-02-gryphic-wall-large.png
+      - "Aquamarine Barrier": exoprosopa/images/exoprosopa-26f-03-aquamarine-wall-small.png
+      - "Large Aquamarine Barrier": exoprosopa/images/exoprosopa-26f-04-aquamarine-wall-large.png
+      - "Toxocida": exoprosopa/images/exoprosopa-27g-01-toxocida.png
+      - "Core: Astral": exoprosopa/images/exoprosopa-29i-01-core-astral.png
+      - "Necroplasm Navigator": exoprosopa/images/exoprosopa-29i-01-necroplasm-radar.png
+      - "Artificial Mycellium": exoprosopa/images/exoprosopa-29i-06-artificial-mycellium.png
+      - "Necroplasm Beacon": exoprosopa/images/exoprosopa-29i-07-necroplasm-beacon.png
+      - "Beth": exoprosopa/images/exoprosopa-31k-01-beth.png
+      - "Blastum": exoprosopa/images/exoprosopa-31k-01-blastum.png
+      - "Scorcher": exoprosopa/images/exoprosopa-31k-02-scorcher.png
+      - "Heavy Armored Treads": exoprosopa/images/exoprosopa-90z-01-heavy-armored-treads.png
+      - "Hyperspace Thruster": exoprosopa/images/exoprosopa-90z-02-hyperspace-engine.png
+      - "Geopowered Mechlegs": exoprosopa/images/exoprosopa-90z-03-geopowered-mechlegs.png
+      - "Multi Batteries": exoprosopa/images/exoprosopa-90z-04-multi-joint.png
+      - "Ultimate Accelerator": exoprosopa/images/exoprosopa-91z-00-core-accelerator.png
+      - "exoprosopa-arc-missile": exoprosopa/images/exoprosopa-arc-missile.png
+      - "Large Flower": exoprosopa/images/exoprosopa-flower-large.png
+      - "Small Flower": exoprosopa/images/exoprosopa-flower-small.png
+      - "Petal Flower": exoprosopa/images/exoprosopa-flower-unique.png
+      - "Flower White Small": exoprosopa/images/exoprosopa-flower-white-small.png
+      - "Frostnova": exoprosopa/images/exoprosopa-frostnova.png
+      - "Miasma": exoprosopa/images/exoprosopa-miasma-pool.png
+      - "exoprosopa-morphite-rudal": exoprosopa/images/exoprosopa-morphite-rudal.png
+      - "Nova Lightone Tile": exoprosopa/images/exoprosopa-nova-a.png
+      - "Nova Darktone Tile": exoprosopa/images/exoprosopa-nova-b.png
+      - "Nova Blue Floor": exoprosopa/images/exoprosopa-nova-blue-floor.png
+      - "Derelict Box": exoprosopa/images/exoprosopa-nova-box.png
+      - "Core Zone (Nova)": exoprosopa/images/exoprosopa-nova-corezone.png
+      - "Nova Light Bottom": exoprosopa/images/exoprosopa-nova-floor-bottom-light.png
+      - "Nova Floor 2": exoprosopa/images/exoprosopa-nova-floor-shining.png
+      - "Nova Light Top": exoprosopa/images/exoprosopa-nova-floor-top-light.png
+      - "Nova Floor": exoprosopa/images/exoprosopa-nova-floor.png
+      - "Nova Wall 2": exoprosopa/images/exoprosopa-nova-hole-wall.png
+      - "Nova Lighting Wall": exoprosopa/images/exoprosopa-nova-lighting-wall.png
+      - "Nova Nuclear Silo": exoprosopa/images/exoprosopa-nova-nuclear-silo.png
+      - "Nova Portal": exoprosopa/images/exoprosopa-nova-portal.png
+      - "Derelict Radar": exoprosopa/images/exoprosopa-nova-radar.png
+      - "Nova Floor (Rotated)": exoprosopa/images/exoprosopa-nova-rsquared-floor.png
+      - "Nova Tile": exoprosopa/images/exoprosopa-nova-tile.png
+      - "Nova Vent": exoprosopa/images/exoprosopa-nova-vent.png
+      - "Nova Air Ventillation": exoprosopa/images/exoprosopa-nova-ventillation.png
+      - "Nova Wall Pipe": exoprosopa/images/exoprosopa-nova-wall-pipe.png
+      - "Nova Yellow Floor": exoprosopa/images/exoprosopa-nova-yellow-floor.png
+      - "exoprosopa-rhitle-missile": exoprosopa/images/exoprosopa-rhitle-missile.png
+      - "Rhodes Core Land VFX": exoprosopa/images/exoprosopa-rhodes-core-land.png
+      - "exoprosopa-scathe-rudal": exoprosopa/images/exoprosopa-scathe-rudal.png
+      - "Technoscrap Wall": exoprosopa/images/exoprosopa-tech-ore.png
+      - "Exponential Reconstructor": exoprosopa/images/exponential-reconstructor.png
+      - "Flare": exoprosopa/images/flare.png
+      - "Flux Reactor": exoprosopa/images/flux-reactor.png
+      - "Force Projector": exoprosopa/images/force-projector.png
+      - "Foreshadow": exoprosopa/images/foreshadow.png
+      - "Fortress": exoprosopa/images/fortress.png
+      - "Fuse": exoprosopa/images/fuse.png
+      - "Gamma": exoprosopa/images/gamma.png
+      - "Graphite Press": exoprosopa/images/graphite-press.png
+      - "Ground Factory": exoprosopa/images/ground-factory.png
+      - "Hail": exoprosopa/images/hail.png
+      - "Heat Reactor": exoprosopa/images/heat-reactor.png
+      - "Heat Redirector": exoprosopa/images/heat-redirector.png
+      - "Heat Router": exoprosopa/images/heat-router.png
+      - "Heat Source": exoprosopa/images/heat-source.png
+      - "Horizon": exoprosopa/images/horizon.png
+      - "Hyper Processor": exoprosopa/images/hyper-processor.png
+      - "Illuminator": exoprosopa/images/illuminator.png
+      - "Impact Drill": exoprosopa/images/impact-drill.png
+      - "Impact Reactor": exoprosopa/images/impact-reactor.png
+      - "Impulse Pump": exoprosopa/images/impulse-pump.png
+      - "Incinerator": exoprosopa/images/incinerator.png
+      - "Incite": exoprosopa/images/incite.png
+      - "Interplanetary Accelerator": exoprosopa/images/interplanetary-accelerator.png
+      - "Inverted Sorter": exoprosopa/images/inverted-sorter.png
+      - "Item Source": exoprosopa/images/item-source.png
+      - "Item Void": exoprosopa/images/item-void.png
+      - "Junction": exoprosopa/images/junction.png
+      - "Kiln": exoprosopa/images/kiln.png
+      - "Lancer": exoprosopa/images/lancer.png
+      - "Landing Pad": exoprosopa/images/landing-pad.png
+      - "Large Canvas": exoprosopa/images/large-canvas.png
+      - "Advanced Cliff Crusher": exoprosopa/images/large-cliff-crusher.png
+      - "Large Constructor": exoprosopa/images/large-constructor.png
+      - "Large Logic Display": exoprosopa/images/large-logic-display.png
+      - "Large Payload Mass Driver": exoprosopa/images/large-payload-mass-driver.png
+      - "Advanced Plasma Bore": exoprosopa/images/large-plasma-bore.png
+      - "Large Barrier Projector": exoprosopa/images/large-shield-projector.png
+      - "Laser Drill": exoprosopa/images/laser-drill.png
+      - "Latum": exoprosopa/images/latum.png
+      - "Launch Pad [lightgray](Legacy)": exoprosopa/images/launch-pad.png
+      - "Liquid Container": exoprosopa/images/liquid-container.png
+      - "Liquid Junction": exoprosopa/images/liquid-junction.png
+      - "Liquid Router": exoprosopa/images/liquid-router.png
+      - "Liquid Source": exoprosopa/images/liquid-source.png
+      - "Liquid Tank": exoprosopa/images/liquid-tank.png
+      - "Liquid Void": exoprosopa/images/liquid-void.png
+      - "Locus": exoprosopa/images/locus.png
+      - "Logic Display": exoprosopa/images/logic-display.png
+      - "Logic Processor": exoprosopa/images/logic-processor.png
+      - "Mace": exoprosopa/images/mace.png
+      - "Manifold": exoprosopa/images/manifold.png
+      - "Mass Driver": exoprosopa/images/mass-driver.png
+      - "Mech Assembler": exoprosopa/images/mech-assembler.png
+      - "Mech Fabricator": exoprosopa/images/mech-fabricator.png
+      - "Mech Refabricator": exoprosopa/images/mech-refabricator.png
+      - "Mechanical Drill": exoprosopa/images/mechanical-drill.png
+      - "Mechanical Pump": exoprosopa/images/mechanical-pump.png
+      - "Mega": exoprosopa/images/mega.png
+      - "Meltdown": exoprosopa/images/meltdown.png
+      - "Melter": exoprosopa/images/melter.png
+      - "Memory Bank": exoprosopa/images/memory-bank.png
+      - "Memory Cell": exoprosopa/images/memory-cell.png
+      - "Mend Projector": exoprosopa/images/mend-projector.png
+      - "Mender": exoprosopa/images/mender.png
+      - "Merui": exoprosopa/images/merui.png
+      - "Message": exoprosopa/images/message.png
+      - "Metal Floor 2": exoprosopa/images/metal-floor-2.png
+      - "Metal Floor 3": exoprosopa/images/metal-floor-3.png
+      - "Metal Floor 4": exoprosopa/images/metal-floor-4.png
+      - "Metal Floor 5": exoprosopa/images/metal-floor-5.png
+      - "Metal Floor 1": exoprosopa/images/metal-floor.png
+      - "Metal Tiles 1": exoprosopa/images/metal-tiles-1.png
+      - "Metal Tiles 10": exoprosopa/images/metal-tiles-10.png
+      - "Metal Tiles 11": exoprosopa/images/metal-tiles-11.png
+      - "Metal Tiles 12": exoprosopa/images/metal-tiles-12.png
+      - "Metal Tiles 13": exoprosopa/images/metal-tiles-13.png
+      - "Metal Tiles 2": exoprosopa/images/metal-tiles-2.png
+      - "Metal Tiles 3": exoprosopa/images/metal-tiles-3.png
+      - "Metal Tiles 4": exoprosopa/images/metal-tiles-4.png
+      - "Metal Tiles 5": exoprosopa/images/metal-tiles-5.png
+      - "Metal Tiles 6": exoprosopa/images/metal-tiles-6.png
+      - "Metal Tiles 7": exoprosopa/images/metal-tiles-7.png
+      - "Metal Tiles 8": exoprosopa/images/metal-tiles-8.png
+      - "Metal Tiles 9": exoprosopa/images/metal-tiles-9.png
+      - "Metal Wall 1": exoprosopa/images/metal-wall-1.png
+      - "Metal Wall 2": exoprosopa/images/metal-wall-2.png
+      - "Metal Wall 3": exoprosopa/images/metal-wall-3.png
+      - "Micro Processor": exoprosopa/images/micro-processor.png
+      - "Minke": exoprosopa/images/minke.png
+      - "Slag": exoprosopa/images/molten-slag.png
+      - "Mono": exoprosopa/images/mono.png
+      - "Multi-Press": exoprosopa/images/multi-press.png
+      - "Multiplicative Reconstructor": exoprosopa/images/multiplicative-reconstructor.png
+      - "Naval Factory": exoprosopa/images/naval-factory.png
+      - "Navanax": exoprosopa/images/navanax.png
+      - "Neoplasia Reactor": exoprosopa/images/neoplasia-reactor.png
+      - "Nova": exoprosopa/images/nova.png
+      - "Obviate": exoprosopa/images/obviate.png
+      - "Oct": exoprosopa/images/oct.png
+      - "Oil Extractor": exoprosopa/images/oil-extractor.png
+      - "Omura": exoprosopa/images/omura.png
+      - "Overdrive Dome": exoprosopa/images/overdrive-dome.png
+      - "Overdrive Projector": exoprosopa/images/overdrive-projector.png
+      - "Overflow Duct": exoprosopa/images/overflow-duct.png
+      - "Overflow Gate": exoprosopa/images/overflow-gate.png
+      - "Oxidation Chamber": exoprosopa/images/oxidation-chamber.png
+      - "Oxynoe": exoprosopa/images/oxynoe.png
+      - "Parallax": exoprosopa/images/parallax.png
+      - "Payload Conveyor": exoprosopa/images/payload-conveyor.png
+      - "Payload Loader": exoprosopa/images/payload-loader.png
+      - "Payload Mass Driver": exoprosopa/images/payload-mass-driver.png
+      - "Payload Router": exoprosopa/images/payload-router.png
+      - "Payload Source": exoprosopa/images/payload-source.png
+      - "Payload Unloader": exoprosopa/images/payload-unloader.png
+      - "Payload Void": exoprosopa/images/payload-void.png
+      - "Phase Conduit": exoprosopa/images/phase-conduit.png
+      - "Phase Conveyor": exoprosopa/images/phase-conveyor.png
+      - "Phase Heater": exoprosopa/images/phase-heater.png
+      - "Phase Synthesizer": exoprosopa/images/phase-synthesizer.png
+      - "Large Phase Wall": exoprosopa/images/phase-wall-large.png
+      - "Phase Wall": exoprosopa/images/phase-wall.png
+      - "Phase Weaver": exoprosopa/images/phase-weaver.png
+      - "Pine": exoprosopa/images/pine.png
+      - "Plasma Bore": exoprosopa/images/plasma-bore.png
+      - "Plastanium Compressor": exoprosopa/images/plastanium-compressor.png
+      - "Plastanium Conveyor": exoprosopa/images/plastanium-conveyor.png
+      - "Large Plastanium Wall": exoprosopa/images/plastanium-wall-large.png
+      - "Plastanium Wall": exoprosopa/images/plastanium-wall.png
+      - "Pneumatic Drill": exoprosopa/images/pneumatic-drill.png
+      - "Poly": exoprosopa/images/poly.png
+      - "Cryofluid": exoprosopa/images/pooled-cryofluid.png
+      - "Large Power Node": exoprosopa/images/power-node-large.png
+      - "Power Node": exoprosopa/images/power-node.png
+      - "Power Source": exoprosopa/images/power-source.png
+      - "Power Void": exoprosopa/images/power-void.png
+      - "Precept": exoprosopa/images/precept.png
+      - "Prime Refabricator": exoprosopa/images/prime-refabricator.png
+      - "Pulsar": exoprosopa/images/pulsar.png
+      - "Pulverizer": exoprosopa/images/pulverizer.png
+      - "Pur Bush": exoprosopa/images/pur-bush.png
+      - "Pyratite Mixer": exoprosopa/images/pyratite-mixer.png
+      - "Pyrolysis Generator": exoprosopa/images/pyrolysis-generator.png
+      - "Quad": exoprosopa/images/quad.png
+      - "Quasar": exoprosopa/images/quasar.png
+      - "quell-missile": exoprosopa/images/quell-missile.png
+      - "Quell": exoprosopa/images/quell.png
+      - "Radar": exoprosopa/images/radar.png
+      - "Regen Projector": exoprosopa/images/regen-projector.png
+      - "Reign": exoprosopa/images/reign.png
+      - "Reinforced Bridge Conduit": exoprosopa/images/reinforced-bridge-conduit.png
+      - "Reinforced Container": exoprosopa/images/reinforced-container.png
+      - "Reinforced Liquid Container": exoprosopa/images/reinforced-liquid-container.png
+      - "Reinforced Liquid Junction": exoprosopa/images/reinforced-liquid-junction.png
+      - "Reinforced Liquid Router": exoprosopa/images/reinforced-liquid-router.png
+      - "Reinforced Liquid Tank": exoprosopa/images/reinforced-liquid-tank.png
+      - "Reinforced Message": exoprosopa/images/reinforced-message.png
+      - "Reinforced Payload Conveyor": exoprosopa/images/reinforced-payload-conveyor.png
+      - "Reinforced Payload Router": exoprosopa/images/reinforced-payload-router.png
+      - "Reinforced Pump": exoprosopa/images/reinforced-pump.png
+      - "Large Reinforced Surge Wall": exoprosopa/images/reinforced-surge-wall-large.png
+      - "Reinforced Surge Wall": exoprosopa/images/reinforced-surge-wall.png
+      - "Reinforced Vault": exoprosopa/images/reinforced-vault.png
+      - "Remove Ore": exoprosopa/images/remove-ore.png
+      - "Remove Wall": exoprosopa/images/remove-wall.png
+      - "Renale": exoprosopa/images/renale.png
+      - "Repair Point": exoprosopa/images/repair-point.png
+      - "Repair Turret": exoprosopa/images/repair-turret.png
+      - "Retusa": exoprosopa/images/retusa.png
+      - "Ripple": exoprosopa/images/ripple.png
+      - "Risso": exoprosopa/images/risso.png
+      - "Rotary Pump": exoprosopa/images/rotary-pump.png
+      - "Router": exoprosopa/images/router.png
+      - "RTG Generator": exoprosopa/images/rtg-generator.png
+      - "Rune Overlay (Crux)": exoprosopa/images/rune-overlay-crux.png
+      - "Rune Overlay": exoprosopa/images/rune-overlay.png
+      - "Salt": exoprosopa/images/salt.png
+      - "Sand Water": exoprosopa/images/sand-water.png
+      - "scathe-missile-phase": exoprosopa/images/scathe-missile-phase.png
+      - "scathe-missile-surge-split": exoprosopa/images/scathe-missile-surge-split.png
+      - "scathe-missile-surge": exoprosopa/images/scathe-missile-surge.png
+      - "scathe-missile": exoprosopa/images/scathe-missile.png
+      - "Scatter": exoprosopa/images/scatter.png
+      - "Scepter": exoprosopa/images/scepter.png
+      - "Scorch": exoprosopa/images/scorch.png
+      - "Gigantic Scrap Wall": exoprosopa/images/scrap-wall-gigantic.png
+      - "Segment": exoprosopa/images/segment.png
+      - "Sei": exoprosopa/images/sei.png
+      - "Separator": exoprosopa/images/separator.png
+      - "Water": exoprosopa/images/shallow-water.png
+      - "Barrier Projector": exoprosopa/images/shield-projector.png
+      - "Shielded Wall": exoprosopa/images/shielded-wall.png
+      - "Ship Assembler": exoprosopa/images/ship-assembler.png
+      - "Ship Fabricator": exoprosopa/images/ship-fabricator.png
+      - "Ship Refabricator": exoprosopa/images/ship-refabricator.png
+      - "Shock Mine": exoprosopa/images/shock-mine.png
+      - "Shockwave Tower": exoprosopa/images/shockwave-tower.png
+      - "Silicon Arc Furnace": exoprosopa/images/silicon-arc-furnace.png
+      - "Silicon Crucible": exoprosopa/images/silicon-crucible.png
+      - "Silicon Smelter": exoprosopa/images/silicon-smelter.png
+      - "Slag Centrifuge": exoprosopa/images/slag-centrifuge.png
+      - "Slag Heater": exoprosopa/images/slag-heater.png
+      - "Slag Incinerator": exoprosopa/images/slag-incinerator.png
+      - "Deconstructor": exoprosopa/images/small-deconstructor.png
+      - "Small Heat Redirector": exoprosopa/images/small-heat-redirector.png
+      - "Snow Pine": exoprosopa/images/snow-pine.png
+      - "Large Solar Panel": exoprosopa/images/solar-panel-large.png
+      - "Solar Panel": exoprosopa/images/solar-panel.png
+      - "Sorter": exoprosopa/images/sorter.png
+      - "Space": exoprosopa/images/space.png
+      - "Enemy Spawn": exoprosopa/images/spawn.png
+      - "Spectre": exoprosopa/images/spectre.png
+      - "Spiroct": exoprosopa/images/spiroct.png
+      - "Spore Pine": exoprosopa/images/spore-pine.png
+      - "Spore Press": exoprosopa/images/spore-press.png
+      - "Steam Generator": exoprosopa/images/steam-generator.png
+      - "Stell": exoprosopa/images/stell.png
+      - "Sublimate": exoprosopa/images/sublimate.png
+      - "Surge Conveyor": exoprosopa/images/surge-conveyor.png
+      - "Surge Crucible": exoprosopa/images/surge-crucible.png
+      - "Surge Router": exoprosopa/images/surge-router.png
+      - "Surge Smelter": exoprosopa/images/surge-smelter.png
+      - "Surge Tower": exoprosopa/images/surge-tower.png
+      - "Large Surge Wall": exoprosopa/images/surge-wall-large.png
+      - "Surge Wall": exoprosopa/images/surge-wall.png
+      - "Swarmer": exoprosopa/images/swarmer.png
+      - "Switch": exoprosopa/images/switch.png
+      - "Tainted Water": exoprosopa/images/tainted-water.png
+      - "Tank Assembler": exoprosopa/images/tank-assembler.png
+      - "Tank Fabricator": exoprosopa/images/tank-fabricator.png
+      - "Tank Refabricator": exoprosopa/images/tank-refabricator.png
+      - "Tar": exoprosopa/images/tar.png
+      - "Tecta": exoprosopa/images/tecta.png
+      - "Tetrative Reconstructor": exoprosopa/images/tetrative-reconstructor.png
+      - "Thermal Generator": exoprosopa/images/thermal-generator.png
+      - "Thorium Reactor": exoprosopa/images/thorium-reactor.png
+      - "Large Thorium Wall": exoprosopa/images/thorium-wall-large.png
+      - "Thorium Wall": exoprosopa/images/thorium-wall.png
+      - "Thruster": exoprosopa/images/thruster.png
+      - "Tiled Logic Display": exoprosopa/images/tile-logic-display.png
+      - "Titan": exoprosopa/images/titan.png
+      - "Large Titanium Wall": exoprosopa/images/titanium-wall-large.png
+      - "Titanium Wall": exoprosopa/images/titanium-wall.png
+      - "Toxopid": exoprosopa/images/toxopid.png
+      - "Tsunami": exoprosopa/images/tsunami.png
+      - "Large Tungsten Wall": exoprosopa/images/tungsten-wall-large.png
+      - "Tungsten Wall": exoprosopa/images/tungsten-wall.png
+      - "Turbine Condenser": exoprosopa/images/turbine-condenser.png
+      - "Underflow Duct": exoprosopa/images/underflow-duct.png
+      - "Underflow Gate": exoprosopa/images/underflow-gate.png
+      - "Unit Cargo Loader": exoprosopa/images/unit-cargo-loader.png
+      - "Unit Cargo Unload Point": exoprosopa/images/unit-cargo-unload-point.png
+      - "Unit Repair Tower": exoprosopa/images/unit-repair-tower.png
+      - "Unloader": exoprosopa/images/unloader.png
+      - "Vanquish": exoprosopa/images/vanquish.png
+      - "Vault": exoprosopa/images/vault.png
+      - "Vela": exoprosopa/images/vela.png
+      - "Vent Condenser": exoprosopa/images/vent-condenser.png
+      - "Water Extractor": exoprosopa/images/water-extractor.png
+      - "Wave": exoprosopa/images/wave.png
+      - "White Tree Dead": exoprosopa/images/white-tree-dead.png
+      - "White Tree": exoprosopa/images/white-tree.png
+      - "World Cell": exoprosopa/images/world-cell.png
+      - "World Message": exoprosopa/images/world-message.png
+      - "World Processor": exoprosopa/images/world-processor.png
+      - "World Switch": exoprosopa/images/world-switch.png
+      - "Yellowcoral": exoprosopa/images/yellowcoral.png
+      - "Zenith": exoprosopa/images/zenith.png
+    - "Items": 
+      - "Cobalt": exoprosopa/item/exoprosopa-01a-01-item-cobalt.md
+      - "Nickel": exoprosopa/item/exoprosopa-01a-02-item-nickel.md
+      - "Anthracite": exoprosopa/item/exoprosopa-01a-03-item-anthracite.md
+      - "Aquamarine": exoprosopa/item/exoprosopa-01a-03-item-aquashard.md
+      - "Lamine": exoprosopa/item/exoprosopa-01a-03-item-lamine.md
+      - "Tantrium": exoprosopa/item/exoprosopa-01a-04-item-tantra-sand.md
+      - "Aluminium": exoprosopa/item/exoprosopa-01a-05-item-aluminium.md
+      - "Nichrome": exoprosopa/item/exoprosopa-01a-05-item-raw-nichrome.md
+      - "Chromium": exoprosopa/item/exoprosopa-01a-06-item-chromium.md
+      - "Clevorite": exoprosopa/item/exoprosopa-01a-07-item-clevorite.md
+      - "Nucridscrap": exoprosopa/item/exoprosopa-01a-08-item-nucrid.md
+      - "Petal Fragment": exoprosopa/item/exoprosopa-01a-08-item-petal-flower.md
+      - "Bloodstone": exoprosopa/item/exoprosopa-01a-08-item-petal.md
+      - "Morphite": exoprosopa/item/exoprosopa-01a-09-item-morphite.md
+      - "Gravitix": exoprosopa/item/exoprosopa-01a-10-item-bethine.md
+      - "Pyroxenes": exoprosopa/item/exoprosopa-01a-11-item-pyroxene.md
+      - "Technoscrap": exoprosopa/item/exoprosopa-01a-11-item-technoscrap.md
+      - "Techno Plating": exoprosopa/item/exoprosopa-01a-12-item-techno-plating.md
+      - "Gryphic": exoprosopa/item/exoprosopa-01a-21-item-gryphic.md
+      - "Crystallic Geode": exoprosopa/item/exoprosopa-01a-22-item-crystallic-geode.md
+      - "Morphitix Crystal": exoprosopa/item/exoprosopa-01a-31-item-morphitix-crystal.md
+    - "Fluids": 
+      - "Elixir": exoprosopa/liquid/exoprosopa-02b-01-bioliquid.md
+      - "Cryogenics": exoprosopa/liquid/exoprosopa-02b-02-a-purified-elixir.md
+      - "Ichor": exoprosopa/liquid/exoprosopa-02b-02-ichor.md
+      - "Necroplasm": exoprosopa/liquid/exoprosopa-02b-03-necroplasm.md
+      - "Miasma": exoprosopa/liquid/exoprosopa-02b-04-miasma.md
+      - "Hydryite": exoprosopa/liquid/exoprosopa-02b-05-hydrowater.md
+      - "Morphitix Plasma": exoprosopa/liquid/exoprosopa-02b-06-morphitix-plasma.md
+      - "Ectoplasm": exoprosopa/liquid/exoprosopa-02b-07-ectoplasm.md
+      - "Nucliogen": exoprosopa/liquid/exoprosopa-02b-08-nucliogen.md
+    - "???database-category.planet???": 
+      - "Frostnova": exoprosopa/planet/exoprosopa-frostnova.md
+      - "Teresa": exoprosopa/planet/exoprosopa-teresa.md
+    - "Sectors": 
+      - "Newgrounds": exoprosopa/sector/exoprosopa-19s-01-newgrounds.md
+      - "Mountain Ridge": exoprosopa/sector/exoprosopa-19s-02-mountain-ridge.md
+      - "Encampment": exoprosopa/sector/exoprosopa-19s-03-hostile-outpost.md
+      - "Cliffside": exoprosopa/sector/exoprosopa-19s-04-cliffside.md
+      - "Crest": exoprosopa/sector/exoprosopa-19s-05-crest.md
+      - "Botanical Garden": exoprosopa/sector/exoprosopa-19s-06-botanical-garden.md
+      - "Escarpment": exoprosopa/sector/exoprosopa-19s-07-escarpment.md
+      - "Cornerstone": exoprosopa/sector/exoprosopa-19s-08-cornerstone.md
+      - "Hazardous Wasteland": exoprosopa/sector/exoprosopa-19s-09-hazardous-wasteland.md
+      - "Precipice": exoprosopa/sector/exoprosopa-19s-10-precipice.md
+      - "Creek": exoprosopa/sector/exoprosopa-19s-11-creek.md
+      - "Marshlands": exoprosopa/sector/exoprosopa-19s-12-marshlands.md
+      - "Pier": exoprosopa/sector/exoprosopa-19s-14-pier.md
+      - "Bioproject Core": exoprosopa/sector/exoprosopa-19s-15-bioproject-core.md
+      - "Eridanus": exoprosopa/sector/exoprosopa-19s-23-eridanus.md
+      - "Luminary": exoprosopa/sector/exoprosopa-20t-01-luminary.md
+      - "Foggy Fields": exoprosopa/sector/exoprosopa-20t-02-foggy-fields.md
+      - "Abandoned Reservoir": exoprosopa/sector/exoprosopa-20t-03-reservoir.md
+      - "Trekker Campsite": exoprosopa/sector/exoprosopa-20t-04-trekker-campsite.md
+      - "Ridgeline": exoprosopa/sector/exoprosopa-20t-11-ridgeline.md
+      - "Clover Springs": exoprosopa/sector/exoprosopa-20t-26-clover-springs.md
+      - "Myrra Heights": exoprosopa/sector/exoprosopa-20t-37-myrra-heights.md
+      - "Ending": exoprosopa/sector/exoprosopa-20t-99-ending.md
+    - "Status Effects": 
+      - "Breached": exoprosopa/status/exoprosopa-13m-01-breached.md
+      - "Immunity": exoprosopa/status/exoprosopa-13m-02-immunity.md
+      - "Discharge Overload": exoprosopa/status/exoprosopa-13m-03-hsos6.md
+      - "Boosted": exoprosopa/status/exoprosopa-13m-04-boosted.md
+      - "Overboosted": exoprosopa/status/exoprosopa-13m-05-overboosted.md
+      - "Contaminated": exoprosopa/status/exoprosopa-13m-06-contaminated.md
+      - "Ground Shock": exoprosopa/status/exoprosopa-13m-07-shock.md
+      - "Stunned": exoprosopa/status/exoprosopa-13m-07-stunned.md
+      - "Doom": exoprosopa/status/exoprosopa-13m-08-doom.md
+    - "Units": 
+      - "Air":
+        - "Rogue": exoprosopa/unit/unit-air/exoprosopa-14n-01-anby.md
+        - "Pioneer": exoprosopa/unit/unit-air/exoprosopa-14n-02-nicole.md
+        - "Trailblaze": exoprosopa/unit/unit-air/exoprosopa-14n-03-axthrasis.md
+        - "Suzuran": exoprosopa/unit/unit-air/exoprosopa-14n-04-suzuran.md
+        - "Huntress": exoprosopa/unit/unit-air/exoprosopa-15n-02-ag-shiraino.md
+        - "Strike": exoprosopa/unit/unit-air/exoprosopa-17q-03-syntaxe.md
+        - "Skyblade": exoprosopa/unit/unit-air/exoprosopa-17q-04-noya.md
+        - "Archangel": exoprosopa/unit/unit-air/exoprosopa-17q-05-archangel.md
+        - "Amber": exoprosopa/unit/unit-air/exoprosopa-19r-01-amber.md
+        - "Crystal": exoprosopa/unit/unit-air/exoprosopa-19r-02-iris.md
+        - "Beth": exoprosopa/unit/unit-air/exoprosopa-31k-01-beth.md
+        - "exoprosopa-arc-missile": exoprosopa/unit/unit-air/exoprosopa-arc-missile.md
+        - "exoprosopa-morphite-rudal": exoprosopa/unit/unit-air/exoprosopa-morphite-rudal.md
+        - "exoprosopa-rhitle-missile": exoprosopa/unit/unit-air/exoprosopa-rhitle-missile.md
+        - "exoprosopa-scathe-rudal": exoprosopa/unit/unit-air/exoprosopa-scathe-rudal.md
+      - "Ground":
+        - "Coronis": exoprosopa/unit/unit-ground/exoprosopa-14n-04-coronis.md
+        - "Sepia": exoprosopa/unit/unit-ground/exoprosopa-14n-04-sepia.md
+        - "Locust": exoprosopa/unit/unit-ground/exoprosopa-14n-04-t-evernight.md
+        - "Honsha": exoprosopa/unit/unit-ground/exoprosopa-15n-01-honsha.md
+        - "Craig": exoprosopa/unit/unit-ground/exoprosopa-15o-01-mason.md
+        - "Bastion": exoprosopa/unit/unit-ground/exoprosopa-15o-02-oktarav.md
+        - "Bulwark": exoprosopa/unit/unit-ground/exoprosopa-15o-03-vicient.md
+        - "Fortis": exoprosopa/unit/unit-ground/exoprosopa-15o-04-siphon.md
+        - "Rancor": exoprosopa/unit/unit-ground/exoprosopa-15o-05-rancor.md
+        - "Baron": exoprosopa/unit/unit-ground/exoprosopa-16p-01-ares.md
+        - "Tribune": exoprosopa/unit/unit-ground/exoprosopa-16p-02-rhitle.md
+        - "Archon": exoprosopa/unit/unit-ground/exoprosopa-16p-03-sender.md
+        - "Emperor": exoprosopa/unit/unit-ground/exoprosopa-16p-04-carragher.md
+        - "Monarch": exoprosopa/unit/unit-ground/exoprosopa-16p-05-xenoct.md
+        - "Spark": exoprosopa/unit/unit-ground/exoprosopa-17q-01-codex.md
+        - "Sora": exoprosopa/unit/unit-ground/exoprosopa-17q-02-calaust.md
+        - "Byte": exoprosopa/unit/unit-ground/exoprosopa-18r-01-byte.md
+        - "Syntax": exoprosopa/unit/unit-ground/exoprosopa-18r-02-syntax.md
+        - "Decode": exoprosopa/unit/unit-ground/exoprosopa-18r-03-decode.md
+        - "Matrix": exoprosopa/unit/unit-ground/exoprosopa-18r-04-matrix.md
+        - "Program": exoprosopa/unit/unit-ground/exoprosopa-18r-05-program.md
+        - "Blastum": exoprosopa/unit/unit-ground/exoprosopa-31k-01-blastum.md
+        - "Scorcher": exoprosopa/unit/unit-ground/exoprosopa-31k-02-scorcher.md
+        - "Rhodes Core Land VFX": exoprosopa/unit/unit-ground/exoprosopa-rhodes-core-land.md
+      - "Naval":
+        - "Bulbhead": exoprosopa/unit/unit-naval/exoprosopa-17q-05-bulbhead.md
+        - "Hammerhead": exoprosopa/unit/unit-naval/exoprosopa-17q-06-shark.md
+        - "Narhwal": exoprosopa/unit/unit-naval/exoprosopa-17q-07-narhwal.md
+        - "Freesia": exoprosopa/unit/unit-naval/exoprosopa-17q-08-freesia.md
+    - "???database-category.weather???": 
+      - "Blizzard": exoprosopa/weather/exoprosopa-blizzard.md
+      - "Exosphere Storm": exoprosopa/weather/exoprosopa-exosphere.md
+      - "Hydrostorm": exoprosopa/weather/exoprosopa-hydrostorm.md

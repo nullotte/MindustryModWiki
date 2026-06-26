@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-08h-05-a-aluminium-gate-full.png" width="48" height="48"></img> Automatic Gate
+Protects structures from enemy projectiles, lightly armored. Functions as a gate for allied units.

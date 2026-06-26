@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-09i-02-f-elixir-autofreezer-full.png" width="48" height="48"></img> Cryogenics Autofreezer
+Purifies elixir faster than elixir purifier. Additionally utilizes cobalt for better efficiency.

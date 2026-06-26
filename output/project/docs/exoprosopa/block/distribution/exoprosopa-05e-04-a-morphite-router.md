@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-05e-04-a-morphite-router-full.png" width="48" height="48"></img> Morphite Splitter
+Distributes the stacks equally over every output. Faster when powered.

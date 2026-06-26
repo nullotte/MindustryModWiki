@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-16p-04-carragher-full.png" width="48" height="48"></img> Emperor
+Fires a piercing bolt at enemy targets. Will dash every second shot. Can walk over most terrain.

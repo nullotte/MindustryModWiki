@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-08h-07-morphite-wall-small-full.png" width="48" height="48"></img> Morphite Wall
+Protects structures from enemy projectiles, decently armored. Creates lighting sparks when damaged.

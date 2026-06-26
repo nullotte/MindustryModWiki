@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-09i-12-enchanting-basin-full.png" width="48" height="48"></img> Enchanting Basin
+Enchants and combines nucridscrap with petal fragment to create bloodstone, requires nucliogen and power.

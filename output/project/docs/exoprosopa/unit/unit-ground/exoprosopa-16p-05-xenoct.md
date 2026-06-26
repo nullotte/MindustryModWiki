@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-16p-05-xenoct-full.png" width="48" height="48"></img> Monarch
+Fires piercing shrapnel at multiple enemies in range. Has mounted seeking missiles suited for medium range and lower. Can walk over most terrain.

@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-18r-03-decode-full.png" width="48" height="48"></img> Decode
+Fires piercing laser that inflict a stunned effect at enemies. Protects itself with a directional shield.

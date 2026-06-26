@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-26f-04-aquamarine-wall-large-full.png" width="48" height="48"></img> Large Aquamarine Barrier
+Protects structures from enemy projectiles. High health, insanely armored.

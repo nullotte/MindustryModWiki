@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-07g-02-lb-supernode-full.png" width="48" height="48"></img> Testing Node
+Connect non-powered blocks, useful while checking enemy bases in editor playtesting.

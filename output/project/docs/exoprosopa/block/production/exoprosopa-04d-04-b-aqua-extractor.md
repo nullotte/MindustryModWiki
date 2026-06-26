@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-04d-04-b-aqua-extractor-full.png" width="48" height="48"></img> Aquamarine Extractor
+Slowly extracts aquamarine from aqua tiles, requires hydryite to operate.

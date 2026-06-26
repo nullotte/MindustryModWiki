@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-11k-05-holoshield-full.png" width="48" height="48"></img> Holoshield
+Creates a square shield that blocks enemy projectiles, requires cryogenics and power.

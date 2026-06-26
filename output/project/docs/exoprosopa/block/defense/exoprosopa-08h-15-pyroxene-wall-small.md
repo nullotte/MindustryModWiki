@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-08h-15-pyroxene-wall-small-full.png" width="48" height="48"></img> Pyroxene Wall
+Protects structures from enemy projectiles, heavily armored. Able to absorb lasers. Regenerates over time when powered. Deals damage to enemies when destroyed.

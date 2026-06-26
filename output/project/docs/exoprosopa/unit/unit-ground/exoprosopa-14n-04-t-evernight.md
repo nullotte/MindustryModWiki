@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-14n-04-t-evernight-full.png" width="48" height="48"></img> Locust
+Protects the Ultimatum Core, can build and retrieve resources faster. Equipped with additional mount weapon.

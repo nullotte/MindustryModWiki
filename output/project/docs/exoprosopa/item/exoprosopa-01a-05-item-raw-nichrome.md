@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/exoprosopa-01a-05-item-raw-nichrome.png" width="48" height="48"></img> Nichrome
+Fused nickel and chromium, known as nichrome. Can be separated using elemental separators.

@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-09i-04-ichor-regulator-full.png" width="48" height="48"></img> Heavy Ichor Infuser
+Infuse cryogenics with nucridscrap to produce large amount of ichor. Requires heat to operate.

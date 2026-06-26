@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-12l-005-cell-data-large-full.png" width="48" height="48"></img> Large Data Cell Chip
+Stores large numbers for a terminal chip to read at a later point in time.

@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-08h-13-bethine-wall-small-full.png" width="48" height="48"></img> Gravitix Wall
+Protects structures from enemy projectiles, well armored. Able to deflect bullets and creating shield when powered.

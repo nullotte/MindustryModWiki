@@ -1,0 +1,2 @@
+# <img src="/exoprosopa/images/block-exoprosopa-08h-05-clevorite-wall-small-full.png" width="48" height="48"></img> Clevorite Wall
+Protects structures from enemy projectiles, lightly armored. Able to absorb lasers.
