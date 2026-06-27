@@ -35,10 +35,11 @@ public class Main {
 
         Seq<ModListing> modListings = ModListUtils.parseModListings();
         int modCount = modListings.count(m -> m.stars >= 10);
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < modListings.size; i++) {
             ModListing modListing = modListings.get(i);
             if (testModName != null && !modListing.internalName.equals(testModName)) continue;
             if (modListing.stars < 10) continue;
+            if (i > 100) continue;
 
             Log.info("Loading mod " + i + "/" + modCount + ": " + modListing.repo);
             try {
