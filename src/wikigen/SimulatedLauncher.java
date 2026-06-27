@@ -300,8 +300,8 @@ public class SimulatedLauncher {
         }
 
         // add navigations
-        Config.addMkDocsConfig(1, "- " + navName(Strings.stripColors(currentMod.meta.displayName)) + ":");
-        Config.addMkDocsConfig(2, "- " + navName(Strings.stripColors(currentMod.meta.displayName)) + ": " + getNavPath(indexPage));
+        Config.addMkDocsConfig(1, "- " + navName(currentMod.meta.displayName) + ":");
+        Config.addMkDocsConfig(2, "- " + navName(currentMod.meta.displayName) + ": " + getNavPath(indexPage));
         for (Fi category : currentModDocsDirectory.list()) {
             if (!category.isDirectory()) continue;
             Config.addMkDocsConfig(2, "- " + navName(Core.bundle.get("database-category." + category.nameWithoutExtension())) + ": ");
@@ -329,6 +329,6 @@ public class SimulatedLauncher {
     }
 
     public static String navName(String name) {
-        return "\"" + name.replace("\"", "\\\"") + "\"";
+        return "\"" + Strings.stripColors(name.replace("\"", "\\\"")) + "\"";
     }
 }
