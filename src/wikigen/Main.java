@@ -30,9 +30,6 @@ public class Main {
             child.copyTo(Config.outputProjectDirectory);
         }
 
-        Config.addMkDocsConfig(0, "nav:");
-        Config.addMkDocsConfig(1, "- index.md");
-
         Seq<ModListing> modListings = ModListUtils.parseModListings();
         int modCount = modListings.count(m -> m.stars >= 10);
         for (int i = 0; i < modListings.size; i++) {

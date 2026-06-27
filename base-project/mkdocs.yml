@@ -6,3 +6,5 @@ theme:
   features:
     - navigation.indexes
     - navigation.prune
+nav:
+  - index.md
