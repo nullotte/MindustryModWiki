@@ -25,6 +25,7 @@ import mindustry.mod.*;
 import mindustry.mod.Mods.*;
 import mindustry.net.*;
 import mindustry.ui.*;
+import wikigen.Navigation.*;
 
 import java.nio.*;
 
@@ -178,7 +179,6 @@ public class SimulatedLauncher {
             Vars.content.createModContent();
         });
 
-        // this is horrible and includes a lot of unnecessary images!
         Events.on(AtlasPackEvent.class, e -> {
             for (PageType type : PageType.all) {
                 PixmapPacker packer = e.multiPacker.getPacker(type);
@@ -228,6 +228,7 @@ public class SimulatedLauncher {
         Core.bundle.getProperties().put("database-category.weather", "Weathers");
 
         Fi currentModDocsDirectory = Config.outputDocsDirectory.child(ModListUtils.currentModListing.internalName).child("content");
+        NavSectionNode modNavNode = new NavSectionNode(currentMod.meta.displayName);
 
         Fi indexPage = currentModDocsDirectory.child("index.md");
         indexPage.writeString(
@@ -238,6 +239,7 @@ public class SimulatedLauncher {
                         "\n" + "|Last updated|" + ModListUtils.currentModListing.lastUpdated + "|" +
                         "\n\n" + Strings.stripColors(currentMod.meta.description).replace("\n", "\n\n")
         );
+        modNavNode.children.add(new NavFileNode(indexPage));
 
         OrderedMap<String, OrderedMap<String, Seq<UnlockableContent>>> sortedContents = new OrderedMap<>();
 
@@ -272,11 +274,21 @@ public class SimulatedLauncher {
             }
             if (shownCategoryContents.isEmpty()) continue;
 
+            NavSectionNode categoryNavSectionNode = new NavSectionNode(Core.bundle.get("database-category." + categoryName));
+            modNavNode.children.add(categoryNavSectionNode);
             Fi categoryDirectory = currentModDocsDirectory.child(categoryName);
             for (int j = 0; j < shownCategoryContents.size; j++) {
                 String tagName = shownCategoryContents.orderedKeys().get(j);
                 Seq<UnlockableContent> array = shownCategoryContents.get(tagName);
                 if (array == null || array.isEmpty()) continue;
+
+                NavSectionNode tagNavSectionNode;
+                if (tagName.equals("default")) {
+                    tagNavSectionNode = categoryNavSectionNode;
+                } else {
+                    tagNavSectionNode = new NavSectionNode(Core.bundle.get("database-tag." + tagName));
+                    categoryNavSectionNode.children.add(tagNavSectionNode);
+                }
 
                 Fi tagDirectory = tagName.equals("default") ? categoryDirectory : categoryDirectory.child(tagName);
                 for (UnlockableContent content : array) {
@@ -287,7 +299,7 @@ public class SimulatedLauncher {
                     if (uiIcon instanceof AtlasRegion a && uiIcon.found()) {
                         result.append("<img src=\"/MindustryModWiki/images/").append(a.name).append(".png\" width=\"48\" height=\"48\"></img> ");
                     }
-                    result.append(content.localizedName);
+                    result.append(Strings.stripColors(content.localizedName));
                     result.append("\n");
                     if (content.description != null) {
                         result.append(Strings.stripColors(content.description));
@@ -297,40 +309,11 @@ public class SimulatedLauncher {
 
                     Fi file = tagDirectory.child(content.name + ".md");
                     file.writeString(result.toString());
+                    tagNavSectionNode.children.add(new NavFileNode(file, content.localizedName));
                 }
             }
         }
 
-        // add navigations
-        Config.addMkDocsConfig(1, "- " + navName(currentMod.meta.displayName) + ":");
-        Config.addMkDocsConfig(2, "- " + getNavPath(indexPage));
-        for (Fi category : currentModDocsDirectory.list()) {
-            if (!category.isDirectory()) continue;
-            Config.addMkDocsConfig(2, "- " + navName(Core.bundle.get("database-category." + category.nameWithoutExtension())) + ": ");
-            for (Fi file : category.list()) {
-                if (file.isDirectory()) {
-                    Config.addMkDocsConfig(3, "- " + navName(Core.bundle.get("database-tag." + file.nameWithoutExtension())) + ":");
-                    for (Fi content : file.list()) {
-                        MappableContent m = Vars.content.byName(content.nameWithoutExtension());
-                        if (m instanceof UnlockableContent u) {
-                            Config.addMkDocsConfig(4, "- " + navName(u.localizedName) + ": " + getNavPath(content));
-                        }
-                    }
-                } else {
-                    MappableContent m = Vars.content.byName(file.nameWithoutExtension());
-                    if (m instanceof UnlockableContent u) {
-                        Config.addMkDocsConfig(3, "- " + navName(u.localizedName) + ": " + getNavPath(file));
-                    }
-                }
-            }
-        }
-    }
-
-    public static String getNavPath(Fi file) {
-        return file.path().replace(Config.outputDocsDirectory.path() + "/", "");
-    }
-
-    public static String navName(String name) {
-        return "\"" + Strings.stripColors(name.replace("\"", "\\\"").replace("\n", " ")) + "\"";
+        Config.mkdocsConfig.writeString(modNavNode.makeNavigation().replace("\n", "\n  "), true);
     }
 }
