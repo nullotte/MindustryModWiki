@@ -225,6 +225,7 @@ public class SimulatedLauncher {
         }
 
         Core.bundle.getProperties().put("database-category.planet", "Planets");
+        Core.bundle.getProperties().put("database-category.weather", "Weathers");
 
         Fi currentModDocsDirectory = Config.outputDocsDirectory.child(ModListUtils.currentModListing.internalName).child("content");
 
