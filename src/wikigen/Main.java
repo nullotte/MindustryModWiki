@@ -34,12 +34,13 @@ public class Main {
         Config.addMkDocsConfig(1, "- index.md");
 
         Seq<ModListing> modListings = ModListUtils.parseModListings();
+        int modCount = modListings.count(m -> m.stars >= 10);
         for (int i = 0; i < modListings.size; i++) {
             ModListing modListing = modListings.get(i);
             if (testModName != null && !modListing.internalName.equals(testModName)) continue;
             if (modListing.stars < 10) continue;
 
-            Log.info("Loading mod " + i + ": " + modListing.repo);
+            Log.info("Loading mod " + i + "/" + modCount + ": " + modListing.repo);
             try {
                 JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of(Integer.toString(i), HttpUtils.githubToken == null ? "none" : HttpUtils.githubToken));
             } catch (Exception e) {
