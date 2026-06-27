@@ -50,7 +50,7 @@ jobs:
           chmod +x ./gradlew
           ./gradlew run -PappArgs="['${{ secrets.GITHUB_TOKEN }}']"
           cd ./output/project
-          mkdocs build
+          mkdocs build -v
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
