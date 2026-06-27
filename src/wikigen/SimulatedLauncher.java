@@ -180,8 +180,6 @@ public class SimulatedLauncher {
 
         // this is horrible and includes a lot of unnecessary images!
         Events.on(AtlasPackEvent.class, e -> {
-            Fi modImages = Config.outputDocsDirectory.child(ModListUtils.currentModListing.internalName).child("images");
-
             for (PageType type : PageType.all) {
                 PixmapPacker packer = e.multiPacker.getPacker(type);
                 for (Page page : packer.getPages()) {
@@ -189,7 +187,10 @@ public class SimulatedLauncher {
                         String name = page.getRects().orderedKeys().get(i);
                         PixmapPackerRect rect = page.getRects().get(name);
                         Pixmap result = page.getPixmap().crop((int) rect.x, (int) rect.y, (int) rect.width, (int) rect.height);
-                        modImages.child(name + ".png").writePng(result);
+                        Fi out = Config.outputImagesDirectory.child(name + ".png");
+                        if (!out.exists()) {
+                            out.writePng(result);
+                        }
                         result.dispose();
                     }
                 }
@@ -283,7 +284,7 @@ public class SimulatedLauncher {
                     result.append("# ");
                     TextureRegion uiIcon = content.uiIcon;
                     if (uiIcon instanceof AtlasRegion a && uiIcon.found()) {
-                        result.append("<img src=\"/MindustryModWiki/").append(ModListUtils.currentModListing.internalName).append("/images/").append(a.name).append(".png\" width=\"48\" height=\"48\"></img> ");
+                        result.append("<img src=\"/MindustryModWiki/images/").append(a.name).append(".png\" width=\"48\" height=\"48\"></img> ");
                     }
                     result.append(content.localizedName);
                     result.append("\n");
