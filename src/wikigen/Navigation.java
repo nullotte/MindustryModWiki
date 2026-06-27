@@ -23,6 +23,8 @@ public class Navigation {
 
         @Override
         public String makeNavigation() {
+            if (children.isEmpty()) return "";
+
             StringBuilder builder = new StringBuilder();
             builder.append("\n- ").append(navName(name)).append(":");
             for (NavNode node : children) {
