@@ -32,16 +32,15 @@ public class Main {
             //if (i < 33 || i > 36) continue;
             ModListing modListing = modListings.get(i);
 
-            Log.info("loading mod " + i + ": " + modListing.repo);
+            Log.info("Loading mod " + i + ": " + modListing.repo);
 
             try {
-                ModListUtils.initMod(i);
                 JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of(Integer.toString(i)));
             } catch (Exception e) {
                 Log.err(e);
             }
 
-            Log.info("completed mod " + i + ": " + modListing.repo);
+            Log.info("Completed mod " + i + ": " + modListing.repo);
         }
     }
 

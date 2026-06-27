@@ -215,11 +215,13 @@ public class SimulatedLauncher {
     public static void generateModDocs() {
         LoadedMod currentMod = Vars.mods.list().find(LoadedMod::enabled);
         if (currentMod == null) {
-            Log.info("this mod isn't compatible with v158!");
+            Log.info("This mod isn't compatible with build 158!");
             return;
         }
 
-        Fi currentModDocsDirectory = Config.outputDocsDirectory.child(ModListUtils.currentModListing.internalName);
+        Core.bundle.getProperties().put("database-category.planet", "Planets");
+
+        Fi currentModDocsDirectory = Config.outputDocsDirectory.child(ModListUtils.currentModListing.internalName).child("content");
 
         Fi indexPage = currentModDocsDirectory.child("index.md");
         indexPage.writeString(
