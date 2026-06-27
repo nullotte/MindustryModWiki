@@ -38,8 +38,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m pip install -r mkdocs
-          python3 -m pip install -r mkdocs-material
+          python3 -m pip install mkdocs
+          python3 -m pip install mkdocs-material
 
       - name: Set up JDK 17
         uses: actions/setup-java@v1
