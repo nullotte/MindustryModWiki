@@ -1,2 +1,8 @@
 site_name: Mindustry Mod Wiki
-theme: material
+site_url: https://nullotte.github.io/MindustryModWiki/
+repo_url: https://github.com/nullotte/MindustryModWiki/
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.prune

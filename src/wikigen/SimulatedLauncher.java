@@ -302,7 +302,7 @@ public class SimulatedLauncher {
 
         // add navigations
         Config.addMkDocsConfig(1, "- " + navName(currentMod.meta.displayName) + ":");
-        Config.addMkDocsConfig(2, "- " + navName(currentMod.meta.displayName) + ": " + getNavPath(indexPage));
+        Config.addMkDocsConfig(2, "- " + getNavPath(indexPage));
         for (Fi category : currentModDocsDirectory.list()) {
             if (!category.isDirectory()) continue;
             Config.addMkDocsConfig(2, "- " + navName(Core.bundle.get("database-category." + category.nameWithoutExtension())) + ": ");
