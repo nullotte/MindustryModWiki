@@ -227,7 +227,10 @@ public class SimulatedLauncher {
         Core.bundle.getProperties().put("database-category.planet", "Planets");
         Core.bundle.getProperties().put("database-category.weather", "Weathers");
 
-        Fi currentModDocsDirectory = Config.outputDocsDirectory.child(ModListUtils.currentModListing.internalName).child("content");
+        Fi currentModDocsDirectory = Config.outputDocsDirectory.child(
+                // some mods just have empty internal names for some reason???
+                !ModListUtils.currentModListing.internalName.isEmpty() ? ModListUtils.currentModListing.name : ModListUtils.currentModListing.internalName
+        );
         NavSectionNode modNavNode = new NavSectionNode(currentMod.meta.displayName);
 
         Fi indexPage = currentModDocsDirectory.child("index.md");
