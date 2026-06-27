@@ -39,7 +39,6 @@ public class Main {
             ModListing modListing = modListings.get(i);
             if (testModName != null && !modListing.internalName.equals(testModName)) continue;
             if (modListing.stars < 10) continue;
-            if (i > 100) continue;
 
             Log.info("Loading mod " + i + "/" + modCount + ": " + modListing.repo);
             try {
