@@ -48,7 +48,7 @@ jobs:
       - name: Generate docs
         run: |
           chmod +x ./gradlew
-          ./gradlew run -PappArgs="['none', 'exoprosopa']"
+          ./gradlew run -PappArgs="['${{ secrets.GITHUB_TOKEN }}']"
           cd ./output/project
           mkdocs build
       - name: Deploy
