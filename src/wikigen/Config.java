@@ -11,4 +11,8 @@ public class Config {
     public static final Fi outputProjectDirectory = outputDirectory.child("project");
     public static final Fi outputDocsDirectory = outputProjectDirectory.child("docs");
     public static final Fi mkdocsConfig = outputProjectDirectory.child("mkdocs.yml");
+
+    public static void addMkDocsConfig(int level, String config) {
+        Config.mkdocsConfig.writeString("\n" + " ".repeat(level * 2) + config, true);
+    }
 }

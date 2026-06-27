@@ -11,6 +11,15 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        if (args.length > 0 && !args[0].equals("none")) {
+            HttpUtils.githubToken = args[0];
+        }
+
+        String testModName = null;
+        if (args.length > 1) {
+            testModName = args[1];
+        }
+
         Core.files = new MockFiles();
 
         if (Config.outputDirectory.exists()) {
@@ -21,30 +30,22 @@ public class Main {
             child.copyTo(Config.outputProjectDirectory);
         }
 
-        addMkDocsConfig(0, "nav:");
-        addMkDocsConfig(1, "- index.md");
+        Config.addMkDocsConfig(0, "nav:");
+        Config.addMkDocsConfig(1, "- index.md");
 
         Seq<ModListing> modListings = ModListUtils.parseModListings();
-
-        for (int i = 0; i < 50; i++) {
-            // TODO exoprosopa is currently index 34!
-            if (i != 34) continue;
-            //if (i < 33 || i > 36) continue;
+        for (int i = 0; i < modListings.size; i++) {
             ModListing modListing = modListings.get(i);
+            if (testModName != null && !modListing.internalName.equals(testModName)) continue;
+            if (modListing.stars < 10) continue;
 
             Log.info("Loading mod " + i + ": " + modListing.repo);
-
             try {
-                JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of(Integer.toString(i)));
+                JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of(Integer.toString(i), HttpUtils.githubToken == null ? "none" : HttpUtils.githubToken));
             } catch (Exception e) {
                 Log.err(e);
             }
-
             Log.info("Completed mod " + i + ": " + modListing.repo);
         }
-    }
-
-    public static void addMkDocsConfig(int level, String config) {
-        Config.mkdocsConfig.writeString("\n" + " ".repeat(level * 2) + config, true);
     }
 }

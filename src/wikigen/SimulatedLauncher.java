@@ -80,9 +80,13 @@ public class SimulatedLauncher {
 
         ArcNativesLoader.load();
 
+        if (!args[1].equals("none")) {
+            HttpUtils.githubToken = args[1];
+        }
         int modIndex = Strings.parseInt(args[0]);
         ModListUtils.initMod(modIndex);
 
+        UI.loadColors();
         Core.assets = new AssetManager();
         Core.assets.setLoader(Texture.class, "." + Vars.mapExtension, new MapPreviewLoader());
 
@@ -296,24 +300,24 @@ public class SimulatedLauncher {
         }
 
         // add navigations
-        addMkDocsConfig(1, "- " + navName(Strings.stripColors(currentMod.meta.displayName)) + ":");
-        addMkDocsConfig(2, "- " + navName(Strings.stripColors(currentMod.meta.displayName)) + ": " + getNavPath(indexPage));
+        Config.addMkDocsConfig(1, "- " + navName(Strings.stripColors(currentMod.meta.displayName)) + ":");
+        Config.addMkDocsConfig(2, "- " + navName(Strings.stripColors(currentMod.meta.displayName)) + ": " + getNavPath(indexPage));
         for (Fi category : currentModDocsDirectory.list()) {
             if (!category.isDirectory()) continue;
-            addMkDocsConfig(2, "- " + navName(Core.bundle.get("database-category." + category.nameWithoutExtension())) + ": ");
+            Config.addMkDocsConfig(2, "- " + navName(Core.bundle.get("database-category." + category.nameWithoutExtension())) + ": ");
             for (Fi file : category.list()) {
                 if (file.isDirectory()) {
-                    addMkDocsConfig(3, "- " + navName(Core.bundle.get("database-tag." + file.nameWithoutExtension())) + ":");
+                    Config.addMkDocsConfig(3, "- " + navName(Core.bundle.get("database-tag." + file.nameWithoutExtension())) + ":");
                     for (Fi content : file.list()) {
                         MappableContent m = Vars.content.byName(content.nameWithoutExtension());
                         if (m instanceof UnlockableContent u) {
-                            addMkDocsConfig(4, "- " + navName(u.localizedName) + ": " + getNavPath(content));
+                            Config.addMkDocsConfig(4, "- " + navName(u.localizedName) + ": " + getNavPath(content));
                         }
                     }
                 } else {
                     MappableContent m = Vars.content.byName(file.nameWithoutExtension());
                     if (m instanceof UnlockableContent u) {
-                        addMkDocsConfig(3, "- " + navName(u.localizedName) + ": " + getNavPath(file));
+                        Config.addMkDocsConfig(3, "- " + navName(u.localizedName) + ": " + getNavPath(file));
                     }
                 }
             }
@@ -326,10 +330,5 @@ public class SimulatedLauncher {
 
     public static String navName(String name) {
         return "\"" + name.replace("\"", "\\\"") + "\"";
-    }
-
-    // ???
-    public static void addMkDocsConfig(int level, String config) {
-        Main.addMkDocsConfig(level, config);
     }
 }

@@ -20,6 +20,10 @@ tasks.register('run', JavaExec) {
     dependsOn classes
     mainClass = "wikigen.Main"
     classpath = sourceSets.main.runtimeClasspath
+
+    if (project.hasProperty("appArgs")) {
+        args(Eval.me(project.property("appArgs") as String))
+    }
 }
 
 dependencies {
