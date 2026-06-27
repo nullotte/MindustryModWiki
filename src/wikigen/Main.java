@@ -30,14 +30,12 @@ public class Main {
             child.copyTo(Config.outputProjectDirectory);
         }
 
-        Seq<ModListing> modListings = ModListUtils.parseModListings();
-        int modCount = modListings.count(m -> m.stars >= 10);
+        Seq<ModListing> modListings = ModListUtils.getFilteredModListings();
         for (int i = 0; i < modListings.size; i++) {
             ModListing modListing = modListings.get(i);
             if (testModName != null && !modListing.internalName.equals(testModName)) continue;
-            if (modListing.stars < 10) continue;
 
-            Log.info("Loading mod " + i + "/" + modCount + ": " + modListing.repo);
+            Log.info("Loading mod " + i + "/" + modListings.size + ": " + modListing.repo);
             try {
                 JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of(Integer.toString(i), HttpUtils.githubToken == null ? "none" : HttpUtils.githubToken));
             } catch (Exception e) {

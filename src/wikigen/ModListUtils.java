@@ -11,6 +11,8 @@ import mindustry.io.*;
 import mindustry.mod.*;
 
 public class ModListUtils {
+    public static final int minStars = 10;
+
     public static ModListing currentModListing;
 
     public static Fi modDirectory() {
@@ -20,13 +22,17 @@ public class ModListUtils {
     public static void initMod(int index) {
         modDirectory().emptyDirectory();
 
-        Seq<ModListing> modListings = parseModListings();
+        Seq<ModListing> modListings = getFilteredModListings();
         if (modListings == null || index < 0 || index >= modListings.size) return;
         ModListing modListing = modListings.get(index);
 
         githubImportMod(modListing.repo, modListing.hasJava, null);
 
         currentModListing = modListing;
+    }
+
+    public static Seq<ModListing> getFilteredModListings() {
+        return parseModListings().select(m -> m.stars >= minStars);
     }
 
     public static Seq<ModListing> parseModListings() {
