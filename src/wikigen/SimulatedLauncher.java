@@ -283,7 +283,7 @@ public class SimulatedLauncher {
                     result.append("# ");
                     TextureRegion uiIcon = content.uiIcon;
                     if (uiIcon instanceof AtlasRegion a && uiIcon.found()) {
-                        result.append("<img src=\"/").append(ModListUtils.currentModListing.internalName).append("/images/").append(a.name).append(".png\" width=\"48\" height=\"48\"></img> ");
+                        result.append("<img src=\"/MindustryModWiki/").append(ModListUtils.currentModListing.internalName).append("/images/").append(a.name).append(".png\" width=\"48\" height=\"48\"></img> ");
                     }
                     result.append(content.localizedName);
                     result.append("\n");
