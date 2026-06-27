@@ -47,10 +47,7 @@ jobs:
           java-version: 17
       - name: Generate docs
         run: |
-          cd ..
-          git clone https://github.com/nullotte/MindustryModWikiGen --depth 1
-          cd MindustryModWikiGen/
-          ./gradlew run
+          ./gradlew run -PappArgs="['none', 'exoprosopa']"
           cd ../output/project
           mkdocs build
       - name: Deploy
