@@ -43,7 +43,5 @@ public class Main {
             }
             Log.info("Completed mod " + i + ": " + modListing.repo);
         }
-
-        Log.info(Config.mkdocsConfig.readString());
     }
 }
