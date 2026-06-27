@@ -329,6 +329,6 @@ public class SimulatedLauncher {
     }
 
     public static String navName(String name) {
-        return "\"" + Strings.stripColors(name.replace("\"", "\\\"")) + "\"";
+        return "\"" + Strings.stripColors(name.replace("\"", "\\\"").replace("\n", " ")) + "\"";
     }
 }
