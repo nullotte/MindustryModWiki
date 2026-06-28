@@ -6,6 +6,7 @@ import arc.mock.*;
 import arc.struct.*;
 import arc.util.*;
 import mindustry.mod.*;
+import wikigen.util.*;
 
 import java.util.*;
 

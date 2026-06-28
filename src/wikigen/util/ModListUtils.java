@@ -1,6 +1,5 @@
-package wikigen;
+package wikigen.util;
 
-import arc.*;
 import arc.files.*;
 import arc.struct.*;
 import arc.util.*;

@@ -1,6 +1,4 @@
-package wikigen;
-
-import arc.util.*;
+package wikigen.util;
 
 import java.io.*;
 import java.util.*;

@@ -1,12 +1,21 @@
-package wikigen;
+package wikigen.media;
 
 import arc.files.*;
 import arc.struct.*;
 import arc.util.*;
+import wikigen.util.*;
 
 public class Navigation {
+    public static String cleanName(String name) {
+        return Strings.stripColors(name.replace("\n", " "));
+    }
+
     public static String navName(String name) {
-        return "\"" + Strings.stripColors(name.replace("\"", "\\\"").replace("\n", " ")) + "\"";
+        return "\"" + cleanName(name).replace("\"", "\\\"") + "\"";
+    }
+
+    public static String navPath(Fi file) {
+        return file.path().replace(Config.outputDocsDirectory.path() + "/", "");
     }
 
     public static abstract class NavNode {
@@ -49,7 +58,7 @@ public class Navigation {
 
         @Override
         public String makeNavigation() {
-            return "\n- " + (name == null ? "" : (navName(name) + ": ")) + "\"" + file.path().replace(Config.outputDocsDirectory.path() + "/", "") + "\"";
+            return "\n- " + (name == null ? "" : (navName(name) + ": ")) + "\"" + navPath(file) + "\"";
         }
     }
 }

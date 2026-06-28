@@ -1,4 +1,4 @@
-package wikigen;
+package wikigen.util;
 
 import arc.func.*;
 import arc.util.*;

@@ -25,7 +25,9 @@ import mindustry.mod.*;
 import mindustry.mod.Mods.*;
 import mindustry.net.*;
 import mindustry.ui.*;
-import wikigen.Navigation.*;
+import wikigen.media.*;
+import wikigen.media.Navigation.*;
+import wikigen.util.*;
 
 import java.nio.*;
 
@@ -243,9 +245,9 @@ public class SimulatedLauncher {
                         "\n\n" + Strings.stripColors(currentMod.meta.description).replace("\n", "\n\n")
         );
         modNavNode.children.add(new NavFileNode(indexPage));
+        StringBuilder indexDatabaseStringBuilder = new StringBuilder();
 
         OrderedMap<String, OrderedMap<String, Seq<UnlockableContent>>> sortedContents = new OrderedMap<>();
-
         Seq<Content>[] allContent = Vars.content.getContentMap();
         for (Seq<Content> contents : allContent) {
             for (Content content : contents) {
@@ -261,7 +263,6 @@ public class SimulatedLauncher {
                 }
             }
         }
-
         OrderedMap<String, Seq<UnlockableContent>> shownCategoryContents = new OrderedMap<>();
         for (int i = 0; i < sortedContents.size; i++) {
             String categoryName = sortedContents.orderedKeys().get(i);
@@ -279,6 +280,7 @@ public class SimulatedLauncher {
 
             NavSectionNode categoryNavSectionNode = new NavSectionNode(Core.bundle.get("database-category." + categoryName));
             modNavNode.children.add(categoryNavSectionNode);
+            indexDatabaseStringBuilder.append("\n").append("### ").append(Navigation.cleanName(Core.bundle.get("database-category." + categoryName)));
             Fi categoryDirectory = currentModDocsDirectory.child(categoryName);
             for (int j = 0; j < shownCategoryContents.size; j++) {
                 String tagName = shownCategoryContents.orderedKeys().get(j);
@@ -291,32 +293,44 @@ public class SimulatedLauncher {
                 } else {
                     tagNavSectionNode = new NavSectionNode(Core.bundle.get("database-tag." + tagName));
                     categoryNavSectionNode.children.add(tagNavSectionNode);
+                    indexDatabaseStringBuilder.append("\n").append("#### ").append(Navigation.cleanName(Core.bundle.get("database-tag." + tagName)));
                 }
 
                 Fi tagDirectory = tagName.equals("default") ? categoryDirectory : categoryDirectory.child(tagName);
                 for (UnlockableContent content : array) {
-                    StringBuilder result = new StringBuilder();
-
-                    result.append("# ");
-                    TextureRegion uiIcon = content.uiIcon;
-                    if (uiIcon instanceof AtlasRegion a && uiIcon.found()) {
-                        result.append("<img src=\"/MindustryModWiki/images/").append(a.name).append(".png\" width=\"48\" height=\"48\"></img> ");
-                    }
-                    result.append(Strings.stripColors(content.localizedName));
-                    result.append("\n");
-                    if (content.description != null) {
-                        result.append(Strings.stripColors(content.description));
-                    } else {
-                        result.append("...");
-                    }
-
                     Fi file = tagDirectory.child(content.name + ".md");
-                    file.writeString(result.toString());
+                    writeContentPage(content, file);
                     tagNavSectionNode.children.add(new NavFileNode(file, content.localizedName));
+
+                    AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
+                    indexDatabaseStringBuilder.append("\n")
+                            .append("<a href=\"/MindustryModWiki/").append(Navigation.navPath(file).replace(".md", "/")).append("\">")
+                            .append("<img src=\"/MindustryModWiki/images/").append(icon.name).append(".png\" width=\"24\" height=\"24\"></img>")
+                            .append("</a>");
                 }
             }
         }
 
+        // attach database
+        String databaseString = indexDatabaseStringBuilder.toString();
+        if (!databaseString.isEmpty()) {
+            indexPage.writeString(indexDatabaseStringBuilder.toString(), true);
+        }
+
         Config.mkdocsConfig.writeString(modNavNode.makeNavigation().replace("\n", "\n  "), true);
+    }
+
+    public static void writeContentPage(UnlockableContent content, Fi file) {
+        StringBuilder result = new StringBuilder();
+
+        result.append("# ");
+        AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
+        result.append("<img src=\"/MindustryModWiki/images/").append(icon.name).append(".png\" width=\"48\" height=\"48\"></img> ");
+        result.append(Strings.stripColors(content.localizedName));
+        if (content.description != null) {
+            result.append("\n").append(Strings.stripColors(content.description));
+        }
+
+        file.writeString(result.toString());
     }
 }
