@@ -13,7 +13,7 @@ repositories {
 }
 
 ext {
-    mindustryVersion = 'v158'
+    mindustryVersion = 'v158.1'
 }
 
 tasks.register('run', JavaExec) {
