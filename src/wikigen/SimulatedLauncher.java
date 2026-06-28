@@ -229,7 +229,7 @@ public class SimulatedLauncher {
 
         Fi currentModDocsDirectory = Config.outputDocsDirectory.child(
                 // some mods just have empty internal names for some reason???
-                !ModListUtils.currentModListing.internalName.isEmpty() ? ModListUtils.currentModListing.name : ModListUtils.currentModListing.internalName
+                !ModListUtils.currentModListing.internalName.isEmpty() ? ModListUtils.currentModListing.internalName : ModListUtils.currentModListing.name
         );
         NavSectionNode modNavNode = new NavSectionNode(currentMod.meta.displayName);
 
