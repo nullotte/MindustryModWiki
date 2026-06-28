@@ -253,7 +253,11 @@ public class SimulatedLauncher {
         for (ContentType contentType : ContentType.all) {
             for (Content content : Vars.content.getBy(contentType)) {
                 if (content instanceof UnlockableContent unlockableContent) {
-                    if (unlockableContent.uiIcon instanceof AtlasRegion atlasRegion && atlasRegion.found()) {
+                    TextureRegion contentIconRegion = unlockableContent.uiIcon;
+                    if (unlockableContent instanceof Item item && item.frames > 0) {
+                        contentIconRegion = Core.atlas.find(item.name + "1");
+                    }
+                    if (contentIconRegion instanceof AtlasRegion atlasRegion && atlasRegion.found()) {
                         regionToContentMap.put(atlasRegion.name, unlockableContent);
                     }
 
@@ -521,7 +525,11 @@ public class SimulatedLauncher {
             return "planeticon-" + planet.name + ".png";
         }
 
-        if (unlockableContent.uiIcon instanceof AtlasRegion atlasRegion) {
+        TextureRegion contentIconRegion = unlockableContent.uiIcon;
+        if (unlockableContent instanceof Item item && item.frames > 0) {
+            contentIconRegion = Core.atlas.find(item.name + "1");
+        }
+        if (contentIconRegion instanceof AtlasRegion atlasRegion) {
             return atlasRegion.name + ".png";
         }
 
