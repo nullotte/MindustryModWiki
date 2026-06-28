@@ -36,14 +36,14 @@ public class Main {
             ModListing modListing = modListings.get(i);
             if (testModName != null && !modListing.internalName.equals(testModName)) continue;
 
-            Log.info("Loading mod @/@ (@)", i, modListings.size, modListing.repo);
+            Log.info("Loading mod @/@ (@)", i + 1, modListings.size, modListing.repo);
             long beginTime = System.currentTimeMillis();
             try {
                 JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of(Integer.toString(i), HttpUtils.githubToken == null ? "none" : HttpUtils.githubToken));
             } catch (Exception e) {
                 Log.err(e);
             }
-            Log.info("Completed mod @/@ (@) in @ms", i, modListings.size, modListing.repo, System.currentTimeMillis() - beginTime);
+            Log.info("Completed mod @/@ (@) in @ms", i + 1, modListings.size, modListing.repo, System.currentTimeMillis() - beginTime);
         }
     }
 }
