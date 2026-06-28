@@ -323,10 +323,14 @@ public class SimulatedLauncher {
                     if (u instanceof Weather) return false;
 
                     if (u instanceof Block block) {
-                        return block.synthetic();
+                        return block.canBeBuilt();
                     }
 
-                    return true;
+                    if (u instanceof Planet) {
+                        return true;
+                    }
+
+                    return !u.isHidden();
                 });
                 if (array.isEmpty()) continue;
                 shownCategoryContents.put(tagName, array);
