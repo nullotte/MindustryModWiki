@@ -171,7 +171,7 @@ public class SimulatedLauncher {
         Core.assets.load("sprites/error.png", Texture.class);
         Core.atlas = TextureAtlas.blankAtlas();
 
-        Vars.net = new Net(null);
+        Vars.net = new Net(new ArcNetProvider());
         MapPreviewLoader.setupLoaders();
         Vars.mods = new Mods();
         Vars.schematics = new Schematics();
