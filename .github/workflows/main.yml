@@ -61,6 +61,12 @@ jobs:
           ./gradlew run -PappArgs="['${{ secrets.GITHUB_TOKEN }}']"
           cd ./output/project
           mkdocs build -v
+      - name: Upload debug project archive
+        if: '!cancelled()'
+        uses: actions/upload-artifact@v4
+        with:
+          name: Debug Project Archive
+          path: output/project/mkdocs.yml
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
