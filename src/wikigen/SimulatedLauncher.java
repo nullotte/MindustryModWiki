@@ -221,17 +221,17 @@ public class SimulatedLauncher {
             assetsLoaded = Core.assets.update();
         } while (!assetsLoaded);
 
+        Core.bundle.getProperties().put("database-category.planet", "Planets");
+
         generateModDocs();
     }
 
     public static void generateModDocs() {
         LoadedMod currentMod = Vars.mods.list().find(LoadedMod::enabled);
         if (currentMod == null) {
-            Log.info("This mod isn't compatible with build 158!");
+            Log.info("This mod isn't compatible with the current build!");
             return;
         }
-
-        Core.bundle.getProperties().put("database-category.planet", "Planets");
 
         Fi currentModDocsDirectory = Config.outputDocsDirectory.child(
                 // some mods just have empty internal names for some reason???
@@ -240,15 +240,36 @@ public class SimulatedLauncher {
         NavSectionNode modNavNode = new NavSectionNode(currentMod.meta.displayName);
 
         Fi indexPage = currentModDocsDirectory.child("index.md");
-        indexPage.writeString(
-                "|Property|Value|" +
-                        "\n" + "|-|-|" +
-                        "\n" + "|Repository|" + "<" + "https://github.com/" + ModListUtils.currentModListing.repo + ">" + "|" +
-                        "\n" + "|Stars|" + ModListUtils.currentModListing.stars + "|" +
-                        "\n" + "|Last updated|" + ModListUtils.currentModListing.lastUpdated + "|" +
-                        "\n\n" + Strings.stripColors(currentMod.meta.description).replace("\n", "\n\n")
-        );
         modNavNode.children.add(new NavFileNode(indexPage));
+
+        Fi modIcon = currentMod.root.child("icon.png");
+        if (!modIcon.exists()) {
+            modIcon = currentMod.root.child("preview.png");
+        }
+
+        Fi modIconImage = Config.outputImagesDirectory.child("icon-" + currentModDocsDirectory.nameWithoutExtension() + ".png");
+        if (modIcon.exists()) {
+            modIcon.copyTo(modIconImage);
+        }
+
+        StringBuilder indexStringBuilder = new StringBuilder();
+
+        if (modIconImage.exists()) {
+            indexStringBuilder.append("<img src=\"/MindustryModWiki/").append(Navigation.navPath(modIconImage)).append("\" width=\"128\" height=\"128\"></img>\n");
+        }
+        indexStringBuilder.append("# ").append(Navigation.cleanName(currentMod.meta.displayName));
+
+        indexStringBuilder
+                .append("\n").append("|Property|Value|")
+                .append("\n").append("|-|-|")
+                .append("\n").append("|Repository|<https://github.com/").append(ModListUtils.currentModListing.repo).append(">|")
+                .append("\n").append("|Stars|").append(ModListUtils.currentModListing.stars).append("|")
+                .append("\n").append("|Last updated|").append(ModListUtils.currentModListing.lastUpdated).append("|");
+
+        indexStringBuilder.append("\n\n").append(Strings.stripColors(currentMod.meta.description).replace("\n", "\n\n"));
+
+        indexPage.writeString(indexStringBuilder.toString());
+
         StringBuilder indexDatabaseStringBuilder = new StringBuilder();
 
         OrderedMap<String, OrderedMap<String, Seq<UnlockableContent>>> sortedContents = new OrderedMap<>();
