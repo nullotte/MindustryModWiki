@@ -38,11 +38,11 @@ import wikigen.media.Navigation.*;
 import wikigen.util.*;
 
 import java.nio.*;
-import java.util.*;
 
 public class SimulatedLauncher {
     private static final ObjectMap<String, UnlockableContent> regionToContentMap = new ObjectMap<>();
     private static final ObjectMap<UnlockableContent, Fi> contentToPageMap = new ObjectMap<>();
+    private static final ObjectMap<TextureRegion, String> iconRegionToImageMap = new ObjectMap<>();
 
     public static void main(String[] args) {
         Core.settings = new MockSettings();
@@ -102,6 +102,7 @@ public class SimulatedLauncher {
         ModListUtils.initMod(modIndex);
 
         UI.loadColors();
+        Core.batch = new SpriteBatch();
         Core.assets = new AssetManager();
         Core.assets.setLoader(Texture.class, "." + Vars.mapExtension, new MapPreviewLoader());
 
@@ -233,17 +234,58 @@ public class SimulatedLauncher {
             assetsLoaded = Core.assets.update();
         } while (!assetsLoaded);
 
+        Seq<ApplicationListener> listeners = Seq.with(
+                Vars.logic,
+                Vars.control,
+                Vars.renderer,
+                Vars.ui,
+                Vars.netServer,
+                Vars.netClient
+        );
+        for (ApplicationListener listener : listeners) {
+            listener.init();
+        }
+        Vars.mods.eachClass(Mod::init);
+        Events.fire(new ClientLoadEvent());
+
         Core.bundle.getProperties().put("database-category.planet", "Planets");
 
         for (ContentType contentType : ContentType.all) {
             for (Content content : Vars.content.getBy(contentType)) {
                 if (content instanceof UnlockableContent unlockableContent) {
-                    if (unlockableContent.uiIcon instanceof AtlasRegion atlasRegion) {
+                    if (unlockableContent.uiIcon instanceof AtlasRegion atlasRegion && atlasRegion.found()) {
                         regionToContentMap.put(atlasRegion.name, unlockableContent);
+                    }
+
+                    if (unlockableContent instanceof Planet planet) {
+                        TextureRegionDrawable planetIcon = Icon.icons.get(planet.icon, Icon.commandRally);
+                        TextureRegion region = planetIcon.getRegion();
+                        Pixmap pixmap = region.texture.getTextureData().getPixmap().crop(region.getX(), region.getY(), region.width, region.height);
+                        pixmap.each((x, y) -> {
+                            Tmp.c1.rgba8888(pixmap.get(x, y));
+                            Tmp.c2.set(planet.iconColor).a(Tmp.c1.a);
+                            pixmap.set(x, y, Tmp.c2);
+                        });
+                        Fi planetIconFile = Config.outputImagesDirectory.child("planeticon-" + planet.name + ".png");
+                        planetIconFile.writePng(pixmap);
+                        pixmap.dispose();
+
+                        Config.outputProjectDirectory.child("help.png").writePng(region.texture.getTextureData().getPixmap());
                     }
                 }
             }
         }
+
+        Icon.icons.each((name, drawable) -> {
+            TextureRegion region = drawable.getRegion();
+            Fi iconFile = Config.outputImagesDirectory.child("icon-" + name + ".png");
+            if (!iconFile.exists()) {
+                Pixmap pixmap = region.texture.getTextureData().getPixmap().crop(region.getX(), region.getY(), region.width, region.height);
+                iconFile.writePng(pixmap);
+                pixmap.dispose();
+            }
+            iconRegionToImageMap.put(region, "icon-" + name);
+        });
 
         generateModDocs();
     }
@@ -362,10 +404,9 @@ public class SimulatedLauncher {
                     contentToPageMap.put(content, file);
                     tagNavSectionNode.children.add(new NavFileNode(file, content.localizedName));
 
-                    AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
                     indexDatabaseStringBuilder.append(" ")
                             .append("<a href=\"/MindustryModWiki/").append(Navigation.navPath(file).replace(".md", "/")).append("\">")
-                            .append("<img src=\"/MindustryModWiki/images/").append(icon.name).append(".png\" width=\"24\" height=\"24\"></img>")
+                            .append("<img src=\"/MindustryModWiki/images/").append(contentIcon(content)).append("\" width=\"24\" height=\"24\"></img>")
                             .append("</a>");
                 }
             }
@@ -386,8 +427,7 @@ public class SimulatedLauncher {
         StringBuilder result = new StringBuilder();
 
         result.append("# ");
-        AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
-        result.append("<img src=\"/MindustryModWiki/images/").append(icon.name).append(".png\" width=\"48\" height=\"48\"></img> ");
+        result.append("<img src=\"/MindustryModWiki/images/").append(contentIcon(content)).append("\" width=\"48\" height=\"48\"></img> ");
         result.append(Strings.stripColors(content.localizedName));
 
         if (content.description != null) {
@@ -474,5 +514,22 @@ public class SimulatedLauncher {
                 display(child, stringBuilder);
             }
         }
+    }
+
+    public static String contentIcon(UnlockableContent unlockableContent) {
+        if (unlockableContent instanceof Planet planet) {
+            return "planeticon-" + planet.name + ".png";
+        }
+
+        if (unlockableContent.uiIcon instanceof AtlasRegion atlasRegion) {
+            return atlasRegion.name + ".png";
+        }
+
+        String iconName = iconRegionToImageMap.get(unlockableContent.uiIcon);
+        if (iconName != null) {
+            return iconName + ".png";
+        }
+
+        return "error.png";
     }
 }
