@@ -31,6 +31,13 @@ public class Main {
             child.copyTo(Config.outputProjectDirectory);
         }
 
+        // run a blank instance to load icons and vanilla regions
+        try {
+            JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of());
+        } catch (Exception e) {
+            Log.err(e);
+        }
+
         Seq<ModListing> modListings = ModListUtils.getFilteredModListings();
         for (int i = 0; i < modListings.size; i++) {
             ModListing modListing = modListings.get(i);

@@ -95,11 +95,13 @@ public class SimulatedLauncher {
 
         ArcNativesLoader.load();
 
-        if (!args[1].equals("none")) {
-            HttpUtils.githubToken = args[1];
+        if (args.length > 0) {
+            if (!args[1].equals("none")) {
+                HttpUtils.githubToken = args[1];
+            }
+            int modIndex = Strings.parseInt(args[0]);
+            ModListUtils.initMod(modIndex);
         }
-        int modIndex = Strings.parseInt(args[0]);
-        ModListUtils.initMod(modIndex);
 
         UI.loadColors();
         Core.batch = new SpriteBatch();
@@ -253,6 +255,20 @@ public class SimulatedLauncher {
 
         Core.bundle.getProperties().put("database-category.planet", "Planets");
 
+        Icon.icons.each((name, drawable) -> {
+            TextureRegion region = drawable.getRegion();
+            Fi iconFile = Config.outputImagesDirectory.child("icon-" + name + ".png");
+            if (!iconFile.exists()) {
+                Pixmap pixmap = region.texture.getTextureData().getPixmap();
+                if (pixmap.isDisposed()) return;
+
+                Pixmap resultPixmap = pixmap.crop(region.getX(), region.getY(), region.width, region.height);
+                iconFile.writePng(resultPixmap);
+                resultPixmap.dispose();
+            }
+            iconRegionToImageMap.put(region, "icon-" + name);
+        });
+
         for (ContentType contentType : ContentType.all) {
             for (Content content : Vars.content.getBy(contentType)) {
                 if (content instanceof UnlockableContent unlockableContent) {
@@ -265,9 +281,12 @@ public class SimulatedLauncher {
                     }
 
                     if (unlockableContent instanceof Planet planet) {
-                        TextureRegionDrawable planetIcon = Icon.icons.get(planet.icon, Icon.commandRally);
-                        TextureRegion region = planetIcon.getRegion();
-                        Pixmap pixmap = region.texture.getTextureData().getPixmap().crop(region.getX(), region.getY(), region.width, region.height);
+                        Fi baseIconFile = Config.outputImagesDirectory.child("icon-" + planet.icon + ".png");
+                        if (!baseIconFile.exists()) {
+                            baseIconFile = Config.outputImagesDirectory.child("icon-commandRally.png");
+                        }
+
+                        Pixmap pixmap = PixmapIO.readPNG(baseIconFile);
                         pixmap.each((x, y) -> {
                             Tmp.c1.rgba8888(pixmap.get(x, y));
                             Tmp.c2.set(planet.iconColor).a(Tmp.c1.a);
@@ -276,25 +295,14 @@ public class SimulatedLauncher {
                         Fi planetIconFile = Config.outputImagesDirectory.child("planeticon-" + planet.name + ".png");
                         planetIconFile.writePng(pixmap);
                         pixmap.dispose();
-
-                        Config.outputProjectDirectory.child("help.png").writePng(region.texture.getTextureData().getPixmap());
                     }
                 }
             }
         }
 
-        Icon.icons.each((name, drawable) -> {
-            TextureRegion region = drawable.getRegion();
-            Fi iconFile = Config.outputImagesDirectory.child("icon-" + name + ".png");
-            if (!iconFile.exists()) {
-                Pixmap pixmap = region.texture.getTextureData().getPixmap().crop(region.getX(), region.getY(), region.width, region.height);
-                iconFile.writePng(pixmap);
-                pixmap.dispose();
-            }
-            iconRegionToImageMap.put(region, "icon-" + name);
-        });
-
-        generateModDocs();
+        if (args.length > 0) {
+            generateModDocs();
+        }
     }
 
     public static void generateModDocs() {
