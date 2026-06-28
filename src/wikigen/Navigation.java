@@ -49,7 +49,7 @@ public class Navigation {
 
         @Override
         public String makeNavigation() {
-            return "\n- " + (name == null ? "" : (navName(name) + ": ")) + file.path().replace(Config.outputDocsDirectory.path() + "/", "");
+            return "\n- " + (name == null ? "" : (navName(name) + ": ")) + "\"" + file.path().replace(Config.outputDocsDirectory.path() + "/", "") + "\"";
         }
     }
 }
