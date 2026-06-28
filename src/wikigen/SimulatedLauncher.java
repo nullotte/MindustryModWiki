@@ -24,7 +24,9 @@ import mindustry.maps.*;
 import mindustry.mod.*;
 import mindustry.mod.Mods.*;
 import mindustry.net.*;
+import mindustry.type.*;
 import mindustry.ui.*;
+import mindustry.world.*;
 import wikigen.media.*;
 import wikigen.media.Navigation.*;
 import wikigen.util.*;
@@ -214,7 +216,10 @@ public class SimulatedLauncher {
         Core.assets.loadRun("contentinit", ContentLoader.class, () -> Vars.content.init(), () -> Vars.content.load());
         Core.assets.loadRun("baseparts", BaseRegistry.class, () -> {}, () -> Vars.bases.load());
 
-        while (!Core.assets.update());
+        boolean assetsLoaded;
+        do {
+            assetsLoaded = Core.assets.update();
+        } while (!assetsLoaded);
 
         generateModDocs();
     }
@@ -227,7 +232,6 @@ public class SimulatedLauncher {
         }
 
         Core.bundle.getProperties().put("database-category.planet", "Planets");
-        Core.bundle.getProperties().put("database-category.weather", "Weathers");
 
         Fi currentModDocsDirectory = Config.outputDocsDirectory.child(
                 // some mods just have empty internal names for some reason???
@@ -271,8 +275,15 @@ public class SimulatedLauncher {
             shownCategoryContents.clear();
             for (int j = 0; j < categoryContents.size; j++) {
                 String tagName = categoryContents.orderedKeys().get(j);
-                // TODO visibilities!
-                Seq<UnlockableContent> array = categoryContents.get(tagName);//.select(u -> !u.isHidden() && !u.hideDatabase);
+                Seq<UnlockableContent> array = categoryContents.get(tagName).select(u -> {
+                    if (u instanceof Weather) return false;
+
+                    if (u instanceof Block block) {
+                        return block.synthetic();
+                    }
+
+                    return true;
+                });
                 if (array.isEmpty()) continue;
                 shownCategoryContents.put(tagName, array);
             }
@@ -280,7 +291,7 @@ public class SimulatedLauncher {
 
             NavSectionNode categoryNavSectionNode = new NavSectionNode(Core.bundle.get("database-category." + categoryName));
             modNavNode.children.add(categoryNavSectionNode);
-            indexDatabaseStringBuilder.append("\n").append("### ").append(Navigation.cleanName(Core.bundle.get("database-category." + categoryName)));
+            indexDatabaseStringBuilder.append("\n").append("#### ").append(Navigation.cleanName(Core.bundle.get("database-category." + categoryName))).append("<br>");
             Fi categoryDirectory = currentModDocsDirectory.child(categoryName);
             for (int j = 0; j < shownCategoryContents.size; j++) {
                 String tagName = shownCategoryContents.orderedKeys().get(j);
@@ -293,7 +304,7 @@ public class SimulatedLauncher {
                 } else {
                     tagNavSectionNode = new NavSectionNode(Core.bundle.get("database-tag." + tagName));
                     categoryNavSectionNode.children.add(tagNavSectionNode);
-                    indexDatabaseStringBuilder.append("\n").append("#### ").append(Navigation.cleanName(Core.bundle.get("database-tag." + tagName)));
+                    indexDatabaseStringBuilder.append("\n").append("##### ").append(Navigation.cleanName(Core.bundle.get("database-tag." + tagName))).append("<br>");
                 }
 
                 Fi tagDirectory = tagName.equals("default") ? categoryDirectory : categoryDirectory.child(tagName);
@@ -303,7 +314,7 @@ public class SimulatedLauncher {
                     tagNavSectionNode.children.add(new NavFileNode(file, content.localizedName));
 
                     AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
-                    indexDatabaseStringBuilder.append("\n")
+                    indexDatabaseStringBuilder.append(" ")
                             .append("<a href=\"/MindustryModWiki/").append(Navigation.navPath(file).replace(".md", "/")).append("\">")
                             .append("<img src=\"/MindustryModWiki/images/").append(icon.name).append(".png\" width=\"24\" height=\"24\"></img>")
                             .append("</a>");
@@ -312,9 +323,9 @@ public class SimulatedLauncher {
         }
 
         // attach database
-        String databaseString = indexDatabaseStringBuilder.toString();
-        if (!databaseString.isEmpty()) {
-            indexPage.writeString(indexDatabaseStringBuilder.toString(), true);
+        String indexDatabaseString = indexDatabaseStringBuilder.toString();
+        if (!indexDatabaseString.isEmpty()) {
+            indexPage.writeString("\n## Content" + indexDatabaseString, true);
         }
 
         Config.mkdocsConfig.writeString(modNavNode.makeNavigation().replace("\n", "\n  "), true);
