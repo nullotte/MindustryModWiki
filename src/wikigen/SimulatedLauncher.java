@@ -416,6 +416,10 @@ public class SimulatedLauncher {
             result.append(statsBuilder);
         }
 
+        if (content.details != null) {
+            result.append("\n\n*").append(Strings.stripColors(content.details)).append("*");
+        }
+
         file.writeString(result.toString());
     }
 
