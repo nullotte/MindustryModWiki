@@ -234,6 +234,9 @@ public class SimulatedLauncher {
             assetsLoaded = Core.assets.update();
         } while (!assetsLoaded);
 
+        // PLEASE DON'T!
+        Vars.fetchedServers = true;
+
         Seq<ApplicationListener> listeners = Seq.with(
                 Vars.logic,
                 Vars.control,
