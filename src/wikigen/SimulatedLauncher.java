@@ -42,6 +42,7 @@ import java.util.*;
 
 public class SimulatedLauncher {
     private static final ObjectMap<String, UnlockableContent> regionToContentMap = new ObjectMap<>();
+    private static final ObjectMap<UnlockableContent, Fi> contentToPageMap = new ObjectMap<>();
 
     public static void main(String[] args) {
         Core.settings = new MockSettings();
@@ -353,7 +354,8 @@ public class SimulatedLauncher {
                 Fi tagDirectory = tagName.equals("default") ? categoryDirectory : categoryDirectory.child(tagName);
                 for (UnlockableContent content : array) {
                     Fi file = tagDirectory.child(content.name + ".md");
-                    writeContentPage(content, file);
+                    file.write(); // TODO is this the correct way?
+                    contentToPageMap.put(content, file);
                     tagNavSectionNode.children.add(new NavFileNode(file, content.localizedName));
 
                     AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
@@ -364,6 +366,8 @@ public class SimulatedLauncher {
                 }
             }
         }
+
+        contentToPageMap.each(SimulatedLauncher::writeContentPage);
 
         // attach database
         String indexDatabaseString = indexDatabaseStringBuilder.toString();
@@ -434,7 +438,19 @@ public class SimulatedLauncher {
             if (image.getDrawable() instanceof TextureRegionDrawable textureRegionDrawable && textureRegionDrawable.getRegion() instanceof AtlasRegion atlasRegion) {
                 UnlockableContent unlockableContent = regionToContentMap.get(atlasRegion.name);
                 if (unlockableContent != null) {
-                    stringBuilder.append("<img src=\"/MindustryModWiki/images/").append(atlasRegion.name).append(".png\" width=\"16\" height=\"16\"></img> ");
+                    Fi page = contentToPageMap.get(unlockableContent);
+
+                    if (page != null) {
+                        stringBuilder.append("<a href=\"/MindustryModWiki/").append(Navigation.navPath(page).replace(".md", "/")).append("\">");
+                    }
+
+                    stringBuilder.append("<img src=\"/MindustryModWiki/images/").append(atlasRegion.name).append(".png\" width=\"16\" height=\"16\"></img>");
+
+                    if (page != null) {
+                        stringBuilder.append("</a>");
+                    }
+
+                    stringBuilder.append(" ");
                 }
             }
         } else if (element instanceof Button ignored) {
