@@ -10,6 +10,10 @@ import arc.graphics.g2d.*;
 import arc.graphics.g2d.PixmapPacker.*;
 import arc.graphics.g2d.TextureAtlas.*;
 import arc.mock.*;
+import arc.scene.*;
+import arc.scene.style.*;
+import arc.scene.ui.*;
+import arc.scene.ui.layout.*;
 import arc.struct.*;
 import arc.util.*;
 import mindustry.*;
@@ -21,19 +25,24 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.graphics.MultiPacker.*;
 import mindustry.maps.*;
+import mindustry.maps.Map;
 import mindustry.mod.*;
 import mindustry.mod.Mods.*;
 import mindustry.net.*;
 import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
+import mindustry.world.meta.*;
 import wikigen.media.*;
 import wikigen.media.Navigation.*;
 import wikigen.util.*;
 
 import java.nio.*;
+import java.util.*;
 
 public class SimulatedLauncher {
+    private static final ObjectMap<String, UnlockableContent> regionToContentMap = new ObjectMap<>();
+
     public static void main(String[] args) {
         Core.settings = new MockSettings();
         Core.app = new MockApplication();
@@ -202,7 +211,8 @@ public class SimulatedLauncher {
         });
 
         Core.assets.load(Vars.mods);
-        Core.assets.loadRun("mergeUI", PixmapPacker.class, () -> {}, () -> Fonts.mergeFontAtlas(Core.atlas));
+        Core.assets.loadRun("mergeUI", PixmapPacker.class, () -> {
+        }, () -> Fonts.mergeFontAtlas(Core.atlas));
 
         Vars.logic = new Logic();
         Core.assets.load(Vars.control = new Control());
@@ -214,7 +224,8 @@ public class SimulatedLauncher {
         Core.assets.load(Vars.schematics);
 
         Core.assets.loadRun("contentinit", ContentLoader.class, () -> Vars.content.init(), () -> Vars.content.load());
-        Core.assets.loadRun("baseparts", BaseRegistry.class, () -> {}, () -> Vars.bases.load());
+        Core.assets.loadRun("baseparts", BaseRegistry.class, () -> {
+        }, () -> Vars.bases.load());
 
         boolean assetsLoaded;
         do {
@@ -222,6 +233,16 @@ public class SimulatedLauncher {
         } while (!assetsLoaded);
 
         Core.bundle.getProperties().put("database-category.planet", "Planets");
+
+        for (ContentType contentType : ContentType.all) {
+            for (Content content : Vars.content.getBy(contentType)) {
+                if (content instanceof UnlockableContent unlockableContent) {
+                    if (unlockableContent.uiIcon instanceof AtlasRegion atlasRegion) {
+                        regionToContentMap.put(atlasRegion.name, unlockableContent);
+                    }
+                }
+            }
+        }
 
         generateModDocs();
     }
@@ -262,6 +283,7 @@ public class SimulatedLauncher {
         indexStringBuilder
                 .append("\n").append("|Property|Value|")
                 .append("\n").append("|-|-|")
+                .append("\n").append("|Author|").append(Navigation.cleanName(currentMod.meta.author)).append("|")
                 .append("\n").append("|Repository|<https://github.com/").append(ModListUtils.currentModListing.repo).append(">|")
                 .append("\n").append("|Stars|").append(ModListUtils.currentModListing.stars).append("|")
                 .append("\n").append("|Last updated|").append(ModListUtils.currentModListing.lastUpdated).append("|");
@@ -359,10 +381,74 @@ public class SimulatedLauncher {
         AtlasRegion icon = content.uiIcon.found() && content.uiIcon instanceof AtlasRegion a ? a : Core.atlas.find("error");
         result.append("<img src=\"/MindustryModWiki/images/").append(icon.name).append(".png\" width=\"48\" height=\"48\"></img> ");
         result.append(Strings.stripColors(content.localizedName));
+
         if (content.description != null) {
             result.append("\n").append(Strings.stripColors(content.description));
         }
 
+        content.checkStats();
+        OrderedMap<StatCat, OrderedMap<Stat, Seq<StatValue>>> statMap = content.stats.toMap();
+        if (!statMap.isEmpty()) {
+            StringBuilder statsBuilder = new StringBuilder();
+
+            statsBuilder.append("\n\n").append("|Property|Value|");
+            statsBuilder.append("\n").append("|-|-|");
+
+            statMap.each((category, map) -> {
+                if (map.isEmpty()) return;
+                if (content.stats.useCategories) {
+                    statsBuilder.append("\n").append("|**").append(category.localized()).append("**||");
+                }
+
+                map.each((stat, statValues) -> {
+                    statsBuilder.append("\n").append("|").append(stat.localized()).append("|");
+                    for (StatValue statValue : statValues) {
+                        statsBuilder.append(strStat(statValue)).append(" ");
+                    }
+                    statsBuilder.append("|");
+                });
+            });
+
+            result.append(statsBuilder);
+        }
+
         file.writeString(result.toString());
+    }
+
+    public static String strStat(StatValue statValue) {
+        Table dummy = new Table();
+        statValue.display(dummy);
+        StringBuilder result = new StringBuilder();
+        display(dummy, result);
+        return result.toString();
+    }
+
+    public static void display(Element element, StringBuilder stringBuilder) {
+        if (element instanceof Label label) {
+            String text = label.getText().toString();
+            if (text.startsWith("$") || text.startsWith("@")) {
+                text = Core.bundle.get(text.substring(1));
+            }
+            stringBuilder.append(Navigation.cleanName(text)).append(" ");
+        } else if (element instanceof Image image && image.getDrawable() != null) {
+            if (image.getDrawable() instanceof TextureRegionDrawable textureRegionDrawable && textureRegionDrawable.getRegion() instanceof AtlasRegion atlasRegion) {
+                UnlockableContent unlockableContent = regionToContentMap.get(atlasRegion.name);
+                if (unlockableContent != null) {
+                    stringBuilder.append("<img src=\"/MindustryModWiki/images/").append(atlasRegion.name).append(".png\" width=\"16\" height=\"16\"></img> ");
+                }
+            }
+        } else if (element instanceof Button ignored) {
+        } else if (element instanceof Table t) {
+            for (Cell cell : t.getCells()) {
+                display(cell.get(), stringBuilder);
+                if (cell.isEndRow() && element.parent == null) {
+                    stringBuilder.append("<br>");
+                }
+            }
+        } else if (element instanceof Group g) {
+            for (Element child : g.getChildren()) {
+                display(child, stringBuilder);
+            }
+        }
     }
 }

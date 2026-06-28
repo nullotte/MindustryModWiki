@@ -7,7 +7,7 @@ import wikigen.util.*;
 
 public class Navigation {
     public static String cleanName(String name) {
-        return Strings.stripColors(name.replace("\n", " "));
+        return Strings.stripColors(Strings.stripGlyphs(name.replace("\n", " ")));
     }
 
     public static String navName(String name) {
