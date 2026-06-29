@@ -421,7 +421,7 @@ public class SimulatedLauncher {
 
                     indexDatabaseStringBuilder.append(" ")
                             .append("<a href=\"/MindustryModWiki/").append(Navigation.navPath(file).replace(".md", "/")).append("\">")
-                            .append("<img src=\"/MindustryModWiki/images/").append(contentIcon(content)).append("\" width=\"24\" height=\"24\"></img>")
+                            .append("<img src=\"/MindustryModWiki/images/").append(contentIcon(content)).append("\" id=\"content-icon-small\"></img>")
                             .append("</a>");
                 }
             }
@@ -442,7 +442,7 @@ public class SimulatedLauncher {
         StringBuilder result = new StringBuilder();
 
         result.append("# ");
-        result.append("<img src=\"/MindustryModWiki/images/").append(contentIcon(content)).append("\" width=\"48\" height=\"48\"></img> ");
+        result.append("<img src=\"/MindustryModWiki/images/").append(contentIcon(content)).append("\" id=\"content-icon\"></img> ");
         result.append(Strings.stripColors(content.localizedName));
 
         if (content.description != null) {
@@ -507,7 +507,7 @@ public class SimulatedLauncher {
                         stringBuilder.append("<a href=\"/MindustryModWiki/").append(Navigation.navPath(page).replace(".md", "/")).append("\">");
                     }
 
-                    stringBuilder.append("<img src=\"/MindustryModWiki/images/").append(atlasRegion.name).append(".png\" width=\"16\" height=\"16\"></img>");
+                    stringBuilder.append("<img src=\"/MindustryModWiki/images/").append(atlasRegion.name).append(".png\" id=\"content-icon-tiny\"></img>");
 
                     if (page != null) {
                         stringBuilder.append("</a>");

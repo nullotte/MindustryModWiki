@@ -6,5 +6,8 @@ theme:
   features:
     - navigation.indexes
     - navigation.prune
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - index.md
