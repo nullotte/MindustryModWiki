@@ -347,12 +347,12 @@ public class SimulatedLauncher {
         indexStringBuilder
                 .append("\n").append("|Property|Value|")
                 .append("\n").append("|-|-|")
-                .append("\n").append("|Author|").append(Navigation.cleanName(currentMod.meta.author)).append("|")
+                .append("\n").append("|Author|").append(Navigation.cleanName(currentMod.meta.author.replace("\n", "<br>"))).append("|")
                 .append("\n").append("|Repository|<https://github.com/").append(ModListUtils.currentModListing.repo).append(">|")
                 .append("\n").append("|Stars|").append(ModListUtils.currentModListing.stars).append("|")
                 .append("\n").append("|Last updated|").append(ModListUtils.currentModListing.lastUpdated).append("|");
 
-        indexStringBuilder.append("\n\n").append(Strings.stripColors(currentMod.meta.description).replace("\n", "\n\n"));
+        indexStringBuilder.append("\n\n").append(Strings.stripColors(currentMod.meta.description).replace("\n", "<br>"));
 
         indexPage.writeString(indexStringBuilder.toString());
 
