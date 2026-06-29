@@ -383,6 +383,8 @@ public class SimulatedLauncher {
             for (int j = 0; j < categoryContents.size; j++) {
                 String tagName = categoryContents.orderedKeys().get(j);
                 Seq<UnlockableContent> array = categoryContents.get(tagName).select(u -> {
+                    if (u.hideDatabase) return false;
+
                     if (u instanceof Weather) return false;
 
                     if (u instanceof Block block) {
