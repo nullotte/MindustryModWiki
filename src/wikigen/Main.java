@@ -32,11 +32,14 @@ public class Main {
         }
 
         // run a blank instance to load icons and vanilla regions
+        Log.info("Running initial vanilla instance");
+        long vanillaBeginTime = System.currentTimeMillis();
         try {
             JavaProcess.exec(SimulatedLauncher.class, List.of(), List.of());
         } catch (Exception e) {
             Log.err(e);
         }
+        Log.info("Initial vanilla instance finished in @ms", System.currentTimeMillis() - vanillaBeginTime);
 
         Seq<ModListing> modListings = ModListUtils.getFilteredModListings();
         for (int i = 0; i < modListings.size; i++) {
