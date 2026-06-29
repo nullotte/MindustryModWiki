@@ -339,6 +339,10 @@ public class SimulatedLauncher {
 
         StringBuilder indexStringBuilder = new StringBuilder();
 
+        indexStringBuilder.append("---\n");
+        indexStringBuilder.append("title: " + Navigation.cleanName(currentMod.meta.displayName));
+        indexStringBuilder.append("\n---\n");
+
         if (modIconImage.exists()) {
             indexStringBuilder.append("<img src=\"/MindustryModWiki/").append(Navigation.navPath(modIconImage)).append("\" width=\"128\" height=\"128\"></img>\n");
         }
