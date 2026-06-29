@@ -31,6 +31,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -48,6 +51,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -57,7 +62,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -108,6 +120,42 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -238,6 +286,74 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../new-horizon/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New Horizon
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1253,6 +1369,68 @@
       
         
       
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../Meepscellaneous%20Concepts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meepscellaneous Concepts
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1327,7 +1505,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_21" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1349,14 +1527,14 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_19" id="__nav_19_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_21" id="__nav_21_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_19">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_21_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_21">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1622,6 +1800,60 @@
             
           </ul>
         </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../pictologic/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PicToLogic
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
       
     </li>
   
@@ -2548,6 +2780,74 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../MineDusty/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MineDusty
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -2710,20 +3010,6 @@
           
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -2739,14 +3025,14 @@
   
   
   
-    <a href="../MineDusty/" class="md-nav__link">
+    <a href="../dev-mode/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    MineDusty
+    Developer Mode
   
 
     
@@ -2927,114 +3213,6 @@
     
   
     Mindustry Overhaul 
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../claj/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CLaJ
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../dev-mode/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Developer Mode
   
 
     
@@ -3363,6 +3541,74 @@
     
   
     Erekir Extended
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../as/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asterion
   
 
     
@@ -3999,6 +4245,60 @@
   
   
   
+    <a href="../enhancement-units/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enhancement Units
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
     <a href="../bundles/" class="md-nav__link">
       
   
@@ -4061,60 +4361,6 @@
     
   
     anime units display
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../enhancement-units/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Enhancement Units
   
 
     
@@ -4247,6 +4493,60 @@
     
   
     Zeridmuth: A New Beginning
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../schematic-browser/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schematic Browser
   
 
     
@@ -4853,60 +5153,6 @@
   
   
   
-    <a href="../schematic-browser/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Schematic Browser
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
     <a href="../black-hole-renderer/" class="md-nav__link">
       
   
@@ -5254,6 +5500,60 @@
           
         
       
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../smp/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smeshariki-Music-Pack
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
         
       
         
@@ -5318,6 +5618,18 @@
           
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5333,14 +5645,14 @@
   
   
   
-    <a href="../no-invasions/" class="md-nav__link">
+    <a href="../aj/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    No Sector Re Attacks
+    Axthrix
   
 
     
@@ -5387,14 +5699,14 @@
   
   
   
-    <a href="../smp/" class="md-nav__link">
+    <a href="../no-invasions/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    Smeshariki-Music-Pack
+    No Sector Re Attacks
   
 
     
@@ -5602,8 +5914,6 @@
       
         
           
-        
-      
         
       
         
@@ -6160,6 +6470,72 @@
       
         
       
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../etigeox/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etigei Exile
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -6554,6 +6930,60 @@
           
         
       
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../distributor/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Distributor
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
         
       
         
@@ -6792,6 +7222,70 @@
       
         
       
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../wh/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WarHammer
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -6923,60 +7417,6 @@
     
   
     ODST Soundtracks
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../distributor/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Distributor
   
 
     
@@ -7200,70 +7640,6 @@
       
         
       
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../astralis/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Astralis
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
         
       
     
@@ -7411,6 +7787,70 @@
     
   
     Cursed Bundles
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../astralis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Astralis
   
 
     
@@ -7703,6 +8143,60 @@
     
   
     Astherive
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../pictocanvas/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PicToCanvas
   
 
     
@@ -8983,14 +9477,14 @@
   
   
   
-    <a href="../cool-musics/" class="md-nav__link">
+    <a href="../multicrafter/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    Cool Musics
+    MultiCrafter
   
 
     
@@ -9037,14 +9531,14 @@
   
   
   
-    <a href="../multicrafter/" class="md-nav__link">
+    <a href="../cool-musics/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    MultiCrafter
+    Cool Musics
   
 
     
@@ -9394,30 +9888,32 @@
 </tr>
 </tbody>
 </table>
-<p>Adds the Diamond resource.</p>
-<p>This mod also adds more than just diamonds. It also adds enhanced versions of vanilla production blocks, as well as units, technology, and more.</p>
+<p>Adds the Diamond resource.<br><br>This mod also adds more than just diamonds. It also adds enhanced versions of vanilla production blocks, as well as units, technology, and more.</p>
 <h2 id="content">Content</h2>
-<h4 id="items">Items<br> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-diamond/"><img src="/MindustryModWiki/images/diamond-ore-diamond.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-cryogem/"><img src="/MindustryModWiki/images/diamond-ore-cryogem.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-dark-spore-pod/"><img src="/MindustryModWiki/images/diamond-ore-dark-spore-pod.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-ancient-scrap/"><img src="/MindustryModWiki/images/diamond-ore-ancient-scrap.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-ancient-alloy/"><img src="/MindustryModWiki/images/diamond-ore-ancient-alloy.png" width="24" height="24"></img></a></h4>
+<h4 id="items">Items<br> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-diamond/"><img src="/MindustryModWiki/images/diamond-ore-diamond.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-cryogem/"><img src="/MindustryModWiki/images/diamond-ore-cryogem.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-dark-spore-pod/"><img src="/MindustryModWiki/images/diamond-ore-dark-spore-pod.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-ancient-scrap/"><img src="/MindustryModWiki/images/diamond-ore-ancient-scrap.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/item/diamond-ore-ancient-alloy/"><img src="/MindustryModWiki/images/diamond-ore-ancient-alloy.png" id="content-icon-small"></img></a></h4>
 <h4 id="blocks">Blocks<br></h4>
-<h5 id="utility">Utility<br> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-cargo-launch-pad/"><img src="/MindustryModWiki/images/block-diamond-ore-cargo-launch-pad-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-launch-silo/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-launch-silo-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-adm/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-adm-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-container/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-container-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-crate/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-crate-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-energy-shield/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-energy-shield-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-haste-obelisk/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-haste-obelisk-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-mending-obelisk/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-mending-obelisk-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-repository/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-repository-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-unloader/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-unloader-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-vault/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-vault-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-cryodiamond-vault/"><img src="/MindustryModWiki/images/block-diamond-ore-cryodiamond-vault-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-cryodrive-projector/"><img src="/MindustryModWiki/images/block-diamond-ore-cryodrive-projector-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-diamond-vault/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-vault-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-omnivault/"><img src="/MindustryModWiki/images/block-diamond-ore-omnivault-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-phasemender/"><img src="/MindustryModWiki/images/block-diamond-ore-phasemender-full.png" width="24" height="24"></img></a></h5>
-<h5 id="turret">Turret<br> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-testbomb/"><img src="/MindustryModWiki/images/block-diamond-ore-testbomb-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-blade/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-blade-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-blaster/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-blaster-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-pulser/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-pulser-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-sentinel/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-sentinel-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-shotgun/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-shotgun-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-sprayer/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-sprayer-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-barrage/"><img src="/MindustryModWiki/images/block-diamond-ore-barrage-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-turret-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-gigantic-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-gigantic-diamond-turret-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-huge-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-huge-diamond-turret-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-large-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-large-diamond-turret-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-loki/"><img src="/MindustryModWiki/images/block-diamond-ore-loki-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-odin/"><img src="/MindustryModWiki/images/block-diamond-ore-odin-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-b/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-b-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-c/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-c-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-small-dark/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-small-dark-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-small/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-small-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-thor/"><img src="/MindustryModWiki/images/block-diamond-ore-thor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-yggdrasil/"><img src="/MindustryModWiki/images/block-diamond-ore-yggdrasil-full.png" width="24" height="24"></img></a></h5>
-<h5 id="distribution">Distribution<br> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-crystal-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-crystal-conveyor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-ancient-item-bridge/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-item-bridge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-ancient-metal-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-metal-conveyor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-ancient-wreckage/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-wreckage-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-mass-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-mass-conveyor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-mass-distributer/"><img src="/MindustryModWiki/images/block-diamond-ore-mass-distributer-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-massdriver-strong/"><img src="/MindustryModWiki/images/block-diamond-ore-massdriver-strong-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-omega-router/"><img src="/MindustryModWiki/images/block-diamond-ore-omega-router-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-spore-cluster-dark/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-cluster-dark-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-spore-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-conveyor-full.png" width="24" height="24"></img></a></h5>
-<h5 id="production">Production<br> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-advanced-cultivator/"><img src="/MindustryModWiki/images/block-diamond-ore-advanced-cultivator-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-ancient-oildrill/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-oildrill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-aqua-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-aqua-drill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-dark-cultivator/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-cultivator-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-diamond-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-drill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-mini-diamond-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-mini-diamond-drill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-omnidrill/"><img src="/MindustryModWiki/images/block-diamond-ore-omnidrill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-organic-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-organic-drill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-precision-omnidrill/"><img src="/MindustryModWiki/images/block-diamond-ore-precision-omnidrill-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-sporecluster/"><img src="/MindustryModWiki/images/block-diamond-ore-sporecluster-full.png" width="24" height="24"></img></a></h5>
-<h5 id="power">Power<br> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-battery-large/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-battery-large-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-battery/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-battery-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-decaygen/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-decaygen-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-energy-node-large/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-energy-node-large-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-energy-node/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-energy-node-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-heatpanel/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-heatpanel-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-solar-generator/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-solar-generator-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-differential-reactor/"><img src="/MindustryModWiki/images/block-diamond-ore-differential-reactor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-reinforced-battery/"><img src="/MindustryModWiki/images/block-diamond-ore-reinforced-battery-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-reinforced-power-distributor/"><img src="/MindustryModWiki/images/block-diamond-ore-reinforced-power-distributor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-solar-panel-diamond/"><img src="/MindustryModWiki/images/block-diamond-ore-solar-panel-diamond-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-surge-reactor/"><img src="/MindustryModWiki/images/block-diamond-ore-surge-reactor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-surgebattery/"><img src="/MindustryModWiki/images/block-diamond-ore-surgebattery-full.png" width="24" height="24"></img></a></h5>
-<h5 id="crafting">Crafting<br> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-ancient-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-forge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-ancient-refinery/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-refinery-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-blast-furnace/"><img src="/MindustryModWiki/images/block-diamond-ore-blast-furnace-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryocentrifuge/"><img src="/MindustryModWiki/images/block-diamond-ore-cryocentrifuge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryogem-compressor/"><img src="/MindustryModWiki/images/block-diamond-ore-cryogem-compressor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryogem-dissipator/"><img src="/MindustryModWiki/images/block-diamond-ore-cryogem-dissipator-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryoseparator/"><img src="/MindustryModWiki/images/block-diamond-ore-cryoseparator-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-dark-sporepress/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-sporepress-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-diamond-synthesizer/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-synthesizer-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-heavy-coal-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-heavy-coal-processor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-heavy-surge-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-heavy-surge-forge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-industrial-diamond-synthesizer/"><img src="/MindustryModWiki/images/block-diamond-ore-industrial-diamond-synthesizer-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-large-ancient-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-large-ancient-forge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multi-melter/"><img src="/MindustryModWiki/images/block-diamond-ore-multi-melter-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multiblast/"><img src="/MindustryModWiki/images/block-diamond-ore-multiblast-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multicompressor/"><img src="/MindustryModWiki/images/block-diamond-ore-multicompressor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multipyra/"><img src="/MindustryModWiki/images/block-diamond-ore-multipyra-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multismelter/"><img src="/MindustryModWiki/images/block-diamond-ore-multismelter-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-mutator/"><img src="/MindustryModWiki/images/block-diamond-ore-mutator-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-string-solidifier/"><img src="/MindustryModWiki/images/block-diamond-ore-string-solidifier-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-stringmaker/"><img src="/MindustryModWiki/images/block-diamond-ore-stringmaker-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-surge-pyra-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-surge-pyra-forge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-water-decorruptor/"><img src="/MindustryModWiki/images/block-diamond-ore-water-decorruptor-full.png" width="24" height="24"></img></a></h5>
-<h5 id="liquid">Liquid<br> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-liquid-bridge/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-liquid-bridge-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-liquid-repository/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-liquid-repository-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-liquid-tank/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-liquid-tank-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-metal-conduit/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-metal-conduit-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-pump/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-pump-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-bulk-liquid-tank/"><img src="/MindustryModWiki/images/block-diamond-ore-bulk-liquid-tank-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-cryopump/"><img src="/MindustryModWiki/images/block-diamond-ore-cryopump-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-crystal-conduit/"><img src="/MindustryModWiki/images/block-diamond-ore-crystal-conduit-full.png" width="24" height="24"></img></a></h5>
-<h5 id="defense">Defense<br> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-metal-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-crystallized-door/"><img src="/MindustryModWiki/images/block-diamond-ore-crystallized-door-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-dark-spore-block-large/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-spore-block-large-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-dark-spore-block/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-spore-block-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-gigantic-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-gigantic-ancient-metal-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-gigantic-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-gigantic-diamond-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-huge-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-huge-ancient-metal-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-huge-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-huge-diamond-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-large-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-large-ancient-metal-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-large-crystallized-door/"><img src="/MindustryModWiki/images/block-diamond-ore-large-crystallized-door-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-large-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-large-diamond-wall-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-reinforced-plastanium-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-reinforced-plastanium-wall-full.png" width="24" height="24"></img></a></h5>
-<h5 id="logic">Logic<br> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-crystal-cell/"><img src="/MindustryModWiki/images/block-diamond-ore-crystal-cell-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-large-crystal-cell/"><img src="/MindustryModWiki/images/block-diamond-ore-large-crystal-cell-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-matrix-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-matrix-processor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-super-matrix-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-super-matrix-processor-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-ultra-matrix-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-ultra-matrix-processor-full.png" width="24" height="24"></img></a></h5>
-<h4 id="fluids">Fluids<br> <a href="/MindustryModWiki/diamond-ore/liquid/diamond-ore-phase-string/"><img src="/MindustryModWiki/images/diamond-ore-phase-string.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/liquid/diamond-ore-corrupt-water/"><img src="/MindustryModWiki/images/diamond-ore-corrupt-water.png" width="24" height="24"></img></a></h4>
+<h5 id="utility">Utility<br> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-cargo-launch-pad/"><img src="/MindustryModWiki/images/block-diamond-ore-cargo-launch-pad-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-launch-silo/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-launch-silo-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-adm/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-adm-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-container/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-container-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-crate/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-crate-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-energy-shield/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-energy-shield-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-haste-obelisk/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-haste-obelisk-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-mending-obelisk/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-mending-obelisk-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-repository/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-repository-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-unloader/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-unloader-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-ancient-vault/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-vault-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-cryodiamond-vault/"><img src="/MindustryModWiki/images/block-diamond-ore-cryodiamond-vault-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-cryodrive-projector/"><img src="/MindustryModWiki/images/block-diamond-ore-cryodrive-projector-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-diamond-vault/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-vault-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-omnivault/"><img src="/MindustryModWiki/images/block-diamond-ore-omnivault-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/effect/diamond-ore-phasemender/"><img src="/MindustryModWiki/images/block-diamond-ore-phasemender-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="turret">Turret<br> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-testbomb/"><img src="/MindustryModWiki/images/block-diamond-ore-testbomb-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-blade/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-blade-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-blaster/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-blaster-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-pulser/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-pulser-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-sentinel/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-sentinel-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-shotgun/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-shotgun-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-ancient-sprayer/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-sprayer-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-barrage/"><img src="/MindustryModWiki/images/block-diamond-ore-barrage-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-turret-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-gigantic-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-gigantic-diamond-turret-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-huge-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-huge-diamond-turret-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-large-diamond-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-large-diamond-turret-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-loki/"><img src="/MindustryModWiki/images/block-diamond-ore-loki-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-odin/"><img src="/MindustryModWiki/images/block-diamond-ore-odin-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-b/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-b-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-c/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-c-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-small-dark/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-small-dark-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret-small/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-small-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-spore-turret/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-turret-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-thor/"><img src="/MindustryModWiki/images/block-diamond-ore-thor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/turret/diamond-ore-yggdrasil/"><img src="/MindustryModWiki/images/block-diamond-ore-yggdrasil-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="distribution">Distribution<br> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-crystal-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-crystal-conveyor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-ancient-item-bridge/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-item-bridge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-ancient-metal-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-metal-conveyor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-ancient-wreckage/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-wreckage-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-mass-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-mass-conveyor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-mass-distributer/"><img src="/MindustryModWiki/images/block-diamond-ore-mass-distributer-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-massdriver-strong/"><img src="/MindustryModWiki/images/block-diamond-ore-massdriver-strong-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-omega-router/"><img src="/MindustryModWiki/images/block-diamond-ore-omega-router-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-spore-cluster-dark/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-cluster-dark-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/distribution/diamond-ore-spore-conveyor/"><img src="/MindustryModWiki/images/block-diamond-ore-spore-conveyor-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="production">Production<br> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-advanced-cultivator/"><img src="/MindustryModWiki/images/block-diamond-ore-advanced-cultivator-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-ancient-oildrill/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-oildrill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-aqua-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-aqua-drill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-dark-cultivator/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-cultivator-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-diamond-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-drill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-mini-diamond-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-mini-diamond-drill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-omnidrill/"><img src="/MindustryModWiki/images/block-diamond-ore-omnidrill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-organic-drill/"><img src="/MindustryModWiki/images/block-diamond-ore-organic-drill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-precision-omnidrill/"><img src="/MindustryModWiki/images/block-diamond-ore-precision-omnidrill-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/production/diamond-ore-sporecluster/"><img src="/MindustryModWiki/images/block-diamond-ore-sporecluster-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="power">Power<br> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-battery-large/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-battery-large-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-battery/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-battery-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-decaygen/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-decaygen-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-energy-node-large/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-energy-node-large-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-energy-node/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-energy-node-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-heatpanel/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-heatpanel-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-ancient-solar-generator/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-solar-generator-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-differential-reactor/"><img src="/MindustryModWiki/images/block-diamond-ore-differential-reactor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-reinforced-battery/"><img src="/MindustryModWiki/images/block-diamond-ore-reinforced-battery-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-reinforced-power-distributor/"><img src="/MindustryModWiki/images/block-diamond-ore-reinforced-power-distributor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-solar-panel-diamond/"><img src="/MindustryModWiki/images/block-diamond-ore-solar-panel-diamond-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-surge-reactor/"><img src="/MindustryModWiki/images/block-diamond-ore-surge-reactor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/power/diamond-ore-surgebattery/"><img src="/MindustryModWiki/images/block-diamond-ore-surgebattery-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="crafting">Crafting<br> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-ancient-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-forge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-ancient-refinery/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-refinery-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-blast-furnace/"><img src="/MindustryModWiki/images/block-diamond-ore-blast-furnace-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryocentrifuge/"><img src="/MindustryModWiki/images/block-diamond-ore-cryocentrifuge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryogem-compressor/"><img src="/MindustryModWiki/images/block-diamond-ore-cryogem-compressor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryogem-dissipator/"><img src="/MindustryModWiki/images/block-diamond-ore-cryogem-dissipator-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-cryoseparator/"><img src="/MindustryModWiki/images/block-diamond-ore-cryoseparator-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-dark-sporepress/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-sporepress-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-diamond-synthesizer/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-synthesizer-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-heavy-coal-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-heavy-coal-processor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-heavy-surge-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-heavy-surge-forge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-industrial-diamond-synthesizer/"><img src="/MindustryModWiki/images/block-diamond-ore-industrial-diamond-synthesizer-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-large-ancient-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-large-ancient-forge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multi-melter/"><img src="/MindustryModWiki/images/block-diamond-ore-multi-melter-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multiblast/"><img src="/MindustryModWiki/images/block-diamond-ore-multiblast-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multicompressor/"><img src="/MindustryModWiki/images/block-diamond-ore-multicompressor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multipyra/"><img src="/MindustryModWiki/images/block-diamond-ore-multipyra-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-multismelter/"><img src="/MindustryModWiki/images/block-diamond-ore-multismelter-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-mutator/"><img src="/MindustryModWiki/images/block-diamond-ore-mutator-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-string-solidifier/"><img src="/MindustryModWiki/images/block-diamond-ore-string-solidifier-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-stringmaker/"><img src="/MindustryModWiki/images/block-diamond-ore-stringmaker-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-surge-pyra-forge/"><img src="/MindustryModWiki/images/block-diamond-ore-surge-pyra-forge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/crafting/diamond-ore-water-decorruptor/"><img src="/MindustryModWiki/images/block-diamond-ore-water-decorruptor-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="liquid">Liquid<br> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-liquid-bridge/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-liquid-bridge-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-liquid-repository/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-liquid-repository-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-liquid-tank/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-liquid-tank-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-metal-conduit/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-metal-conduit-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-ancient-pump/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-pump-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-bulk-liquid-tank/"><img src="/MindustryModWiki/images/block-diamond-ore-bulk-liquid-tank-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-cryopump/"><img src="/MindustryModWiki/images/block-diamond-ore-cryopump-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/liquid/diamond-ore-crystal-conduit/"><img src="/MindustryModWiki/images/block-diamond-ore-crystal-conduit-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="defense">Defense<br> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-ancient-metal-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-crystallized-door/"><img src="/MindustryModWiki/images/block-diamond-ore-crystallized-door-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-dark-spore-block-large/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-spore-block-large-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-dark-spore-block/"><img src="/MindustryModWiki/images/block-diamond-ore-dark-spore-block-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-diamond-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-gigantic-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-gigantic-ancient-metal-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-gigantic-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-gigantic-diamond-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-huge-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-huge-ancient-metal-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-huge-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-huge-diamond-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-large-ancient-metal-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-large-ancient-metal-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-large-crystallized-door/"><img src="/MindustryModWiki/images/block-diamond-ore-large-crystallized-door-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-large-diamond-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-large-diamond-wall-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/defense/diamond-ore-reinforced-plastanium-wall/"><img src="/MindustryModWiki/images/block-diamond-ore-reinforced-plastanium-wall-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="logic">Logic<br> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-crystal-cell/"><img src="/MindustryModWiki/images/block-diamond-ore-crystal-cell-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-large-crystal-cell/"><img src="/MindustryModWiki/images/block-diamond-ore-large-crystal-cell-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-matrix-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-matrix-processor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-super-matrix-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-super-matrix-processor-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/block/logic/diamond-ore-ultra-matrix-processor/"><img src="/MindustryModWiki/images/block-diamond-ore-ultra-matrix-processor-full.png" id="content-icon-small"></img></a></h5>
+<h4 id="fluids">Fluids<br> <a href="/MindustryModWiki/diamond-ore/liquid/diamond-ore-phase-string/"><img src="/MindustryModWiki/images/diamond-ore-phase-string.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/liquid/diamond-ore-corrupt-water/"><img src="/MindustryModWiki/images/diamond-ore-corrupt-water.png" id="content-icon-small"></img></a></h4>
 <h4 id="units">Units<br></h4>
-<h5 id="air">Air<br> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-battleship/"><img src="/MindustryModWiki/images/diamond-ore-battleship-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-beetle/"><img src="/MindustryModWiki/images/diamond-ore-beetle-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-cicada/"><img src="/MindustryModWiki/images/diamond-ore-cicada-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-cruiser/"><img src="/MindustryModWiki/images/diamond-ore-cruiser-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-destroyer/"><img src="/MindustryModWiki/images/diamond-ore-destroyer-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-fighter/"><img src="/MindustryModWiki/images/diamond-ore-fighter-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-firefly/"><img src="/MindustryModWiki/images/diamond-ore-firefly-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-gnat/"><img src="/MindustryModWiki/images/diamond-ore-gnat-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-hurricane/"><img src="/MindustryModWiki/images/diamond-ore-hurricane-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-purger/"><img src="/MindustryModWiki/images/diamond-ore-purger-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-scarab/"><img src="/MindustryModWiki/images/diamond-ore-scarab-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-scout/"><img src="/MindustryModWiki/images/diamond-ore-scout-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-storm/"><img src="/MindustryModWiki/images/diamond-ore-storm-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-strike/"><img src="/MindustryModWiki/images/diamond-ore-strike-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-tempest/"><img src="/MindustryModWiki/images/diamond-ore-tempest-full.png" width="24" height="24"></img></a></h5>
-<h5 id="ground">Ground<br> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-charybdis/"><img src="/MindustryModWiki/images/diamond-ore-charybdis-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-crow/"><img src="/MindustryModWiki/images/diamond-ore-crow-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-falcon/"><img src="/MindustryModWiki/images/diamond-ore-falcon-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-gnome/"><img src="/MindustryModWiki/images/diamond-ore-gnome.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-goblin/"><img src="/MindustryModWiki/images/diamond-ore-goblin-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-leviathan/"><img src="/MindustryModWiki/images/diamond-ore-leviathan-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-nymph/"><img src="/MindustryModWiki/images/diamond-ore-nymph-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-owl/"><img src="/MindustryModWiki/images/diamond-ore-owl-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-pixie/"><img src="/MindustryModWiki/images/diamond-ore-pixie-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-scylla/"><img src="/MindustryModWiki/images/diamond-ore-scylla-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-serpent/"><img src="/MindustryModWiki/images/diamond-ore-serpent-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-siren/"><img src="/MindustryModWiki/images/diamond-ore-siren-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-sparrow/"><img src="/MindustryModWiki/images/diamond-ore-sparrow-full.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-spriite/"><img src="/MindustryModWiki/images/diamond-ore-spriite.png" width="24" height="24"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-vulture/"><img src="/MindustryModWiki/images/diamond-ore-vulture-full.png" width="24" height="24"></img></a></h5>
+<h5 id="air">Air<br> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-battleship/"><img src="/MindustryModWiki/images/diamond-ore-battleship-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-beetle/"><img src="/MindustryModWiki/images/diamond-ore-beetle-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-cicada/"><img src="/MindustryModWiki/images/diamond-ore-cicada-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-cruiser/"><img src="/MindustryModWiki/images/diamond-ore-cruiser-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-destroyer/"><img src="/MindustryModWiki/images/diamond-ore-destroyer-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-fighter/"><img src="/MindustryModWiki/images/diamond-ore-fighter-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-firefly/"><img src="/MindustryModWiki/images/diamond-ore-firefly-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-gnat/"><img src="/MindustryModWiki/images/diamond-ore-gnat-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-hurricane/"><img src="/MindustryModWiki/images/diamond-ore-hurricane-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-purger/"><img src="/MindustryModWiki/images/diamond-ore-purger-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-scarab/"><img src="/MindustryModWiki/images/diamond-ore-scarab-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-scout/"><img src="/MindustryModWiki/images/diamond-ore-scout-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-storm/"><img src="/MindustryModWiki/images/diamond-ore-storm-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-strike/"><img src="/MindustryModWiki/images/diamond-ore-strike-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-air/diamond-ore-tempest/"><img src="/MindustryModWiki/images/diamond-ore-tempest-full.png" id="content-icon-small"></img></a></h5>
+<h5 id="ground">Ground<br> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-charybdis/"><img src="/MindustryModWiki/images/diamond-ore-charybdis-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-crow/"><img src="/MindustryModWiki/images/diamond-ore-crow-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-falcon/"><img src="/MindustryModWiki/images/diamond-ore-falcon-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-gnome/"><img src="/MindustryModWiki/images/diamond-ore-gnome.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-goblin/"><img src="/MindustryModWiki/images/diamond-ore-goblin-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-leviathan/"><img src="/MindustryModWiki/images/diamond-ore-leviathan-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-nymph/"><img src="/MindustryModWiki/images/diamond-ore-nymph-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-owl/"><img src="/MindustryModWiki/images/diamond-ore-owl-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-pixie/"><img src="/MindustryModWiki/images/diamond-ore-pixie-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-scylla/"><img src="/MindustryModWiki/images/diamond-ore-scylla-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-serpent/"><img src="/MindustryModWiki/images/diamond-ore-serpent-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-siren/"><img src="/MindustryModWiki/images/diamond-ore-siren-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-sparrow/"><img src="/MindustryModWiki/images/diamond-ore-sparrow-full.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-spriite/"><img src="/MindustryModWiki/images/diamond-ore-spriite.png" id="content-icon-small"></img></a> <a href="/MindustryModWiki/diamond-ore/unit/unit-ground/diamond-ore-vulture/"><img src="/MindustryModWiki/images/diamond-ore-vulture-full.png" id="content-icon-small"></img></a></h5>
 
 
 
 
 
 
+
+  
+  
 
 
 

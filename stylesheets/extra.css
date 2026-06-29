@@ -1,0 +1,17 @@
+img#content-icon {
+    width: auto;
+    height: 48px;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+img#content-icon-small {
+    width: auto;
+    height: 24px;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+img#content-icon-tiny {
+    width: auto;
+    height: 16px;
+    filter: drop-shadow(0px 0px 2px black);
+}
