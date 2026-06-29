@@ -306,9 +306,15 @@ public class SimulatedLauncher {
     }
 
     public static void generateModDocs() {
-        LoadedMod currentMod = Vars.mods.list().find(LoadedMod::enabled);
+        LoadedMod currentMod = Vars.mods.list().find(m -> m.file.equals(ModListUtils.currentModFile));
+
         if (currentMod == null) {
-            Log.info("This mod isn't compatible with the current build!");
+            Log.err("The initialized mod could not be found.");
+            return;
+        }
+
+        if (!currentMod.enabled()) {
+            Log.err("The initialized mod is not enabled, mod state is @", currentMod.state);
             return;
         }
 

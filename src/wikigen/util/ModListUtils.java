@@ -5,14 +5,21 @@ import arc.struct.*;
 import arc.util.*;
 import arc.util.Http.*;
 import arc.util.serialization.*;
+import arc.util.serialization.Jval.*;
 import mindustry.*;
 import mindustry.io.*;
 import mindustry.mod.*;
+import mindustry.mod.Mods.*;
 
 public class ModListUtils {
     public static final int minStars = 10;
 
+    private static final Json json = new Json();
+    private static final String[] metaFiles = {"mod.json", "mod.hjson", "plugin.json", "plugin.hjson"};
+
     public static ModListing currentModListing;
+    public static Fi currentModFile;
+    private static Seq<ModListing> modListings;
 
     public static Fi modDirectory() {
         return Config.mindustryDataDirectory.child("mods/");
@@ -21,28 +28,46 @@ public class ModListUtils {
     public static void initMod(int index) {
         modDirectory().emptyDirectory();
 
-        Seq<ModListing> modListings = getFilteredModListings();
-        if (modListings == null || index < 0 || index >= modListings.size) return;
-        ModListing modListing = modListings.get(index);
+        Seq<ModListing> filteredModListings = getFilteredModListings();
+        if (filteredModListings == null || index < 0 || index >= filteredModListings.size) return;
+        currentModListing = filteredModListings.get(index);
+        githubImportMod(currentModListing.repo, currentModListing.hasJava, null);
 
-        githubImportMod(modListing.repo, modListing.hasJava, null);
+        ZipFi modFile = new ZipFi(modDirectory().child(currentModListing.repo.replace("/", "") + ".zip"));
+        ModMeta modMeta = null;
 
-        currentModListing = modListing;
+        try {
+            modMeta = findMeta(resolveRoot(modFile));
+        } catch (Exception ignored) {}
+
+        if (modMeta != null && modMeta.dependencies.any()) {
+            ModMeta finalModMeta = modMeta; // what?
+            getModListings().each(modListing -> finalModMeta.dependencies.contains(modListing.internalName), modListing -> {
+                githubImportMod(modListing.repo, modListing.hasJava, null);
+            });
+        }
     }
 
     public static Seq<ModListing> getFilteredModListings() {
-        return parseModListings().select(m -> m.stars >= minStars);
+        return getModListings().select(m -> m.stars >= minStars);
     }
 
-    public static Seq<ModListing> parseModListings() {
+    public static Seq<ModListing> getModListings() {
+        if (modListings == null) {
+            modListings = parseModListings();
+        }
+        return modListings;
+    }
+
+    private static Seq<ModListing> parseModListings() {
         return JsonIO.json.fromJson(Seq.class, ModListing.class, getModListFile().readString());
     }
 
-    public static Fi getModListFile() {
+    private static Fi getModListFile() {
         return getModListFile(0);
     }
 
-    public static Fi getModListFile(int index) {
+    private static Fi getModListFile(int index) {
         Fi modListFile = Config.outputDirectory.child("mod-list.json");
         if (!modListFile.exists()) {
             HttpUtils.httpGetAuthorized(Vars.modJsonURLs[index], response -> {
@@ -59,7 +84,29 @@ public class ModListUtils {
         return modListFile;
     }
 
-    public static void githubImportMod(String repo, boolean isJava, @Nullable String release) {
+    private static ModMeta findMeta(Fi file) {
+        Fi metaFile = null;
+        for (String name : metaFiles) {
+            if ((metaFile = file.child(name)).exists()) {
+                break;
+            }
+        }
+
+        if (!metaFile.exists()) {
+            return null;
+        }
+
+        ModMeta meta = json.fromJson(ModMeta.class, Jval.read(metaFile.readString()).toString(Jformat.plain));
+        meta.cleanup();
+        return meta;
+    }
+
+    private static Fi resolveRoot(ZipFi fi) {
+        Fi[] files = fi.list();
+        return files.length == 1 && files[0].isDirectory() ? files[0] : fi;
+    }
+
+    private static void githubImportMod(String repo, boolean isJava, @Nullable String release) {
         if (isJava) {
             githubImportJavaMod(repo, release);
         } else {
@@ -79,7 +126,7 @@ public class ModListUtils {
         }
     }
 
-    public static void githubImportJavaMod(String repo, @Nullable String release) {
+    private static void githubImportJavaMod(String repo, @Nullable String release) {
         //grab latest release
         HttpUtils.httpGetAuthorized(Vars.ghApi + "/repos/" + repo + "/releases/" + (release == null ? "latest" : release), res -> {
             var json = Jval.read(res.getResultAsString());
@@ -103,7 +150,7 @@ public class ModListUtils {
         }, Log::err);
     }
 
-    public static void githubImportBranch(String branch, String repo, @Nullable String release) {
+    private static void githubImportBranch(String branch, String repo, @Nullable String release) {
         if (release != null) {
             HttpUtils.httpGetAuthorized(Vars.ghApi + "/repos/" + repo + "/releases/" + release, res -> {
                 String zipUrl = Jval.read(res.getResultAsString()).getString("zipball_url");
@@ -130,8 +177,11 @@ public class ModListUtils {
         }
     }
 
-    public static void handleMod(String repo, HttpResponse result) {
+    private static void handleMod(String repo, HttpResponse result) {
         Fi file = modDirectory().child(repo.replace("/", "") + ".zip");
         file.write(result.getResultAsStream(), false);
+        if (currentModFile == null) {
+            currentModFile = file;
+        }
     }
 }
