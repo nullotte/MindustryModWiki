@@ -340,7 +340,7 @@ public class SimulatedLauncher {
         StringBuilder indexStringBuilder = new StringBuilder();
 
         indexStringBuilder.append("---\n");
-        indexStringBuilder.append("title: " + Navigation.cleanName(currentMod.meta.displayName));
+        indexStringBuilder.append("title: ").append(Navigation.navName(currentMod.meta.displayName));
         indexStringBuilder.append("\n---\n");
 
         if (modIconImage.exists()) {
@@ -476,7 +476,7 @@ public class SimulatedLauncher {
                 }
 
                 map.each((stat, statValues) -> {
-                    statsBuilder.append("\n").append("|").append(stat.localized()).append("|");
+                    statsBuilder.append("\n").append("|").append(Strings.stripColors(stat.localized())).append("|");
                     for (StatValue statValue : statValues) {
                         statsBuilder.append(strStat(statValue)).append(" ");
                     }
