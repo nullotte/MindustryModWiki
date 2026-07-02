@@ -3,6 +3,8 @@ site_url: https://nullotte.github.io/MindustryModWiki/
 repo_url: https://github.com/nullotte/MindustryModWiki/
 theme:
   name: material
+  favicon: images/favicon.png
+  logo: images/favicon.png
   features:
     - navigation.indexes
     - navigation.prune
