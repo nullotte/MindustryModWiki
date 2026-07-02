@@ -322,7 +322,7 @@ public class SimulatedLauncher {
                 // some mods just have empty internal names for some reason???
                 !ModListUtils.currentModListing.internalName.isEmpty() ? ModListUtils.currentModListing.internalName : ModListUtils.currentModListing.name
         );
-        NavSectionNode modNavNode = new NavSectionNode(currentMod.meta.displayName);
+        NavSectionNode modNavNode = new NavSectionNode(ModListUtils.currentModListing.name);
 
         Fi indexPage = currentModDocsDirectory.child("index.md");
         modNavNode.children.add(new NavFileNode(indexPage));
@@ -340,23 +340,23 @@ public class SimulatedLauncher {
         StringBuilder indexStringBuilder = new StringBuilder();
 
         indexStringBuilder.append("---\n");
-        indexStringBuilder.append("title: ").append(Navigation.navName(currentMod.meta.displayName));
+        indexStringBuilder.append("title: ").append(Navigation.navName(ModListUtils.currentModListing.name));
         indexStringBuilder.append("\n---\n");
 
         if (modIconImage.exists()) {
             indexStringBuilder.append("<img src=\"/MindustryModWiki/").append(Navigation.navPath(modIconImage)).append("\" width=\"128\" height=\"128\">\n");
         }
-        indexStringBuilder.append("# ").append(Navigation.cleanName(currentMod.meta.displayName));
+        indexStringBuilder.append("# ").append(Navigation.cleanName(ModListUtils.currentModListing.name));
 
         indexStringBuilder
                 .append("\n").append("|Property|Value|")
                 .append("\n").append("|-|-|")
-                .append("\n").append("|Author|").append(Navigation.cleanName(currentMod.meta.author.replace("\n", "<br>"))).append("|")
+                .append("\n").append("|Author|").append(Navigation.cleanName(ModListUtils.currentModListing.author.replace("\n", "<br>"))).append("|")
                 .append("\n").append("|Repository|<https://github.com/").append(ModListUtils.currentModListing.repo).append(">|")
                 .append("\n").append("|Stars|").append(ModListUtils.currentModListing.stars).append("|")
                 .append("\n").append("|Last updated|").append(ModListUtils.currentModListing.lastUpdated).append("|");
 
-        indexStringBuilder.append("\n\n").append(Strings.stripColors(currentMod.meta.description).replace("\n", "<br>"));
+        indexStringBuilder.append("\n\n").append(Strings.stripColors(ModListUtils.currentModListing.description).replace("\n", "<br>"));
 
         indexPage.writeString(indexStringBuilder.toString());
 
