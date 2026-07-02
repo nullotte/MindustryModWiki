@@ -454,7 +454,7 @@ public class SimulatedLauncher {
         StringBuilder result = new StringBuilder();
 
         result.append("# ");
-        result.append("<div class=\"content-icon\"><img src=\"/MindustryModWiki/generated-images/").append(contentIcon(content)).append("\"></div>");
+        result.append("<div class=\"content-icon\"><img src=\"/MindustryModWiki/generated-images/").append(contentIcon(content)).append("\"></div> ");
         result.append(Strings.stripColors(content.localizedName));
 
         if (content.description != null) {
